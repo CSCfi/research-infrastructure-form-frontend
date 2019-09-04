@@ -1,0 +1,65 @@
+﻿/*
+TIPA lomakkeen tyylit
+2.7.2019
+*/
+
+/*
+haetaan googlen Coiny fontti
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    background-color: fff;
+    font-family: Inconsolata, Arial, Helvetica, sans-serif; 
+    
+}
+
+/*Field määrittää vastauspalkin koon */
+
+.field {
+    
+width: 74%;
+}
+
+/* Label ja input aloittamaan palkit samalta kohtaa */
+
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 25%;
+    text-align: left;
+}
+input {
+  display: inline-block;
+  float: left;
+}
+
+/* Osion otsikon tyyli */
+
+legend {
+  display: block;
+  padding-left: 2px;
+  padding-right: 2px;
+  border: none;
+    font-weight: bold;
+    
+}
+
+/* Seliterivi */
+
+.lisatieto {
+    font-size: .8em;
+    margin-top: -1px;
+    font-style: italic;
+    display: block;
+    float: left;
+}
+
+/* ui-datepicker-calendar */
+
+.ui-datepicker-calendar {
+   display: none;
+}
+

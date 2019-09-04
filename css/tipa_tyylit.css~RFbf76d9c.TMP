@@ -1,0 +1,123 @@
+/*
+TIPA lomakkeen tyylit
+2.7.2019
+*/
+
+/*
+haetaan googlen Coiny fontti
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.hero {
+    position: relative;
+}
+
+body {
+    background-color: fff;
+    font-family: Inconsolata, Arial, Helvetica, sans-serif; 
+    
+}
+
+fieldset {
+    border: none;
+}
+
+h1 {
+    color:#3e3fa8;
+}
+
+/*Field määrittää vastauspalkin koon */
+
+.field {
+width: 100%;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.row_field {
+    display: block;
+    float: left;
+}
+
+
+.form-control {
+    width: 80;
+    display: inline-block;
+}
+
+/* Label ja input aloittamaan palkit samalta kohtaa */
+
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 100%;
+    text-align: left;
+}
+input {
+  display: inline-block;
+  float: left;
+}
+
+.box {
+    margin-bottom: 1em;
+    display: block;
+    float: left;
+    clear: right;
+     
+}
+
+/* Osion otsikon tyyli */
+
+legend {
+  display: block;
+  padding: 2px;
+  border: none;
+  font-weight: bold; 
+    margin-top: 10px;
+}
+
+/* Seliterivi */
+
+
+.lisatieto {
+    font-size: .8em !important; 
+    margin-top: -1em;
+    font-style: italic !important; 
+    display: block !important; 
+    float: left;
+}
+
+/* ui-datepicker-calendar
+
+
+.datepicker {
+    display: none;
+    } */
+
+
+/* Send button */ 
+
+.send{
+    margin: 2em;
+}
+
+/*
+.hide {
+ display:none;
+} 
+ */
+
+.reveal-if-active {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+
+input[type="checkbox"]:checked ~ .reveal-if-active {
+  opacity: 1;
+  max-height: 100px; /* little bit of a magic number :( */
+  overflow: visible;
+}
+   
