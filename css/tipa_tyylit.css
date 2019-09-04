@@ -7,9 +7,12 @@ TIPA lomakkeen tyylit
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 
-@media(max-width:1234px)
-width:90%!important;
-margin: 0 auto !important;
+@media (max-width: 1234px) {
+  body {
+    width: 90% !important;
+    margin: 0 auto !important;
+  }
+}
 
 * {
     box-sizing: border-box;
@@ -17,28 +20,28 @@ margin: 0 auto !important;
 }
 
 main .main {
-    max-width: 1000px;
-    margin: 10px auto; 
-    background-color: #FFF; 
-    background-color: hsla(0, 0%, 100%, 0.5);
-    overflow: auto; 
-    position: relative;
+  max-width: 1000px;
+  margin: 10px auto; 
+  background-color: #FFF; 
+  background-color: hsla(0, 0%, 100%, 0.5);
+  overflow: auto; 
+  position: relative;
 }
 
 
 
 .hero {
-background-image: src="ttv_banneri_uusi.png";
-background-position: center; 
-background-repeat: no-repeat; 
-background-size: cover;
+  background-image: src="ttv_banneri_uusi.png";
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
 }
 
 
 
 body {
-    background-color: fff;
-    font-family: Inconsolata, Arial, Helvetica, sans-serif; 
+  background-color: fff;
+  font-family: Inconsolata, Arial, Helvetica, sans-serif; 
     
 }
 
@@ -47,21 +50,21 @@ fieldset {
 }
 
 h1 {
-    color:#3e3fa8;
-    text-align: center;
-    font-size: 4em;
+  color:#3e3fa8;
+  text-align: center;
+  font-size: 4em;
 }
 
 
 h2 {
-    color:#3e3fa8;
-    text-align:left;
-    font-size: 1.2em;
-    margin-bottom: -10px; !important
+  color:#3e3fa8;
+  text-align:left;
+  font-size: 1.2em;
+  margin-bottom: -10px !important;
 }
 
 .ohje{
-    color: green; !important
+  color: green !important;
 }
 
 
@@ -75,7 +78,7 @@ input[type=text]{
   box-sizing: border-box;
   border: 1px solid #555;
   border-radius: 4px;
-  padding-top:  -1em;
+  padding-top: -1em;
   margin-bottom: 1.5em;
 }
 
@@ -85,7 +88,7 @@ input[type=text]:focus {
   box-sizing: border-box;
   border: 2px solid #555;
   border-radius: 4px;
-    padding-top:  -1em;
+  padding-top: -1em;
   margin-bottom: 1.5em;
 }
 
@@ -97,7 +100,7 @@ input[type=number]{
   box-sizing: border-box;
   border: 1px solid #555;
   border-radius: 4px;
-    padding-top:  -1em;
+  padding-top: -1em;
   margin-bottom: 1.5em;
 }
 
@@ -107,7 +110,7 @@ input[type=number]:focus {
   box-sizing: border-box;
   border: 2px solid #555;
   border-radius: 4px;
-    padding-top:  -1em;
+  padding-top: -1em;
   margin-bottom: 1.5em;
 }
 
@@ -119,7 +122,7 @@ textarea {
   box-sizing: border-box;
   border: 1px solid #555;
   border-radius: 4px;
-    padding-top:  -1em;
+  padding-top: -1em;
   margin-bottom: 1.5em;
 }
 
@@ -129,7 +132,7 @@ textarea:focus {
   box-sizing: border-box;
   border: 2px solid #555;
   border-radius: 4px;
-    padding-top:  -1em;
+  padding-top: -1em;
   margin-bottom: 1.5em;
 }
 
@@ -141,7 +144,7 @@ input[type=tel]{
   box-sizing: border-box;
   border: 1px solid #555;
   border-radius: 4px;
-  padding-top:  -1em;
+  padding-top: -1em;
   margin-bottom: 1.5em;
 }
 
@@ -151,7 +154,7 @@ input[type=tel]:focus {
   box-sizing: border-box;
   border: 2px solid #555;
   border-radius: 4px;
-    padding-top:  -1em;
+  padding-top: -1em;
   margin-bottom: 1.5em;
 }
 
@@ -163,7 +166,7 @@ input[type=email]{
   box-sizing: border-box;
   border: 1px solid #555;
   border-radius: 4px;
-  padding-top:  -1em;
+  padding-top: -1em;
   margin-bottom: 1.5em;
 }
 
@@ -173,7 +176,7 @@ input[type=email]:focus {
   box-sizing: border-box;
   border: 2px solid #555;
   border-radius: 4px;
-    padding-top:  -1em;
+  padding-top: -1em;
   margin-bottom: 1.5em;
 }
 
@@ -185,7 +188,7 @@ input[type=url]{
   box-sizing: border-box;
   border: 1px solid #555;
   border-radius: 4px;
-  padding-top:  -1em;
+  padding-top: -1em;
   margin-bottom: 1.5em;
 }
 
@@ -195,7 +198,7 @@ input[type=url]:focus {
   box-sizing: border-box;
   border: 2px solid #555;
   border-radius: 4px;
-    padding-top:  -1em;
+  padding-top: -1em;
   margin-bottom: 1.5em;
 }
 
@@ -213,64 +216,62 @@ select {
 /*Field määrittää vastauspalkin koon */
 
 .field {
-width: 100%;
-    display: inline-block;
-    margin-bottom: 1em;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 1em;
 }
 
  .row_field {
-    display: block;
-    float: left;
+  display: block;
+  float: left;
 }
 
 
 .form-control {
-    width: 80;
-    display: inline-block;
+  width: 80;
+  display: inline-block;
 }
 
 
 
 .hidden{ 
-    display: none;
+  display: none;
 }
 
 
 /* Label ja input aloittamaan palkit samalta kohtaa */
 
 label{
-    display: inline-block;
-    float: left;
-    clear: left;
-    width: 100%;
-    text-align: left;
+  float: left;
+  clear: left;
+  width: 100%;
+  text-align: left;
 }
 input {
-  display: inline-block;
   float: left;
 }
 
 .box {
-    margin-bottom: 1em;
-    display: block;
-    float: left;
-    clear: right; 
+  margin-bottom: 1em;
+  display: block;
+  float: left;
+  clear: right; 
 }
 
 .content60, .content80{
-margin-left: auto;
-margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .content80 {width: 80%;
-padding-bottom: 1rem; 
-padding-top: 4rem;
+  padding-bottom: 1rem; 
+  padding-top: 4rem;
 }
 
 .content60{
-width: 60%; 
-padding-bottom: 1rem; 
-padding-top: 4rem;
+  width: 60%; 
+  padding-bottom: 1rem; 
+  padding-top: 4rem;
 }
 
 
@@ -281,8 +282,8 @@ legend {
   padding: 2px;
   border: none;
   font-weight: bold; 
-    margin-top: 10px;
-    margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 
@@ -291,24 +292,24 @@ legend {
 
 
 .lisatieto {
-    font-size: .8em !important; 
-    margin-top: 0.1em;
-   margin-bottom: 0.2em;
-    font-style: italic !important; 
-    display: block !important; 
-    float: left;
-    color: dimgrey;
+  font-size: .8em !important; 
+  margin-top: 0.1em;
+  margin-bottom: 0.2em;
+  font-style: italic !important; 
+  display: block !important; 
+  float: left;
+  color: dimgrey;
 }
 
 /* selite iso */
 
 .alaotsikko {
-    font-size: .95em;
-    margin-top: -0.4em;
-    font-style: italic !important; 
-    display: block !important; 
-    float: left;
-    color: dimgrey;
+  font-size: .95em;
+  margin-top: -0.4em;
+  font-style: italic !important; 
+  display: block !important; 
+  float: left;
+  color: dimgrey;
 }
 
 /* ui-datepicker-calendar
@@ -321,59 +322,59 @@ legend {
 
 /* Buttons */ 
 
-.cta{
-background-color: #3e3fa8;
-color: #ffffff !important;
-padding: 1rem;
-display: block;
-text-align: center;
-max-width: 200px;
-margin: 2.5rem auto;
-border-radius: 30px;
-text-transform: uppercase;
-font-weight: 300 !important;
+.cta {
+  background-color: #3e3fa8;
+  color: #ffffff !important;
+  padding: 1rem;
+  display: block;
+  text-align: center;
+  max-width: 200px;
+  margin: 2.5rem auto;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: 300 !important;
 }
 
 input:hover.cta {
-background-color: #22225A ;
+  background-color: #22225A ;
 }
 
 .cta-pp {
-background-color: #FFF;
-border: 2px solid #3AAA35;
-color: #3AAA35 !important;
-padding: 0.5rem;
-display: inline;
-text-align: center;
-max-width: 250px;
-margin: 2.5rem auto;
-border-radius: 30px;
-text-transform: uppercase;
-font-weight: 300 !important;
-font-size: -1rem;
+  background-color: #FFF;
+  border: 2px solid #3AAA35;
+  color: #3AAA35 !important;
+  padding: 0.5rem;
+  display: inline;
+  text-align: center;
+  max-width: 250px;
+  margin: 2.5rem auto;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: 300 !important;
+  font-size: -1rem;
 }
 
 button:hover.cta-pp {
-background-color: azure !important;
+  background-color: azure !important;
 }
 
 .cta-pal {
-background-color: #FFF;
-border: 2px solid #3e3fa8;
-color: #3e3fa8 !important;
-padding: 0.5rem;
-display: inline;
-text-align: center;
-max-width: 150px;
-margin: 2.5rem auto;
-border-radius: 30px;
-text-transform: uppercase;
-font-weight: 300 !important;
-font-size: -1rem;
+  background-color: #FFF;
+  border: 2px solid #3e3fa8;
+  color: #3e3fa8 !important;
+  padding: 0.5rem;
+  display: inline;
+  text-align: center;
+  max-width: 150px;
+  margin: 2.5rem auto;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: 300 !important;
+  font-size: -1rem;
 }
 
 button:hover.cta-pal {
-background-color: lavender !important;
+  background-color: lavender !important;
 }
 
 
@@ -385,7 +386,7 @@ background-color: lavender !important;
 } 
 
 .hide4d {
-    display: none;
+  display: none;
 }
 
 
@@ -402,18 +403,18 @@ input[type="checkbox"]:checked ~ .reveal-if-active {
 }
    
 footer {
-    background-color: lightgrey;
-    color: black; 
-    text-align: center;
-    padding: 4rem 2rem 2rem 2rem;
-    clear: both; 
-    margin-bottom: 0rem; 
-    display: inline-block;
-    width: 100%;
+  background-color: lightgrey;
+  color: black; 
+  text-align: center;
+  padding: 4rem 2rem 2rem 2rem;
+  clear: both; 
+  margin-bottom: 0rem; 
+  display: inline-block;
+  width: 100%;
 }
 
 .dropdown {
-    margin-top: 10px;
-    margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
     
 }
