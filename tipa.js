@@ -41,18 +41,6 @@ function showHidePalveluInfo() {
     muutpal.classList.remove("hide")
   }
 }
-$(function () {
-  var checkbox = $("#muut");
-  var hidden = $("#hidden_fields1");
-  hidden.hide();
-  checkbox.change(function () {
-    if (checkbox.is(':checked')) {
-      hidden.show();
-    } else {
-      hidden.hide();
-    }
-  });
-});
 
 // require-if-active --- https://css-tricks.com/exposing-form-fields-radio-button-css/
 
@@ -69,18 +57,6 @@ function showHidePPadditional() {
     text.style.display = "block";
   }
 }
-$(function () {
-  var checkbox = $("#PPadditional");
-  var hidden = $("#hidden_fields2");
-  hidden.hide();
-  checkbox.change(function () {
-    if (checkbox.is(':checked')) {
-      hidden.show();
-    } else {
-      hidden.hide();
-    }
-  });
-});
 
 // HideShow 4c
 
@@ -95,18 +71,6 @@ function showHideVOadditional() {
     text.style.display = "block";
   }
 }
-$(function () {
-  var checkbox = $("#VOadditional");
-  var hidden = $("#hidden_fields3");
-  hidden.hide();
-  checkbox.change(function () {
-    if (checkbox.is(':checked')) {
-      hidden.show();
-    } else {
-      hidden.hide();
-    }
-  });
-});
 
 // HideShow 4d
 
@@ -122,72 +86,37 @@ function showHideMuuPPadditional() {
     muut4d.classList.remove("hide4d")
   }
 }
-$(function () {
-  var checkbox = $("#MuuPPadditional");
-  var hidden = $("#hidden_fields4");
-  hidden.hide();
-  checkbox.change(function () {
-    if (checkbox.is(':checked')) {
-      hidden.show();
-    } else {
-      hidden.hide();
-    }
-  });
-});
 
 // HideShow 5 (additional contact for main infra)
-     
-      function showHideAddContact() {
-     var checkBox = document.getElementById("xtrPPMain")
-     var text = document.getElementById("AddContact")
-     var AC = document.getElementById("hidden_fields5")
 
-     if (!checkBox.checked){
-    AC.className += "hide";    
-  } 
-     else {
-        AC.classList.remove("hide")
+function showHideAddContact() {
+  var checkBox = document.getElementById("xtrPPMain")
+  var text = document.getElementById("AddContact")
+  var AC = document.getElementById("hidden_fields5")
+
+  if (!checkBox.checked) {
+    AC.className += "hide";
   }
-} 
-     $(function() {
-           var checkBox = $("#AddContact");
-      var hidden = $("#hidden_fields5");
-          hidden.hide();
-         checkbox.change(function() {if (checkbox.is(':checked')) {
-             hidden.show();
-             } else {
-                 hidden.hide();
-                  }
-  });
-});
-
+  else {
+    AC.classList.remove("hide")
+  }
+}
 
 
 // HideShow 2nd service 
-     
-      function showHide2ndSer() {
-  var button = document.getElementById("2ndService")
-     var text = document.getElementById("2ndSer")
-     var ss = document.getElementById("hidden_fields2ndSer")
 
-     if (!button.clicked){
-    ss.className += "hide2ndSer";    
-  } 
-     else {
-        ss.classList.remove("hide2ndSer")
+function showHide2ndSer() {
+  var button = document.getElementById("2ndService")
+  var text = document.getElementById("2ndSer")
+  var ss = document.getElementById("hidden_fields2ndSer")
+
+  if (!button.clicked) {
+    ss.className += "hide2ndSer";
   }
-} 
-     $(function() {
-           var button = $("#2ndSer");
-      var hidden = $("#hidden_fields2ndSer");
-          hidden.hide();
-         button.change(function() {if (button.is(':reclicked')) {
-             hidden.show();
-             } else {
-                 hidden.hide();
-                  }
-  });
-});
+  else {
+    ss.classList.remove("hide2ndSer")
+  }
+}
 // ------------------- Aloitusvuosi -------------------------
 
 
