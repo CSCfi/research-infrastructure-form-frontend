@@ -68,22 +68,22 @@ h2 {
     color:#32842F;
     text-align:left;
     font-size: 1.2em;
-    margin-bottom: -10px; !important
+    margin-bottom: -10px !important;
 }
 
 h3 {
     color:#32842F;
     text-align:left;
     font-size: 1em;
-    margin-bottom: -10px; !important
+    margin-bottom: -10px !important;
     
 }
 
 
 .subheading {
-    color: #22225A; !important
-    text-align: center;  !important
-    font-size: 5rem; !important
+    color: #22225A !important;
+    text-align: center  !important;
+    font-size: 5rem !important;
 }
 
 /* green infopoint style  */
