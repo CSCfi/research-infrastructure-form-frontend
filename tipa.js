@@ -135,6 +135,59 @@ $(function () {
   });
 });
 
+// HideShow 5 (additional contact for main infra)
+     
+      function showHideAddContact() {
+     var checkBox = document.getElementById("xtrPPMain")
+     var text = document.getElementById("AddContact")
+     var AC = document.getElementById("hidden_fields5")
+
+     if (!checkBox.checked){
+    AC.className += "hide";    
+  } 
+     else {
+        AC.classList.remove("hide")
+  }
+} 
+     $(function() {
+           var checkBox = $("#AddContact");
+      var hidden = $("#hidden_fields5");
+          hidden.hide();
+         checkbox.change(function() {if (checkbox.is(':checked')) {
+             hidden.show();
+             } else {
+                 hidden.hide();
+                  }
+  });
+});
+
+
+
+// HideShow 2nd service 
+     
+      function showHide2ndSer() {
+  var button = document.getElementById("2ndService")
+     var text = document.getElementById("2ndSer")
+     var ss = document.getElementById("hidden_fields2ndSer")
+
+     if (!button.clicked){
+    ss.className += "hide2ndSer";    
+  } 
+     else {
+        ss.classList.remove("hide2ndSer")
+  }
+} 
+     $(function() {
+           var button = $("#2ndSer");
+      var hidden = $("#hidden_fields2ndSer");
+          hidden.hide();
+         button.change(function() {if (button.is(':reclicked')) {
+             hidden.show();
+             } else {
+                 hidden.hide();
+                  }
+  });
+});
 // ------------------- Aloitusvuosi -------------------------
 
 
@@ -149,12 +202,7 @@ getSelectValue();
 
 // ------------------- testi "lisää palveluita" -------------------------
 
-function addnew4d() {
-  var node = document.createElement("hidden_fields4");
-  var muut4d = document.getElementById("hidden_fields4");
-  node.appendChild(muut4d);
-  document.getElementById("hidden_fields4").appendChild(node);
-}
+
 
 // ------------------- tietosuoja ennen submit -------------------------
 
