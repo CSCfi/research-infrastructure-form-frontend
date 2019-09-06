@@ -52,7 +52,8 @@ fieldset {
 h1 {
   color: #22225A;
   text-align: center;
-  font-size: 3.5em;
+  font-size: 4em;
+  line-height: 95%;
 }
 
 h2 {
@@ -72,8 +73,22 @@ h3 {
 .subheading {
   color: #22225A !important;
   text-align: center !important;
-  font-size: 5rem !important;
+  font-size: -5rem !important;
 }
+
+.legend_border {    /* subheading box style*/
+  width: 80% !important;
+  display: inline-block;
+  padding: 2px;
+  border: solid;
+  border-width: thin;
+  border-color: #22225A;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  align-content: center !important;
+  text-align: center;
+} 
 
 /* green infopoint style  */
 
@@ -303,6 +318,8 @@ legend {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+
 
 /* Seliterivi */
 
