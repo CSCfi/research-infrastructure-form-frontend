@@ -129,9 +129,27 @@ function getSelectValue() {
     // return.true;
 // }
 
+// Wait for DOM to load, then populate selects
+window.addEventListener("DOMContentLoaded", function() {
+  // Go through each select list
+  countrySelectIds.forEach(id => {
+    // Get the current select element
+    let select = document.getElementById(id);
+    // Add each country option to the select list
+    countryList.forEach(elem => {
+      select.options.add( new Option(elem.text, elem.code));
+    });
+  });
+}, false)
 
 
+// Variables related to populating the select fields
+let countrySelectIds = ['country'];
 
+let countryList = [
+  {code: 'FIN', text: 'Suomi'},
+  {code: 'AFG', text: 'Afganistan'}
+];
 
 
 
