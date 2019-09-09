@@ -12,18 +12,6 @@ function showHideTTVcode() {
     muutpal.classList.remove("hide")
   }
 }
-$(function () {
-  var checkbox = $("#TTV_yes");
-  var hidden = $("#hidden_fieldsTTV");
-  hidden.hide();
-  checkbox.change(function () {
-    if (checkbox.is(':checked')) {
-      hidden.show();
-    } else {
-      hidden.hide();
-    }
-  });
-});
 
 // ------------muut HideShow osiot-------------------------
 
@@ -95,7 +83,7 @@ function showHideAddContact() {
   var AC = document.getElementById("hidden_fields5")
 
   if (!checkBox.checked) {
-    AC.className += "hide";
+    AC.classList.add("hide");
   }
   else {
     AC.classList.remove("hide")
@@ -111,7 +99,7 @@ function showHide2ndSer() {
   var ss = document.getElementById("hidden_fields2ndSer")
 
   if (!button.clicked) {
-    ss.className += "hide2ndSer";
+    ss.classList.add("hide2ndSer");
   }
   else {
     ss.classList.remove("hide2ndSer")
@@ -122,11 +110,8 @@ function showHide2ndSer() {
 
 function getSelectValue() {
   var selectedValue = document.getElementById("startYear").value;
-  console.log(SelectedValue);
+  console.log(selectedValue);
 }
-getSelectValue();
-
-
 
 
 // ------------------- testi "lisää palveluita" -------------------------
