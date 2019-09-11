@@ -1,12 +1,28 @@
-function toggleElement(id, visible) {
-  let elem = document.getElementById(id);
+let addedDivs = 0;
 
+function toggleElement(id, visible) {
+  const elem = document.getElementById(id);
+  
   if (visible) {
     elem.classList.remove('hidden');
   } else {
     elem.classList.add('hidden')
   }
 }
+
+function addSection(id) {
+  const markup = `
+  <div class="test">
+    <p>Esimerkki ${addedDivs}</p>
+    <button onclick="addSection('${id}')" type="button">Lisää uusi</button>
+  </div>
+  `;
+  addedDivs++;
+  const newDiv = document.createElement("div");
+  newDiv.innerHTML = markup;
+  document.getElementById(id).append(newDiv);
+}
+
 
 // HideShow TTV tunniste
 
@@ -22,6 +38,7 @@ function toggleElement(id, visible) {
 //     muutpal.classList.remove("hide")
 //   }
 // }
+
 
 // ------------muut HideShow osiot-------------------------
 
