@@ -40,14 +40,14 @@
                         </legend>
 
                         <label for="TTV_yes">Tutkimusinfrastruktuurin tiedot ovat tutkimustietovarannossa?
-                            <input type="checkbox" id="TTV_yes" name="TTV_yes" value="yes" onclick="showHideTTVcode()" />
+                            <input type="checkbox" id="TTV_yes" name="TTV_yes" value="yes" onclick="toggleElement('hidden_fieldsTTV', this.checked)"/>
                         </label>
 
-                        <div id="hidden_fieldsTTV" class="hide">
+                        <div id="hidden_fieldsTTV" class="hidden">
                             <fieldset id=TTVcode>
 
 
-                                <label for="ttvtunniste">Jos kyll&auml;, kerro tutkimusinfrastruktuurin tunniste t&auml;ss&auml;</label>
+                                <label for="ttvtunniste">Jos kyllä, kerro tutkimusinfrastruktuurin tunniste tässä</label>
                                 <p class="info"><a class="ohje">&#9432;</a> Tarkista tunniste <a href="www.research.fi" target="_blank">portaalista</a>.</p>
                                 <input type="text" class="field" name="ttvtunniste" id="ttvtunniste">
 
@@ -76,7 +76,7 @@
                         <input type="text" name="nameEng" id="nameEng" class="field">
 
                         <label for="lyhenne">Tutkimusinfrastruktuurin vakiintunut lyhenne</label>
-                        <p class="info"><a class="ohje">&#9432;</a> Jos infralla on vakiintunut ja k&auml;ytöss&auml; oleva lyhenne tai lyhenne, jota halutaan k&auml;ytett&auml;v&auml;ksi, sen voi toimittaa t&auml;ss&auml;. Esimerkiksi CERN, OtaNano, ESRF, jne.</p>
+                        <p class="info"><a class="ohje">&#9432;</a> Jos infralla on vakiintunut ja käytössä oleva lyhenne tai lyhenne, jota halutaan käytettäväksi, sen voi toimittaa tässä. Esimerkiksi CERN, OtaNano, ESRF, jne.</p>
                         <input type="text" name="lyhenne" id="lyhenne" class="field">
 
 
@@ -97,7 +97,7 @@
 
 
                         <label for="kuvausTie">Tieteellinen kuvaus</label>
-                        <p class="info"><a class="ohje">&#9432;</a> Tarvittaessa tarkempi kuvaus tutkimusinfrastruktuurin edustaman tieteenalan tai tieteenalojen mukaisesti. Kuvaus, jonka avulla tutkija voi p&auml;&auml;tell&auml; onko tutkimusinfrastruktuuri k&auml;ytett&auml;viss&auml; h&auml;nen tarpeisiinsa.</p>
+                        <p class="info"><a class="ohje">&#9432;</a> Tarvittaessa tarkempi kuvaus tutkimusinfrastruktuurin edustaman tieteenalan tai tieteenalojen mukaisesti. Kuvaus, jonka avulla tutkija voi päätellä onko tutkimusinfrastruktuuri käytettävissä hänen tarpeisiinsa.</p>
                         <textarea id="kuvausTie" name="kuvausTie" id="kuvausTie" class="field"></textarea>
 
 
@@ -1529,7 +1529,7 @@
                             <!-- ------------------Additional service (2nd) 5a-d ---------------- !-->
 
 
-                            <button class="cta-pal" id="2ndService" name="2ndService" value="yes" onclick="showHide2ndSer()">Lis&auml;&auml; uusi palvelu</button>
+                            <button class="cta-pal" id="2ndService" name="2ndService" value="yes" onclick="showHide2ndSer()">Lisää uusi palvelu</button>
 
                             <div id="hidden_fields2ndSer" class="hide2ndSer">
 

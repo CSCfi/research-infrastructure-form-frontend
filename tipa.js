@@ -1,17 +1,27 @@
-// HideShow TTV tunniste
+function toggleElement(id, visible) {
+  let elem = document.getElementById(id);
 
-function showHideTTVcode() {
-  var checkBox = document.getElementById("TTV_yes")
-  var text = document.getElementById("TTVcode")
-  var muutpal = document.getElementById("hidden_fieldsTTV")
-
-  if (!checkBox.checked) {
-    muutpal.classList.add("hide");
-  }
-  else {
-    muutpal.classList.remove("hide")
+  if (visible) {
+    elem.classList.remove('hidden');
+  } else {
+    elem.classList.add('hidden')
   }
 }
+
+// HideShow TTV tunniste
+
+// function showHideTTVcode() {
+//   var checkBox = document.getElementById("TTV_yes")
+//   var text = document.getElementById("TTVcode")
+//   var muutpal = document.getElementById("hidden_fieldsTTV")
+
+//   if (!checkBox.checked) {
+//     muutpal.classList.add("hide");
+//   }
+//   else {
+//     muutpal.classList.remove("hide")
+//   }
+// }
 
 // ------------muut HideShow osiot-------------------------
 
