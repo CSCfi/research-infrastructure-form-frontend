@@ -173,7 +173,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
 
 // Variables related to populating the select fields
-let countrySelectIds = ['country'];
+let countrySelectIds = ['country', 'country_AC', 'countryAdd', 'countryAdd_2ndS'];
 
 let countryList = [
   {code: 'FIN', text: 'Suomi'},
