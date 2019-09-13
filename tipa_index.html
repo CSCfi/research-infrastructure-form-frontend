@@ -47,9 +47,9 @@
                             <fieldset id=TTVcode>
 
 
-                                <label for="ttvtunniste">Jos kyllä, kerro tutkimusinfrastruktuurin tunniste tässä</label>
+                                <label for="ttv_id">Jos kyllä, kerro tutkimusinfrastruktuurin tunniste tässä</label>
                                 <p class="info"><a class="ohje">&#9432;</a> Tarkista tunniste <a href="www.research.fi" target="_blank">portaalista</a>.</p>
-                                <input type="text" class="field" name="ttvtunniste" id="ttvtunniste">
+                                <input type="text" class="field" name="ttv_id" id="ttv_id">
 
                             </fieldset>
                         </div>
@@ -63,42 +63,42 @@
                             <h2>1. Tutkimusinfrastruktuurin kuvailutiedot</h2>
                         </legend>
 
-                        <label for="nimiFi">Tutkimusinfrastruktuurin nimi (FI)</label>
+                        <label for="infraNameFi">Tutkimusinfrastruktuurin nimi (FI)</label>
                         <p class="info"><a class="ohje">&#9432;</a> <strong>Tutkimusinfrastruktuurin nimi:</strong> täytä vähintään yksi (FI/SV/EN)</p>
-                        <input type="text" name="nimiFi" id="nimiFi" class="field">
+                        <input type="text" name="infraNameFi" id="infraNameFi" class="field">
 
-                        <label for="nameSv">Tutkimusinfrastruktuurin nimi (SV) </label>
+                        <label for="infraNameSv">Tutkimusinfrastruktuurin nimi (SV) </label>
                         <p class="info"><a class="ohje">&#9432;</a> <strong>Tutkimusinfrastruktuurin nimi:</strong> täytä vähintään yksi (FI/SV/EN)</p>
-                        <input type="text" name="nameSv" id="nameSv" class="field">
+                        <input type="text" name="infraNameSv" id="infraNameSv" class="field">
 
-                        <label for="nameEng">Tutkimusinfrastruktuurin nimi (EN)</label>
+                        <label for="infraNameEn">Tutkimusinfrastruktuurin nimi (EN)</label>
                         <p class="info"><a class="ohje">&#9432;</a> <strong>Tutkimusinfrastruktuurin nimi:</strong> täytä vähintään yksi (FI/SV/EN)</p>
-                        <input type="text" name="nameEng" id="nameEng" class="field">
+                        <input type="text" name="infraNameEn" id="infraNameEn" class="field">
 
-                        <label for="lyhenne">Tutkimusinfrastruktuurin vakiintunut lyhenne</label>
+                        <label for="infraAbbrev">Tutkimusinfrastruktuurin vakiintunut lyhenne</label>
                         <p class="info"><a class="ohje">&#9432;</a> Jos infralla on vakiintunut ja käytössä oleva lyhenne tai lyhenne, jota halutaan käytettäväksi, sen voi toimittaa tässä. Esimerkiksi CERN, OtaNano, ESRF, jne.</p>
-                        <input type="text" name="lyhenne" id="lyhenne" class="field">
+                        <input type="text" name="infraAbbrev" id="infraAbbrev" class="field">
 
 
-                        <label for="kuvausFi">Tutkimusinfrastruktuurin kuvaus (FI)</label>
+                        <label for="infraDescrFi">Tutkimusinfrastruktuurin kuvaus (FI)</label>
                         <p class="info"><a class="ohje">&#9432;</a> <strong>Kuvaus:</strong>Täytä vähintään yksi (FI/SV/EN).
                             Yleistajuinen kuvaus tutkimusinfrastruktuurista, sen käyttötarkoituksista, tavoitteista jne.</p>
-                        <textarea id="kuvausFi" name="kuvausFi" class="field"></textarea>
+                        <textarea id="infraDescrFi" name="infraDescrFi" class="field"></textarea>
 
-                        <label for="kuvausSv">Tutkimusinfrastruktuurin kuvaus (SV)</label>
+                        <label for="infraDescrSv">Tutkimusinfrastruktuurin kuvaus (SV)</label>
                         <p class="info"><a class="ohje">&#9432;</a> <strong>Kuvaus:</strong>Täytä vähintään yksi (FI/SV/EN).
                             Yleistajuinen kuvaus tutkimusinfrastruktuurista, sen käyttötarkoituksista, tavoitteista jne.</p>
-                        <textarea id="kuvausSv" name="kuvausSv" class="field"></textarea>
+                        <textarea id="infraDescrSv" name="infraDescrSv" class="field"></textarea>
 
-                        <label for="kuvausEng">Tutkimusinfrastruktuurin kuvaus (EN)</label>
+                        <label for="infraDescrEn">Tutkimusinfrastruktuurin kuvaus (EN)</label>
                         <p class="info"><a class="ohje">&#9432;</a> <strong>Kuvaus:</strong>Täytä vähintään yksi (FI/SV/EN).
                             Yleistajuinen kuvaus tutkimusinfrastruktuurista, sen käyttötarkoituksista, tavoitteista jne.</p>
-                        <textarea id="kuvausEng" name="kuvausEng" class="field"></textarea>
+                        <textarea id="infraDescrEn" name="infraDescrEn" class="field"></textarea>
 
 
-                        <label for="kuvausTie">Tieteellinen kuvaus</label>
+                        <label for="infraDescrSci">Tieteellinen kuvaus</label>
                         <p class="info"><a class="ohje">&#9432;</a> Tarvittaessa tarkempi kuvaus tutkimusinfrastruktuurin edustaman tieteenalan tai tieteenalojen mukaisesti. Kuvaus, jonka avulla tutkija voi päätellä onko tutkimusinfrastruktuuri käytettävissä hänen tarpeisiinsa.</p>
-                        <textarea id="kuvausTie" name="kuvausTie" id="kuvausTie" class="field"></textarea>
+                        <textarea id="kuvausTie" name="infraDescrSci" id="infraDescrSci" class="field"></textarea>
 
 
                         <label for="startYear"> Toiminnan aloitusvuosi<span style="color: red important!;">*</span></label>
@@ -108,21 +108,21 @@
                         <input type="number" id="endYear" name="endYear" class="field">
 
 
-                        <label for="korvattava">Infrastruktuurin tunniste, jonka tämä tutkimusinfrastuktuuri korvaa</label>
+                        <label for="infraReplace">Infrastruktuurin tunniste, jonka tämä tutkimusinfrastuktuuri korvaa</label>
                         <p class="info"><a class="ohje">&#9432;</a> Uusi tutkimusinfrastruktuuri on aiemman infran seuraaja. Se korvaa aiemman toiminnan.</p>
-                        <input type="text" name="korvattava" id="korvattava" class="field">
+                        <input type="text" name="infraReplace" id="infraReplace" class="field">
 
 
-                        <label for="SA">Tutkimusinfrastruktuuri on Suomen Akatemian tiekartalla
-                            <input type="checkbox" name="SA" id="SA" class="box">
+                        <label for="infraAcafi">Tutkimusinfrastruktuuri on Suomen Akatemian tiekartalla
+                            <input type="checkbox" name="infraAcafi" id="infraAcafi" class="box">
                         </label>
 
-                        <label for="meril"> Tutkimusinfrastruktuurin luokitus MERIL-luokittelussa <a href="#" target="_blank">(koodisto)</a></label>
-                        <input type="text" name="meril" id="meril" class="field">
+                        <label for="infraMeril"> Tutkimusinfrastruktuurin luokitus MERIL-luokittelussa <a href="#" target="_blank">(koodisto)</a></label>
+                        <input type="text" name="infraMeril" id="infraMeril" class="field">
 
                     </fieldset>
 
-                    <!-- ------------------ 2a contact information for main infra------------------ !-->
+                    <!-- ------infraCon------------ 2a contact information for main infra------------------ !-->
 
                     <fieldset>
                         <legend>
@@ -130,296 +130,201 @@
                         </legend>
                         <p class="infoXL"><a class="ohje">&#9432;</a> Tutkimusinfrastruktuurin yhteystiedot toimitetaan tässä. Yhteystiedot ovat palvelukohtaisia, mutta palveluilla voi olla tietenkin samat yhteystiedot. Palvelukohtaisia yhteistietoja tarvitaan esimerkiksi silloin, kun infrastruktuuri on hajautettu, sen palveluita tuottaa useampi kuin yksi organisaatio ja palveluiden käyttö organisaatioiden kautta erikseen. </p>
 
-                        <label for="PPnimi">Palvelupisteen nimi<span style="color: red important!;">*</span></label>
+                        <label for="infraConName">Palvelupisteen nimi<span style="color: red important!;">*</span></label>
                         <p class="info"><a class="ohje">&#9432;</a> Yhteyspisteen tai palvelusta vastaavan henkilön nimi</p>
-                        <input type="text" id="PPnimi" name="PPnimi" class="field" required>
+                        <input type="text" id="infraConName" name="infraConName" class="field" required>
 
-                        <label for="PPkuvaus">Palvelupisteen kuvaus</label>
+                        <label for="infraConDescr">Palvelupisteen kuvaus</label>
                         <p class="info"><a class="ohje">&#9432;</a> Tarvittaessa tarkempi kuvaus yhteystiedon roolista. Esimerkiksi onko kyse tutkimushenkilökunnasta, teknisestä tuesta, hallinnollisesta yhteyshenkilöstä jne.</p>
-                        <textarea id="PPkuvaus" name="PPkuvaus" class="field"></textarea>
+                        <textarea id="infraConDescr" name="infraConDescr" class="field"></textarea>
 
-                        <label for="PPtel">Puhelinnumero<span style="color: red important!;">*</span></label>
-                        <input type="tel" id="PPtel" name="PPtel" class="field" required>
+                        <label for="infraConTel">Puhelinnumero<span style="color: red important!;">*</span></label>
+                        <input type="tel" id="infraConTel" name="infraConTel" class="field" required>
 
-                        <label for="PPemail">Sähköposti<span style="color: red important!;">*</span> </label>
-                        <input type="email" id="PPemail" name="PPemail" class="field" required>
+                        <label for="infraConTel">Sähköposti<span style="color: red important!;">*</span> </label>
+                        <input type="email" id="infraConTel" name="infraConTel" class="field" required>
 
-                        <label for="PPosoite">Postiosoite<span style="color: red important!;">*</span></label>
-                        <input type="text" id="PPosoite" name="PPosoite" class="field" required>
+                        <label for="infraConPost">Postiosoite<span style="color: red important!;">*</span></label>
+                        <input type="text" id="infraConPost" name="infraConPost" class="field" required>
 
-                        <label for="PPlisatiedot">Linkki lisätietoihin</label>
+                        <label for="infraConInfo">Linkki lisätietoihin</label>
                         <p class="info"><a class="ohje">&#9432;</a> Esimerkiksi infrastruktuurin kotisivu jne.</p>
-                        <input type="url" id="PPlisatiedot" name="PPlisatiedot" class="field">
+                        <input type="url" id="infraConInfo" name="infraConInfo" class="field">
 
 
-                        <label for="PPehdot">Linkki käyttöehtoihin</label>
+                        <label for="infraConTerms">Linkki käyttöehtoihin</label>
                         <p class="info"><a class="ohje">&#9432;</a> Tutkimusinfrastruktuurin käyttöehdot kertova dokumentti tai verkkosivu.</p>
-                        <input type="url" id="PPehdot" name="PPehdot" class="field">
+                        <input type="url" id="infraConTerms" name="infraConTerms" class="field">
 
 
-                        <label for="PPkunta">Kuntatieto <a href="#" target="_blank">(koodisto)</a><span style="color: red important!;">*</span></label>
-                        <input type="text" id="PPkunta" name="PPkunta" class="field" required>
+                        <label for="infraConMuninc">Kuntatieto <a href="#" target="_blank">(koodisto)</a><span style="color: red important!;">*</span></label>
+                        <input type="text" id="infraConMuninc" name="infraConMuninc" class="field" required>
 
-                        <label for="country" class="dropdown">Maa<span style="color: red important!;">*</span></label>
+                        <label for="infraCountry" class="dropdown">Maa<span style="color: red important!;">*</span></label>
 
-                        <select id="country" name="country" required>
-                        
+                        <select id="infraCountry" name="infraCountry" required>
                         </select>
 
-                        <label for="PPAsteLE">Leveysaste</label>
+                        <label for="infraConLatitude">Leveysaste</label>
                         <p class="info"><a class="ohje">&#9432;</a> <strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</p>
-                        <input type="number" min="0" value="0" step=".01" id="PPAsteLe" name="PPAsteLe" class="field">
+                        <input type="number" min="0" value="0" step=".01" id="infraConLatitude" name="infraConLatitude" class="field">
 
 
-                        <label for="PPAstePi">Pituusaste</label>
+                        <label for="infraConLongitude">Pituusaste</label>
                         <p class="info"><a class="ohje">&#9432;</a> <strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</p>
-                        <input type="number" min="0" value="0" step=".01" id="PPAstePi" name="PPAstePi" class="field">
+                        <input type="number" min="0" value="0" step=".01" id="infraConLongitude" name="infraConLongitude" class="field">
 
 
-                        <label for="PPavain">Avainsanat</label>
+                        <label for="infraKeywords">Avainsanat</label>
                         <p class="info"><a class="ohje">&#9432;</a> Avainsanat, jotka helpottavat infrastruktuurin löytämistä. Myös laitteistojen, mittausmenetelmien jne. akronyymit.</p>
-                        <input type="text" id="PPAvain" name="PPAvain" class="field">
+                        <input type="text" id="infraKeywords" name="infraKeywords" class="field">
 
-
-                        <!-- ------------------option checkbox / additional contact information for main infra ---------------- !-->
-
-                        <label for="xtrPPMain">Tutkimusinfrastruktuurille ilmoitetaan myös toinen yhteystieto
-                            <input type="checkbox" id="xtrPPMain" name="xtrPPMain" value="yes" onclick="showHideAddContact()">
-                        </label>
-
-                        <!-- ---------------- option fields for additional contact info for main infra ------->
-
-
-                        <div id="hidden_fields5" class="hide">
-                            <fieldset id=AddContact>
-
-                                <legend>
-                                    <h3>Tutkimusinfrastruktuurin yhteystiedot</h3>
-                                </legend>
-                                <p class="infoXL"><a class="ohje">&#9432;</a> Mikäli infrastruktuurilla on yllä ilmoitetun lisäksi toinen yhteystieto. </p>
-
-                                <label for="PPnimi_AC">Palvelupisteen nimi<span style="color: red important!;">*</span></label>
-                                <p class="info"><a class="ohje">&#9432;</a> Yhteyspisteen tai palvelusta vastaavan henkilön nimi</p>
-                                <input type="text" id="PPnimi_AC" name="PPnimi_AC" class="field" required>
-
-
-
-                                <label for="PPkuvaus_AC">Palvelupisteen kuvaus</label>
-                                <p class="info"><a class="ohje">&#9432;</a> Tarvittaessa tarkempi kuvaus yhteystiedon roolista. Esimerkiksi onko kyse tutkimushenkilökunnasta, teknisestä tuesta, hallinnollisesta yhteyshenkilöstä jne.</p>
-                                <textarea id="PPkuvaus_AC" name="PPkuvaus_AC" class="field"></textarea>
-
-                                <label for="PPtel_AC">Puhelinnumero<span style="color: red important!;">*</span></label>
-                                <input type="tel" id="PPtel_AC" name="PPtel_AC" class="field" required>
-
-                                <label for="PPemail_AC">Sähköposti<span style="color: red important!;">*</span> </label>
-                                <input type="email" id="PPemail_AC" name="PPemail_AC" class="field" required>
-
-                                <label for="PPosoite_AC">Postiosoite<span style="color: red important!;">*</span></label>
-                                <input type="text" id="PPosoite_AC" name="PPosoite_AC" class="field" required>
-
-                                <label for="PPlisatiedot_AC">Linkki lisätietoihin</label>
-                                <p class="info"><a class="ohje">&#9432;</a> Esimerkiksi infrastruktuurin kotisivu jne.</p>
-                                <input type="url" id="PPlisatiedot_AC" name="PPlisatiedot_AC" class="field">
-
-
-                                <label for="PPehdot_AC">Linkki käyttöehtoihin</label>
-                                <p class="info"><a class="ohje">&#9432;</a> Tutkimusinfrastruktuurin käyttöehdot kertova dokumentti tai verkkosivu.</p>
-                                <input type="url" id="PPehdot_AC" name="PPehdot_AC" class="field">
-
-
-                                <label for="PPkunta_AC">Kuntatieto <a href="#" target="_blank">(koodisto)</a><span style="color: red important!;">*</span></label>
-                                <input type="text" id="PPkunta_AC" name="PPkunta_AC" class="field" required>
-
-                                <label for="country_AC" class="dropdown">Maa<span style="color: red important!;">*</span></label>
-
-                                <select id="country_AC" name="country_AC" required>
-                                    
-                                </select>
-
-                                <label for="PPAsteLE_AC">Leveysaste</label>
-                                <p class="info"><a class="ohje">&#9432;</a> <strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</p>
-                                <input type="number" min="0" value="0" step=".01" id="PPAsteLe_AC" name="PPAsteLe_AC" class="field">
-
-
-                                <label for="PPAstePi_AC">Pituusaste</label>
-                                <p class="info"><a class="ohje">&#9432;</a> <strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</p>
-                                <input type="number" min="0" value="0" step=".01" id="PPAstePi_AC" name="PPAstePi_AC" class="field">
-
-
-                                <label for="PPavain_AC">Avainsanat</label>
-                                <p class="info"><a class="ohje">&#9432;</a> Avainsanat, jotka helpottavat infrastruktuurin löytämistä. Myös laitteistojen, mittausmenetelmien jne. akronyymit.</p>
-                                <input type="text" id="PPAvain_AC" name="PPAvain_AC" class="field">
-
-                            </fieldset>
-                        </div>
-
-                    </fieldset>
-
-
-                    <!-- ------------------ 2b coordinating organization for main infra ------------------ !-->
+                    <!-- -------CoOrg----------- 2b coordinating organization for main infra ------------------ !-->
 
                     <fieldset>
                         <legend>
                             <h2>2b. Koordinoiva organisaatio</h2>
                         </legend>
 
-                        <label for="VOnimi">Organisaation nimi<span style="color: red important!;" required>*</span></label>
-                        <input type="text" id="VOnimi" name="VOnimi" class="field">
+                        <label for="CoOrgName">Organisaation nimi<span style="color: red important!;" required>*</span></label>
+                        <input type="text" id="CoOrgName" name="CoOrgName" class="field">
 
-                        <label for="VOytunnus">Y-tunnus<span style="color: red important!;" required>*</span></label>
-                        <input type="text" id="VOytunnus" name="VOytunnus" class="field" pattern="([0-9]{7} - [0-9]{1})" placeholder="1234567-8">
+                        <label for="CoOrgID">Y-tunnus<span style="color: red important!;" required>*</span></label>
+                        <input type="text" id="CoOrgID" name="CoOrgID" class="field" pattern="([0-9]{7} - [0-9]{1})" placeholder="1234567-8">
 
-                        <label for="VOisni">ISNI</label>
-                        <input type="text" id="VOisni" name="VOisni" class="field" pattern="([0-9]{15} [a-zA-Z0-9]{1})" placeholder="0000 0000 0000 0000">
+                        <label for="CoOrgIsni">ISNI</label>
+                        <input type="text" id="CoOrgIsni" name="CoOrgIsni" class="field" pattern="([0-9]{15} [a-zA-Z0-9]{1})" placeholder="0000 0000 0000 0000">
                     </fieldset>
 
 
 
 
 
-                    <!-- ------------------ 3 option checkbox / add services ------------------ -->
+                    <!-- ------------------ 3 services ------------------ -->
 
                     <fieldset>
                         <legend>
-                            <h2>3. Tutkimusinfrastruktuurin palvelut</h2>
+                            <h2>3. Tutkimusinfrastruktuurin palvelu</h2>
                         </legend>
 
-                        <label for="muut">Tutkimusinfrastruktuuriin kuuluu useampi kuin yksi palvelu
-                            <input type="checkbox" id="muut" name="muut" value="yes" onclick="showHidePalveluInfo()">
-                        </label>
-                    </fieldset>
-                </form>
-
-                <!-- ------------------ EO main infra fields ----------------- -->
-
-                <!-- ------------------Additional service (1st) 4a-d ---------------- -->
-
-                <form>
-
-                    <div id="hidden_fields1" class="hide">
-                        <fieldset id=palveluinfo>
-
-                            <!-- -------(_Add)-------- 4a service information---------------- !-->
-
+                            <!-- --------------- 3a service information---------------- -->
 
                             <legend>
-                                <h2>4a. Palvelun tiedot</h2>
+                                <h2>3a. Palvelun tiedot</h2>
                             </legend>
 
-                            <label for="nimiAdd">Palvelun nimi<span style="color: red important!;">*</span></label>
-                            <input type="text" id="nimiAdd" name="nimiAdd" class="field require-if-active" required> <!-- https://css-tricks.com/exposing-form-fields-radio-button-css/ !-->
+                            <label for="serName">Palvelun nimi<span style="color: red important!;">*</span></label>
+                            <input type="text" id="serName" name="serName" class="field require-if-active" required> <!-- https://css-tricks.com/exposing-form-fields-radio-button-css/ !-->
 
-                            <label for="kuvausAdd">Palveun kuvaus </label>
+                            <label for="serDescr">Palveun kuvaus </label>
                             <p class="info"><a class="ohje">&#9432;</a> Palvelun sisällön ja toiminnan yleinen kuvaus.</p>
-                            <input type="text" id="kuvausAdd" name="kuvausAdd" class="field">
+                            <input type="text" id="serDescr" name="serDescr" class="field">
 
-                            <label for="kuvausTieAdd">Tieteellinen kuvaus</label>
+                            <label for="serDescriptionsci">Tieteellinen kuvaus</label>
                             <p class="info"><a class="ohje">&#9432;</a> Tarvittaessa tarkempi kuvaus palvelusta. Esimerkiksi laitteisto, tarjottavat mittausmenetelmät, jne.</p>
-                            <input type="text" id="kuvausTieAdd" name="kuvausTieAdd" class="field">
+                            <input type="text" id="serDescrsci" name="serDescrsci" class="field">
 
 
-                            <label for="lyhenneAdd">Lyhenne</label>
+                            <label for="serAbbrev">Lyhenne</label>
                             <p class="info"><a class="ohje">&#9432;</a> Mikäli palvelulla on vakiintunut ja käytössä oleva lyhenne tai lyhenne, jota halutaan käytettäväksi.</p>
-                            <input type="text" id="lyhenneAdd" name="lyhenneAdd" class="field">
+                            <input type="text" id="serAbbrev" name="serAbbrev" class="field">
 
-                            <label for="tyyppiAdd" class="dropdown">Palvelun tyyppi<span style="color: red important!;">*</span></label>
-                            <select id="tyyppiAdd" name="tyyppiAdd" required>
+                            <label for="serType" class="dropdown">Palvelun tyyppi<span style="color: red important!;">*</span></label>
+                            <select id="serType" name="serType" required>
                                 <option selected value="base" disabled>Valitse</option>
                                 <option value="aineisto">Aineisto</option>
                                 <option value="laitteisto">Laitteisto</option>
                                 <option value="palvelu">Palvelu</option>
                             </select>
 
-
-
-                            <!-- --------(_Add)---------- option checkbox / Servive contact information ---------------- !-->
+                            <!-- ------------------ option checkbox / Servive contact information ---------------- -->
 
                             <fieldset>
                                 <legend>
-                                    <h2>4b. Palvelun yhteystiedot</h2>
+                                    <h2>3b. Palvelun yhteystiedot</h2>
                                 </legend>
 
-                                <label for="PPadditional">Palvelun yhteystiedot ovat samat kuin kohdassa 2a.
-                                    <input type="checkbox" id="PPadditional" name="PPadditional" value="yes" onclick="showHidePPadditional()">
+                                <label for="SerPointSame">Palvelun yhteystiedot ovat samat kuin kohdassa 2a.
+                                    <input type="checkbox" id="SerPointSame" name="SerPointSame" value="yes" onclick="showHideSerPointSame()">
                                 </label>
                             </fieldset>
 
-                            <!-- Tähän tarvitaan toiminto jos klikattu = kopioi tiedot kohdasta 2a. !-->
+                            <!-- Tähän tarvitaan toiminto jos klikattu = kopioi tiedot kohdasta 2a. -->
 
-                            <!-- ------(_Add)------ Option fields for service contact info (other than 2a)------------ !-->
+                            <!-- -------(SerPoint)----- Option fields for service contact info (other than 2a)------------ -->
 
-                            <fieldset id="PPlisapalvelu">
+                            <fieldset id="SerPointOther">
                                 <div id="hidden_fields2">
 
                                     <legend>
                                         <h2>Palvelun yhteystiedot (eri kuin kohdassa 2a ilmoitetut)</h2>
                                     </legend>
 
-                                    <label for="PPnimiAdd">Palvelupisteen nimi<span style="color: red important!;">*</span></label>
+                                    <label for="SerPointName">Palvelupisteen nimi<span style="color: red important!;">*</span></label>
                                     <p class="info"><a class="ohje">&#9432;</a> Yhteyspisteen tai palvelusta vastaavan henkilön nimi</p>
-                                    <input type="text" id="PPnimiAdd" name="PPnimiAdd" class="field" required>
+                                    <input type="text" id="SerPointName" name="SerPointName" class="field" required>
 
 
-                                    <label for="PPkuvausAdd">Palvelupisteen kuvaus</label>
+                                    <label for="SerPointDescr">Palvelupisteen kuvaus</label>
                                     <p class="info"><a class="ohje">&#9432;</a> Tarvittaessa tarkempi kuvaus yhteystiedon roolista. Esimerkiksi onko kyse tutkimushenkilökunnasta, teknisestä tuesta, hallinnollisesta yhteyshenkilöstä jne.</p>
-                                    <textarea id="PPkuvausAdd" name="PPkuvausAdd" class="field"></textarea>
+                                    <textarea id="SerPointDescr" name="SerPointDescr" class="field"></textarea>
 
-                                    <label for="PPtelAdd">Puhelinnumero<span style="color: red important!;">*</span></label>
-                                    <input type="tel" id="PPtelAdd" name="PPtelAdd" class="field" required>
+                                    <label for="SerPointTel">Puhelinnumero<span style="color: red important!;">*</span></label>
+                                    <input type="tel" id="SerPointTel" name="SerPointTel" class="field" required>
 
-                                    <label for="PPemailAdd">Sähköposti<span style="color: red important!;">*</span> </label>
-                                    <input type="email" id="PPemailAdd" name="PPemailAdd" class="field" required>
+                                    <label for="SerPointEmail">Sähköposti<span style="color: red important!;">*</span> </label>
+                                    <input type="email" id="SerPointEmail" name="SerPointEmail" class="field" required>
 
-                                    <label for="PPosoiteAdd">Postiosoite<span style="color: red important!;">*</span></label>
-                                    <input type="text" id="PPosoiteAdd" name="PPosoiteAdd" class="field" required>
+                                    <label for="SerPointPost">Postiosoite<span style="color: red important!;">*</span></label>
+                                    <input type="text" id="SerPointPost" name="SerPointPost" class="field" required>
 
-                                    <label for="PPlisatiedotAdd">Linkki lisätietoihin</label>
+                                    <label for="SerPointInfo">Linkki lisätietoihin</label>
                                     <p class="info"><a class="ohje">&#9432;</a> Esimerkiksi infrastruktuurin kotisivu jne.</p>
-                                    <input type="url" id="PPlisatiedotAdd" name="PPlisatiedotAdd" class="field">
+                                    <input type="url" id="SerPointInfo" name="SerPointInfo" class="field">
 
-                                    <label for="PPehdotAdd">Linkki käyttöehtoihin</label>
+                                    <label for="SerPointTerms">Linkki käyttöehtoihin</label>
                                     <p class="info"><a class="ohje">&#9432;</a> Tutkimusinfrastruktuurin käyttöehdot kertova dokumentti tai verkkosivu.</p>
-                                    <input type="url" id="PPehdotAdd" name="PPehdotAdd" class="field">
+                                    <input type="url" id="SerPointTerms" name="SerPointTerms" class="field">
 
 
-                                    <label for="PPkuntaAdd">Kuntatieto <a href="#" target="_blank">(koodisto)</a><span style="color: red important!;">*</span></label>
-                                    <input type="text" id="PPkuntaAdd" name="PPkuntaAdd" class="field" required>
+                                    <label for="SerPointMuninci">Kuntatieto <a href="#" target="_blank">(koodisto)</a><span style="color: red important!;">*</span></label>
+                                    <input type="text" id="SerPointMuninci" name="SerPointMuninci" class="field" required>
 
-                                    <label for="countryAdd" class="dropdown">Maa<span style="color: red important!;">*</span></label>
+                                    <label for="SerPointCountry" class="dropdown">Maa<span style="color: red important!;">*</span></label>
 
-                                    <select id="countryAdd" name="countryAdd" required>
+                                    <select id="SerPointCountry" name="SerPointCountry" required>
                                     </select>
 
-                                    <label for="PPLeAasteAdd">Leveysaste</label>
+                                    <label for="SerPointLatitude">Leveysaste</label>
                                     <p class="info"><a class="ohje">&#9432;</a> <strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</p>
-                                    <input type="number" min="0" value="0" step=".01" id="PPAsteLeAdd" name="PPAsteLeAdd" class="field">
+                                    <input type="number" min="0" value="0" step=".01" id="SerPointLatitude" name="SerPointLatitude" class="field">
 
-                                    <label for="PPPiAsteAdd">Pituusaste</label>
+                                    <label for="SerPointLongitude">Pituusaste</label>
                                     <p class="info"><a class="ohje">&#9432;</a> <strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</p>
-                                    <input type="number" min="0" value="0" step=".01" id="PPAstePiAdd" name="PPAstePiAdd" class="field">
+                                    <input type="number" min="0" value="0" step=".01" id="SerPointLongitude" name="SerPointLongitude" class="field">
                                     >
 
                                 </div>
                             </fieldset>
 
 
-                            <!-- -------(_Add)------ Option checkbox / responsible organisation ---------------- !-->
+                            <!-- -------(SerCoOrg)------ Option checkbox / responsible organisation ---------------- !-->
 
                             <fieldset>
                                 <legend>
-                                    <h2>4c. Koordinoiva organisaatio</h2>
+                                    <h2>3c. Koordinoiva organisaatio</h2>
                                 </legend>
 
-                                <label for="VOadditional">Palvelua koordinoiva organisaatio on sama kuin kohdassa 2b.
-                                    <input type="checkbox" id="VOadditional" name="VOadditional" value="yes" onclick="showHideVOadditional()">
+                                <label for="SerCoOrg">Palvelua koordinoiva organisaatio on sama kuin kohdassa 2b.
+                                    <input type="checkbox" id="SerCoOrg" name="SerCoOrg" value="yes" onclick="showHideSerCoOrg()">
                                 </label>
 
                             </fieldset>
 
-                            <!-- -----(_Add)------- 4c option fields for responsible organisation (other than 2b) --->
+                            <!-- -----(_Add)------- 3c option fields for responsible organisation (other than 2b) --->
 
 
-                            <fieldset id="VOlisapalvelu">
+                            <fieldset id="SerCoOrgOther">
                                 <div id="hidden_fields3">
 
                                     <legend>
@@ -444,7 +349,7 @@
 
                             <fieldset>
                                 <legend>
-                                    <h2>4d. Palvelun muut palvelupisteet</h2>
+                                    <h2>3d. Palvelun muut palvelupisteet</h2>
                                 </legend>
 
                                 <label for="MuuPPadditional">Palvelulla on kohdassa 2a ja 4b ilmoitettujen palvelupisteiden lisäksi myös muita palvelupisteitä.
@@ -452,7 +357,7 @@
                                 </label>
                             </fieldset>
 
-                            <!-- ------(_Add)------ 4d option fields for additional contact information ----------- -->
+                            <!-- ------(_Add)------ 3d option fields for additional contact information ----------- -->
 
 
                             <div id="hidden_fields4" class="hide4d">
@@ -514,7 +419,12 @@
 
                                 </fieldset>
                             </div>
-                            <!-- ------------------EO 1st Additional service ---------------- -->
+
+                        </fieldset>
+                    </form>
+    
+                    <!-- ------------------ EO main infra fields ----------------- -->
+                            <!-- ------------------EO  service ---------------- -->
 
                             <!-- ------------------Additional service (2nd) 5a-d ---------------- !-->
 
@@ -725,259 +635,6 @@
                                             <label for="countryAdd_2nd" class="dropdown">Maa<span style="color: red important!;">*</span></label>
 
                                             <select id="countryAdd_2nd" name="countryAdd_2nd" required>
-                                                <option selected value="base" disabled>Valitse</option>
-                                                <option value="FIN_base">Suomi</option>
-                                                <option value="lines" disabled>---------</option>
-                                                <option value="AFG">Afganistan</option>
-                                                <option value="ALA">Ahvenanmaa</option>
-                                                <option value="NLD">Alankomaat</option>
-                                                <option value="ALB">Albania</option>
-                                                <option value="DZA">Algeria</option>
-                                                <option value="ASM">Amerikan Samoa</option>
-                                                <option value="AND">Andorra</option>
-                                                <option value="AGO">Angola</option>
-                                                <option value="AIA">Anguilla</option>
-                                                <option value="ATA">Antarktis</option>
-                                                <option value="ATG">Antigua ja Barbuda</option>
-                                                <option value="ARE">Arabiemiirikunnat</option>
-                                                <option value="ARG">Argentiina</option>
-                                                <option value="ARM">Armenia</option>
-                                                <option value="ABW">Aruba</option>
-                                                <option value="AUS">Australia</option>
-                                                <option value="AZE">Azerbaidžan</option>
-                                                <option value="BHS">Bahama</option>
-                                                <option value="BHR">Bahrain</option>
-                                                <option value="BGD">Bangladesh</option>
-                                                <option value="BRB">Barbados</option>
-                                                <option value="BEL">Belgia</option>
-                                                <option value="BLZ">Belize</option>
-                                                <option value="BEN">Benin</option>
-                                                <option value="BMU">Bermuda</option>
-                                                <option value="BTN">Bhutan</option>
-                                                <option value="BOL">Bolivia</option>
-                                                <option value="BES">Bonaire, Sint Eustatius ja Saba</option>
-                                                <option value="BIH">Bosnia ja Hertsegovina</option>
-                                                <option value="BWA">Botswana</option>
-                                                <option value="BVT">Bouvet’nsaari</option>
-                                                <option value="BRA">Brasilia</option>
-                                                <option value="GBR">Britannia</option>
-                                                <option value="IOT">Brittiläinen Intian valtameren alue</option>
-                                                <option value="VGB">Brittiläiset Neitsytsaaret</option>
-                                                <option value="BRN">Brunei</option>
-                                                <option value="BGR">Bulgaria</option>
-                                                <option value="BFA">Burkina Faso</option>
-                                                <option value="BDI">Burundi</option>
-                                                <option value="CYM">Caymansaaret</option>
-                                                <option value="CHL">Chile</option>
-                                                <option value="COK">Cookinsaaret</option>
-                                                <option value="CRI">Costa Rica</option>
-                                                <option value="CUW">Curaçao</option>
-                                                <option value="DJI">Djibouti</option>
-                                                <option value="DMA">Dominica</option>
-                                                <option value="DOM">Dominikaaninen tasavalta</option>
-                                                <option value="ECU">Ecuador</option>
-                                                <option value="EGY">Egypti</option>
-                                                <option value="SLV">El Salvador</option>
-                                                <option value="ERI">Eritrea</option>
-                                                <option value="ESP">Espanja</option>
-                                                <option value="ZAF">Etelä-Afrikka</option>
-                                                <option value="SGS">Etelä-Georgia ja Eteläiset Sandwichsaaret</option>
-                                                <option value="SSD">Etelä-Sudan</option>
-                                                <option value="ETH">Etiopia</option>
-                                                <option value="FLK">Falklandinsaaret</option>
-                                                <option value="FJI">Fidži</option>
-                                                <option value="PHL">Filippiinit</option>
-                                                <option value="FRO">Färsaaret</option>
-                                                <option value="GAB">Gabon</option>
-                                                <option value="GMB">Gambia</option>
-                                                <option value="GEO">Georgia</option>
-                                                <option value="GHA">Ghana</option>
-                                                <option value="GIB">Gibraltar</option>
-                                                <option value="GRD">Grenada</option>
-                                                <option value="GRL">Grönlanti</option>
-                                                <option value="GLP">Guadeloupe</option>
-                                                <option value="GUM">Guam</option>
-                                                <option value="GTM">Guatemala</option>
-                                                <option value="GGY">Guernsey</option>
-                                                <option value="GIN">Guinea</option>
-                                                <option value="GNB">Guinea-Bissau</option>
-                                                <option value="GUY">Guyana</option>
-                                                <option value="HTI">Haiti</option>
-                                                <option value="HMD">Heard ja McDonaldinsaaret</option>
-                                                <option value="HND">Honduras</option>
-                                                <option value="HKG">Hongkong</option>
-                                                <option value="IDN">Indonesia</option>
-                                                <option value="IND">Intia</option>
-                                                <option value="IRQ">Irak</option>
-                                                <option value="IRN">Iran</option>
-                                                <option value="IRL">Irlanti</option>
-                                                <option value="ISL">Islanti</option>
-                                                <option value="ISR">Israel</option>
-                                                <option value="ITA">Italia</option>
-                                                <option value="TLS">Itä-Timor</option>
-                                                <option value="AUT">Itävalta</option>
-                                                <option value="JAM">Jamaika</option>
-                                                <option value="JPN">Japani</option>
-                                                <option value="YEM">Jemen</option>
-                                                <option value="JEY">Jersey</option>
-                                                <option value="JOR">Jordania</option>
-                                                <option value="CXR">Joulusaari</option>
-                                                <option value="AFG">Kambodža</option>
-                                                <option value="KHM">Afganistan</option>
-                                                <option value="CMR">Kamerun</option>
-                                                <option value="CAN">Kanada</option>
-                                                <option value="CPV">Kap Verde</option>
-                                                <option value="KAZ">Kazakstan</option>
-                                                <option value="KE">Kenia</option>
-                                                <option value="CAF">Keski-Afrikan tasavalta</option>
-                                                <option value="CHN">Kiina</option>
-                                                <option value="KGZ">Kirgisia</option>
-                                                <option value="KIR">Kiribati</option>
-                                                <option value="COL">Kolumbia</option>
-                                                <option value="COM">Komorit</option>
-                                                <option value="COG">Kongo (Kongo-Brazzaville)</option>
-                                                <option value="COD">Kongo (Kongo-Kinshasa)</option>
-                                                <option value="CCK">Kookossaaret</option>
-                                                <option value="PRK">Korean demokraattinen kansantasavalta (Pohjois-Korea)</option>
-                                                <option value="KOR">Korean tasavalta (Etelä-Korea)</option>
-                                                <option value="GRC">Kreikka</option>
-                                                <option value="HRV">Kroatia</option>
-                                                <option value="CUB">Kuuba</option>
-                                                <option value="KWT">Kuwait</option>
-                                                <option value="CYP">Kypros</option>
-                                                <option value="LAO">Laos</option>
-                                                <option value="LVA">Latvia</option>
-                                                <option value="LSO">Lesotho</option>
-                                                <option value="LBN">Libanon</option>
-                                                <option value="LBR">Liberia</option>
-                                                <option value="LBY">Libya</option>
-                                                <option value="LIE">Liechtenstein</option>
-                                                <option value="LTU">Liettua</option>
-                                                <option value="LUX">Luxemburg</option>
-                                                <option value="ESH">Länsi-Sahara</option>
-                                                <option value="MAC">Macao</option>
-                                                <option value="MDG">Madagaskar</option>
-                                                <option value="MKD">Makedonia</option>
-                                                <option value="MWI">Malawi</option>
-                                                <option value="MDV">Malediivit</option>
-                                                <option value="MYS">Malesia</option>
-                                                <option value="MLI">Mali</option>
-                                                <option value="MLT">Malta</option>
-                                                <option value="IMN">Mansaari</option>
-                                                <option value="MAR">Marokko</option>
-                                                <option value="MHL">Marshallinsaaret</option>
-                                                <option value="MTQ">Martinique</option>
-                                                <option value="MRT">Mauritania</option>
-                                                <option value="MUS">Mauritius</option>
-                                                <option value="MYT">Mayotte</option>
-                                                <option value="MEX">Meksiko</option>
-                                                <option value="FSM">Mikronesia</option>
-                                                <option value="MDA">Moldova</option>
-                                                <option value="MCO">Monaco</option>
-                                                <option value="MNG">Mongolia</option>
-                                                <option value="MNE">Montenegro</option>
-                                                <option value="MSR">Montserrat</option>
-                                                <option value="MOZ">Mosambik</option>
-                                                <option value="MMR">Myanmar</option>
-                                                <option value="NAM">Namibia</option>
-                                                <option value="NRU">Nauru</option>
-                                                <option value="NPL">Nepal</option>
-                                                <option value="NIC">Nicaragua</option>
-                                                <option value="NER">Niger</option>
-                                                <option value="NGA">Nigeria</option>
-                                                <option value="NIU">Niue</option>
-                                                <option value="NFK">Norfolkinsaari</option>
-                                                <option value="NOR">Norja</option>
-                                                <option value="CIV">Norsunluurannikko</option>
-                                                <option value="OMN">Oman</option>
-                                                <option value="PAK">Pakistan</option>
-                                                <option value="PLW">Palau</option>
-                                                <option value="PSE">Palestiinan valtio</option>
-                                                <option value="PAN">Panama</option>
-                                                <option value="PNG">Papua-Uusi-Guinea</option>
-                                                <option value="PRY">Paraguay</option>
-                                                <option value="PER">Peru</option>
-                                                <option value="PCN">Pitcairn</option>
-                                                <option value="MNP">Pohjois-Mariaanit</option>
-                                                <option value="PRT">Portugali</option>
-                                                <option value="PRI">Puerto Rico</option>
-                                                <option value="POL">Puola</option>
-                                                <option value="GNQ">Päiväntasaajan Guinea</option>
-                                                <option value="QAT">Qatar</option>
-                                                <option value="FRA">Ranska</option>
-                                                <option value="ATF">Ranskan eteläiset alueet</option>
-                                                <option value="GUF">Ranskan Guayana</option>
-                                                <option value="PYF">Ranskan Polynesia</option>
-                                                <option value="REU">Réunion</option>
-                                                <option value="ROU">Romania</option>
-                                                <option value="RWA">Ruanda</option>
-                                                <option value="SWE">Ruotsi</option>
-                                                <option value="BLM">Saint Barthélemy</option>
-                                                <option value="SHN">Saint Helena, Ascension ja Tristan da Cunha</option>
-                                                <option value="KNA">Saint Kitts ja Nevis</option>
-                                                <option value="LCA">Saint Lucia</option>
-                                                <option value="MAF">Saint Martin (Ranskan osa)</option>
-                                                <option value="VCT">Saint Vincent ja Grenadiinit</option>
-                                                <option value="SPM">Saint-Pierre ja Miquelon</option>
-                                                <option value="DEU">Saksa</option>
-                                                <option value="SLB">Salomonsaaret</option>
-                                                <option value="ZMB">Sambia</option>
-                                                <option value="WSM">Samoa</option>
-                                                <option value="SMR">San Marino</option>
-                                                <option value="STP">São Tomé ja Príncipe</option>
-                                                <option value="SAU">Saudi-Arabia</option>
-                                                <option value="SEN">Senegal</option>
-                                                <option value="SRB">Serbia</option>
-                                                <option value="SYC">Seychellit</option>
-                                                <option value="SLE">Sierra Leone</option>
-                                                <option value="SGP">Singapore</option>
-                                                <option value="SXM">Sint Maarten (Alankomaiden osa)</option>
-                                                <option value="SVK">Slovakia</option>
-                                                <option value="SVN">Slovenia</option>
-                                                <option value="SOM">Somalia</option>
-                                                <option value="LKA">Sri Lanka</option>
-                                                <option value="SDN">Sudan</option>
-                                                <option value="FIN">Suomi</option>
-                                                <option value="SUR">Suriname</option>
-                                                <option value="SJM">Svalbard ja Jan Mayen</option>
-                                                <option value="SWZ">Swazimaa</option>
-                                                <option value="CHE">Sveitsi</option>
-                                                <option value="SYR">Syyria</option>
-                                                <option value="TJK">Tadžikistan</option>
-                                                <option value="TWN">Taiwan</option>
-                                                <option value="TZA">Tansania</option>
-                                                <option value="DNK">Tanska</option>
-                                                <option value="THA">Thaimaa</option>
-                                                <option value="TGO">Togo</option>
-                                                <option value="TKL">Tokelau</option>
-                                                <option value="TON">Tonga</option>
-                                                <option value="TTO">Trinidad ja Tobago</option>
-                                                <option value="TCD">Tšad</option>
-                                                <option value="CZE">Tšekki</option>
-                                                <option value="TUN">Tunisia</option>
-                                                <option value="TUR">Turkki</option>
-                                                <option value="TKM">Turkmenistan</option>
-                                                <option value="TCA">Turks- ja Caicossaaret</option>
-                                                <option value="TUV">Tuvalu</option>
-                                                <option value="UGA">Uganda</option>
-                                                <option value="UKR">Ukraina</option>
-                                                <option value="HUN">Unkari</option>
-                                                <option value="URY">Uruguay</option>
-                                                <option value="NCL">Uusi-Kaledonia</option>
-                                                <option value="NZL">Uusi-Seelanti</option>
-                                                <option value="UZB">Uzbekistan</option>
-                                                <option value="BLR">Valko-Venäjä</option>
-                                                <option value="WLF">Wallis ja Futuna</option>
-                                                <option value="VUT">Vanuatu</option>
-                                                <option value="VAT">Vatikaani</option>
-                                                <option value="VEN">Venezuela</option>
-                                                <option value="RUS">Venäjä</option>
-                                                <option value="VNM">Vietnamn</option>
-                                                <option value="EST">Viro</option>
-                                                <option value="USA">Yhdysvallat (USA)</option>
-                                                <option value="VIR">Yhdysvaltain Neitsytsaaret</option>
-                                                <option value="UMI">Yhdysvaltain pienet erillissaaret</option>
-                                                <option value="ZWE">Zimbabwe</option>
                                             </select>
 
                                             <label for="PPLeAasteAdd_2nd">Leveysaste</label>

@@ -59,25 +59,11 @@ function showHidePalveluInfo() {
 
 // require-if-active --- https://css-tricks.com/exposing-form-fields-radio-button-css/
 
-// HideShow 4b
+// HideShow 3b
 
-function showHidePPadditional() {
-  var checkBox = document.getElementById("PPadditional")
-  var text = document.getElementById("PPlisapalvelu")
-
-  if (checkBox.checked == true) {
-    text.style.display = "none";
-  }
-  else {
-    text.style.display = "block";
-  }
-}
-
-// HideShow 4c
-
-function showHideVOadditional() {
-  var checkBox = document.getElementById("VOadditional")
-  var text = document.getElementById("VOlisapalvelu")
+function showHideSerPointSame() {
+  var checkBox = document.getElementById("SerPointSame")
+  var text = document.getElementById("SerPointOther")
 
   if (checkBox.checked == true) {
     text.style.display = "none";
@@ -87,7 +73,21 @@ function showHideVOadditional() {
   }
 }
 
-// HideShow 4d
+// HideShow 3c
+
+function showHideSerCoOrg() {
+  var checkBox = document.getElementById("SerCoOrg")
+  var text = document.getElementById("SerCoOrgOther")
+
+  if (checkBox.checked == true) {
+    text.style.display = "none";
+  }
+  else {
+    text.style.display = "block";
+  }
+}
+
+// HideShow 3d
 
 function showHideMuuPPadditional() {
   var checkBox = document.getElementById("MuuPPadditional")
@@ -102,7 +102,7 @@ function showHideMuuPPadditional() {
   }
 }
 
-// HideShow 5 (additional contact for main infra)
+// HideShow 4 (additional contact for main infra)
 
 function showHideAddContact() {
   var checkBox = document.getElementById("xtrPPMain")
@@ -173,7 +173,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
 
 // Variables related to populating the select fields
-let countrySelectIds = ['country', 'country_AC', 'countryAdd', 'countryAdd_2ndS'];
+let countrySelectIds = ['infraCountry', 'country_AC', 'SerPointCountry', 'countryAdd_2nd'];
 
 let countryList = [
   {code: 'FIN', text: 'Suomi'},
