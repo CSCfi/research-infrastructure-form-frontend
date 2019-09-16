@@ -28,7 +28,6 @@
         </header>
 
         <div style="background-color: #fff; width: 100%;">
-            <!-- <div class="content100"; > !-->
 
 
             <div class="content60" ;>
@@ -302,7 +301,7 @@
                                     <label for="SerPointLongitude">Pituusaste</label>
                                     <p class="info"><a class="ohje">&#9432;</a> <strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</p>
                                     <input type="number" min="0" value="0" step=".01" id="SerPointLongitude" name="SerPointLongitude" class="field">
-                                    >
+                                    
 
                                 </div>
                             </fieldset>
@@ -321,7 +320,7 @@
 
                             </fieldset>
 
-                            <!-- -----(_Add)------- 3c option fields for responsible organisation (other than 2b) --->
+                            <!-- -----(CoOrg_oth)------- 3c option fields for responsible organisation (other than 2b) --->
 
 
                             <fieldset id="SerCoOrgOther">
@@ -331,14 +330,14 @@
                                         <h2>Koordinoiva organisaatio (eri kuin kohdassa 2b)</h2>
                                     </legend>
 
-                                    <label for="VOnimiAdd">Organisaation nimi<span style="color: red important!;" required>*</span></label>
-                                    <input type="text" id="VOnimiAdd" name="VOnimiAdd" class="field">
+                                    <label for="CoOrgName_oth">Organisaation nimi<span style="color: red important!;" required>*</span></label>
+                                    <input type="text" id="CoOrgName_oth" name="CoOrgName_oth" class="field">
 
-                                    <label for="VOytunnusAdd">Y-tunnus<span style="color: red important!;" required>*</span></label>
-                                    <input type="text" id="VOytunnusAdd" name="VOytunnusAdd" class="field" pattern="([0-9]{7} - [0-9]{1})" placeholder="1234567-8">
+                                    <label for="CoOrgID_oth">Y-tunnus<span style="color: red important!;" required>*</span></label>
+                                    <input type="text" id="CoOrgID_oth" name="CoOrgID_oth" class="field" pattern="([0-9]{7} - [0-9]{1})" placeholder="1234567-8">
 
-                                    <label for="VOisniAdd">ISNI</label>
-                                    <input type="text" id="VOisniAdd" name="VOisniAdd" class="field" pattern="([0-9]{15} [a-zA-Z0-9]{1})" placeholder="0000 0000 0000 0000">
+                                    <label for="CoOrgIsni_oth">ISNI</label>
+                                    <input type="text" id="CoOrgIsni_oth" name="CoOrgIsni_oth" class="field" pattern="([0-9]{15} [a-zA-Z0-9]{1})" placeholder="0000 0000 0000 0000">
 
                                 </div>
                             </fieldset>
@@ -352,8 +351,8 @@
                                     <h2>3d. Palvelun muut palvelupisteet</h2>
                                 </legend>
 
-                                <label for="MuuPPadditional">Palvelulla on kohdassa 2a ja 4b ilmoitettujen palvelupisteiden lisäksi myös muita palvelupisteitä.
-                                    <input type="checkbox" id="MuuPPadditional" name="MuuPPadditional" value="yes" onclick="showHideMuuPPadditional()">
+                                <label for="SerPointOther_add">Palvelulla on kohdassa 2a ja 3b ilmoitettujen palvelupisteiden lisäksi myös muita palvelupisteitä.
+                                    <input type="checkbox" id="SerPointOther_add" name="SerPointOther_add" value="yes" onclick="showHideSerPointOther_add()">
                                 </label>
                             </fieldset>
 
@@ -361,59 +360,56 @@
 
 
                             <div id="hidden_fields4" class="hide4d">
-                                <fieldset id="MuuPPlisapalvelu">
+                                <fieldset id="AddOtherSerPoint">
 
 
                                     <legend>
                                         <h2>Saman palvelun muut palvelupisteet</h2>
                                     </legend>
 
-                                    <label for="PPnimiAdd">Palvelupisteen nimi<span style="color: red important!;">*</span></label>
+                                    
+                                    <label for="SerPointName_add">Palvelupisteen nimi<span style="color: red important!;">*</span></label>
                                     <p class="info"><a class="ohje">&#9432;</a> Yhteyspisteen tai palvelusta vastaavan henkilön nimi</p>
-                                    <input type="text" id="PPnimiAdd" name="PPnimiAdd" class="field" required>
+                                    <input type="text" id="SerPointName_add" name="SerPointName_add" class="field" required>
 
-                                    <label for="PPkuvausAdd">Palvelupisteen kuvaus</label>
+
+                                    <label for="SerPointDescr_add">Palvelupisteen kuvaus</label>
                                     <p class="info"><a class="ohje">&#9432;</a> Tarvittaessa tarkempi kuvaus yhteystiedon roolista. Esimerkiksi onko kyse tutkimushenkilökunnasta, teknisestä tuesta, hallinnollisesta yhteyshenkilöstä jne.</p>
-                                    <textarea id="PPkuvausAdd" name="PPkuvausAdd" class="field"></textarea>
+                                    <textarea id="SerPointDescr_add" name="SerPointDescr_add" class="field"></textarea>
 
-                                    <label for="PPtelAdd">Puhelinnumero<span style="color: red important!;">*</span></label>
-                                    <input type="tel" id="PPtelAdd" name="PPtelAdd" class="field" required>
+                                    <label for="SerPointTel_add">Puhelinnumero<span style="color: red important!;">*</span></label>
+                                    <input type="tel" id="SerPointTel_add" name="SerPointTel_add" class="field" required>
 
-                                    <label for="PPemailAdd">Sähköposti<span style="color: red important!;">*</span> </label>
-                                    <input type="email" id="PPemailAdd" name="PPemailAdd" class="field" required>
+                                    <label for="SerPointEmail_add">Sähköposti<span style="color: red important!;">*</span> </label>
+                                    <input type="email" id="SerPointEmail_add" name="SerPointEmail_add" class="field" required>
 
-                                    <label for="PPosoiteAdd">Postiosoite<span style="color: red important!;">*</span></label>
-                                    <input type="text" id="PPosoiteAdd" name="PPosoiteAdd" class="field" required>
+                                    <label for="SerPointPost_add">Postiosoite<span style="color: red important!;">*</span></label>
+                                    <input type="text" id="SerPointPost_add" name="SerPointPost_add" class="field" required>
 
-                                    <label for="PPlisatiedotAdd">Linkki lisätietoihin</label>
+                                    <label for="SerPointInfo_add">Linkki lisätietoihin</label>
                                     <p class="info"><a class="ohje">&#9432;</a> Esimerkiksi infrastruktuurin kotisivu jne.</p>
-                                    <input type="url" id="PPlisatiedotAdd" name="PPlisatiedotAdd" class="field">
+                                    <input type="url" id="SerPointInfo_add" name="SerPointInfo_add" class="field">
 
-
-                                    <label for="PPehdotAdd">Linkki käyttöehtoihin</label>
+                                    <label for="SerPointTerms_add">Linkki käyttöehtoihin</label>
                                     <p class="info"><a class="ohje">&#9432;</a> Tutkimusinfrastruktuurin käyttöehdot kertova dokumentti tai verkkosivu.</p>
-                                    <input type="url" id="PPehdotAdd" name="PPehdotAdd" class="field">
+                                    <input type="url" id="SerPointTerms_add" name="SerPointTerms_add" class="field">
 
 
-                                    <label for="PPkuntaAdd">Kuntatieto <a href="#" target="_blank">(koodisto)</a><span style="color: red important!;">*</span></label>
-                                    <input type="text" id="PPkuntaAdd" name="PPkuntaAdd" class="field" required>
+                                    <label for="SerPointMuninci_add">Kuntatieto <a href="#" target="_blank">(koodisto)</a><span style="color: red important!;">*</span></label>
+                                    <input type="text" id="SerPointMuninci_add" name="SerPointMuninci_add" class="field" required>
 
-                                    <label for="countryAdd" class="dropdown">Maa<span style="color: red important!;">*</span></label>
+                                    <label for="SerPointCountry_add" class="dropdown">Maa<span style="color: red important!;">*</span></label>
 
-                                    <select id="countryAdd" name="countryAdd" required>
+                                    <select id="SerPointCountry_add" name="SerPointCountry_add" required>
                                     </select>
 
-                                    <label for="PPLeAasteAdd">Leveysaste</label>
+                                    <label for="SerPointLatitude_add">Leveysaste</label>
                                     <p class="info"><a class="ohje">&#9432;</a> <strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</p>
-                                    <input type="number" min="0" value="0" step=".01" id="PPLeAsteAdd" name="PPLeAsteAdd" class="field">
+                                    <input type="number" min="0" value="0" step=".01" id="SerPointLatitude_add" name="SerPointLatitude_add" class="field">
 
-                                    <label for="PPPiAsteAdd">Pituusaste</label>
+                                    <label for="SerPointLongitude_add">Pituusaste</label>
                                     <p class="info"><a class="ohje">&#9432;</a> <strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</p>
-                                    <input type="numer" min="0" value="0" step=".01" id="PPPiAsteAdd" name="PPPiAsteAdd" class="field">
-
-                                    <label for="PPavainAdd">Avainsanat</label>
-                                    <p class="info"><a class="ohje">&#9432;</a> Avainsanat, jotka helpottavat infrastruktuurin löytämistä. Myös laitteistojen, mittausmenetelmien jne. akronyymit.</p>
-                                    <input type="text" id="PPAvainAdd" name="PPAvainAdd" class="field">
+                                    <input type="number" min="0" value="0" step=".01" id="SerPointLongitude_add" name="SerPointLongitude_add" class="field">
 
 
 

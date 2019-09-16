@@ -89,9 +89,9 @@ function showHideSerCoOrg() {
 
 // HideShow 3d
 
-function showHideMuuPPadditional() {
-  var checkBox = document.getElementById("MuuPPadditional")
-  var text = document.getElementById("MuuPPlisapalvelu")
+function showHideSerPointOther_add() {
+  var checkBox = document.getElementById("SerPointOther_add")
+  var text = document.getElementById("AddOtherSerPoint")
   var muut4d = document.getElementById("hidden_fields4")
 
   if (!checkBox.checked) {
@@ -173,7 +173,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
 
 // Variables related to populating the select fields
-let countrySelectIds = ['infraCountry', 'country_AC', 'SerPointCountry', 'countryAdd_2nd'];
+let countrySelectIds = ['infraCountry', 'SerPointCountry', 'SerPointCountry_add', 'countryAdd_2nd'];
 
 let countryList = [
   {code: 'FIN', text: 'Suomi'},
