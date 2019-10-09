@@ -15,22 +15,20 @@
 </head>
 
 <body>
+    <header>
+        <div class="hero">
+            <div class="logo"><img alt="logo" src="css/Capture.PNG" /></div>
+        </div>
+    </header>
+
     <main>
-        <header>
-            <div class="hero">
-                <div class="logo"><img alt="logo" src="css/Capture.PNG" /></div>
-
-                <div class="content80">
-                    <h1>Tutkimusinfrastruktuurien tietojen toimitus tutkimustietovarantoon</h1>
-                    <p class="subheading; legend_border">Selite lomakkeesta, käyttötarkoituksesta, kenelle suunnattu jne. tiedot kirjoitetaan tähän.Selite lomakkeesta, käyttötarkoituksesta, kenelle suunnattu jne. tiedot kirjoitetaan tähän.Selite lomakkeesta, käyttötarkoituksesta, kenelle suunnattu jne. tiedot kirjoitetaan tähän.</p>
-                </div>
-            </div>
-        </header>
-
+        <div class="content w80">
+            <h1>Tutkimusinfrastruktuurien tietojen toimitus tutkimustietovarantoon</h1>
+            <p class="subheading legend_border w80">Selite lomakkeesta, käyttötarkoituksesta, kenelle suunnattu jne. tiedot kirjoitetaan tähän.Selite lomakkeesta, käyttötarkoituksesta, kenelle suunnattu jne. tiedot kirjoitetaan tähän.Selite lomakkeesta, käyttötarkoituksesta, kenelle suunnattu jne. tiedot kirjoitetaan tähän.</p>
+        </div>
         <div style="background-color: #fff; width: 100%;">
 
-
-            <div class="content60" ;>
+            <div class="content w60" ;>
 
                 <form action="#" method="post">
                     <fieldset>
@@ -38,8 +36,9 @@
                             <h2>Ovatko tutkimusinfrastruktuurin tiedot jo tutkimustietovarannossa?</h2>
                         </legend>
 
-                        <label for="TTV_yes">Tutkimusinfrastruktuurin tiedot ovat tutkimustietovarannossa?
-                            <input type="checkbox" id="TTV_yes" name="TTV_yes" value="yes" onclick="toggleElement('hidden_fieldsTTV', this.checked)"/>
+                        <label for="TTV_yes">
+                            <input type="checkbox" id="TTV_yes" name="TTV_yes" value="yes" onclick="toggleElement('hidden_fieldsTTV', this.checked)" />
+                            Tutkimusinfrastruktuurin tiedot ovat tutkimustietovarannossa?
                         </label>
 
                         <div id="hidden_fieldsTTV" class="hidden">
@@ -112,8 +111,9 @@
                         <input type="text" name="infraReplace" id="infraReplace" class="field">
 
 
-                        <label for="infraAcafi">Tutkimusinfrastruktuuri on Suomen Akatemian tiekartalla
+                        <label for="infraAcafi">
                             <input type="checkbox" name="infraAcafi" id="infraAcafi" class="box">
+                            Tutkimusinfrastruktuuri on Suomen Akatemian tiekartalla
                         </label>
 
                         <label for="infraMeril"> Tutkimusinfrastruktuurin luokitus MERIL-luokittelussa <a href="#" target="_blank">(koodisto)</a></label>
@@ -127,7 +127,7 @@
                         <legend>
                             <h2>2a. Tutkimusinfrastruktuurin yhteystiedot</h2>
                         </legend>
-                        <p class="infoXL"><a class="ohje">&#9432;</a> Tutkimusinfrastruktuurin yhteystiedot toimitetaan tässä. Yhteystiedot ovat palvelukohtaisia, mutta palveluilla voi olla tietenkin samat yhteystiedot. Palvelukohtaisia yhteistietoja tarvitaan esimerkiksi silloin, kun infrastruktuuri on hajautettu, sen palveluita tuottaa useampi kuin yksi organisaatio ja palveluiden käyttö organisaatioiden kautta erikseen. </p>
+                        <p class="info infoXL"><a class="ohje">&#9432;</a> Tutkimusinfrastruktuurin yhteystiedot toimitetaan tässä. Yhteystiedot ovat palvelukohtaisia, mutta palveluilla voi olla tietenkin samat yhteystiedot. Palvelukohtaisia yhteistietoja tarvitaan esimerkiksi silloin, kun infrastruktuuri on hajautettu, sen palveluita tuottaa useampi kuin yksi organisaatio ja palveluiden käyttö organisaatioiden kautta erikseen. </p>
 
                         <label for="infraConName">Palvelupisteen nimi<span style="color: red important!;">*</span></label>
                         <p class="info"><a class="ohje">&#9432;</a> Yhteyspisteen tai palvelusta vastaavan henkilön nimi</p>
@@ -178,33 +178,33 @@
                         <p class="info"><a class="ohje">&#9432;</a> Avainsanat, jotka helpottavat infrastruktuurin löytämistä. Myös laitteistojen, mittausmenetelmien jne. akronyymit.</p>
                         <input type="text" id="infraKeywords" name="infraKeywords" class="field">
 
-                    <!-- -------CoOrg----------- 2b coordinating organization for main infra ------------------ !-->
+                        <!-- -------CoOrg----------- 2b coordinating organization for main infra ------------------ !-->
 
-                    <fieldset>
-                        <legend>
-                            <h2>2b. Koordinoiva organisaatio</h2>
-                        </legend>
+                        <fieldset>
+                            <legend>
+                                <h2>2b. Koordinoiva organisaatio</h2>
+                            </legend>
 
-                        <label for="CoOrgName">Organisaation nimi<span style="color: red important!;" required>*</span></label>
-                        <input type="text" id="CoOrgName" name="CoOrgName" class="field">
+                            <label for="CoOrgName">Organisaation nimi<span style="color: red important!;" required>*</span></label>
+                            <input type="text" id="CoOrgName" name="CoOrgName" class="field">
 
-                        <label for="CoOrgID">Y-tunnus<span style="color: red important!;" required>*</span></label>
-                        <input type="text" id="CoOrgID" name="CoOrgID" class="field" pattern="([0-9]{7} - [0-9]{1})" placeholder="1234567-8">
+                            <label for="CoOrgID">Y-tunnus<span style="color: red important!;" required>*</span></label>
+                            <input type="text" id="CoOrgID" name="CoOrgID" class="field" pattern="([0-9]{7} - [0-9]{1})" placeholder="1234567-8">
 
-                        <label for="CoOrgIsni">ISNI</label>
-                        <input type="text" id="CoOrgIsni" name="CoOrgIsni" class="field" pattern="([0-9]{15} [a-zA-Z0-9]{1})" placeholder="0000 0000 0000 0000">
-                    </fieldset>
-
-
+                            <label for="CoOrgIsni">ISNI</label>
+                            <input type="text" id="CoOrgIsni" name="CoOrgIsni" class="field" pattern="([0-9]{15} [a-zA-Z0-9]{1})" placeholder="0000 0000 0000 0000">
+                        </fieldset>
 
 
 
-                    <!-- ------------------ 3 services ------------------ -->
 
-                    <fieldset>
-                        <legend>
-                            <h2>3. Tutkimusinfrastruktuurin palvelu</h2>
-                        </legend>
+
+                        <!-- ------------------ 3 services ------------------ -->
+
+                        <fieldset>
+                            <legend>
+                                <h2>3. Tutkimusinfrastruktuurin palvelu</h2>
+                            </legend>
 
                             <!-- --------------- 3a service information---------------- -->
 
@@ -243,8 +243,9 @@
                                     <h2>3b. Palvelun yhteystiedot</h2>
                                 </legend>
 
-                                <label for="SerPointSame">Palvelun yhteystiedot ovat samat kuin kohdassa 2a.
+                                <label for="SerPointSame">
                                     <input type="checkbox" id="SerPointSame" name="SerPointSame" value="yes" onclick="showHideSerPointSame()">
+                                    Palvelun yhteystiedot ovat samat kuin kohdassa 2a.
                                 </label>
                             </fieldset>
 
@@ -301,7 +302,7 @@
                                     <label for="SerPointLongitude">Pituusaste</label>
                                     <p class="info"><a class="ohje">&#9432;</a> <strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</p>
                                     <input type="number" min="0" value="0" step=".01" id="SerPointLongitude" name="SerPointLongitude" class="field">
-                                    
+
 
                                 </div>
                             </fieldset>
@@ -314,8 +315,9 @@
                                     <h2>3c. Koordinoiva organisaatio</h2>
                                 </legend>
 
-                                <label for="SerCoOrg">Palvelua koordinoiva organisaatio on sama kuin kohdassa 2b.
+                                <label for="SerCoOrg">
                                     <input type="checkbox" id="SerCoOrg" name="SerCoOrg" value="yes" onclick="showHideSerCoOrg()">
+                                    Palvelua koordinoiva organisaatio on sama kuin kohdassa 2b.
                                 </label>
 
                             </fieldset>
@@ -351,8 +353,9 @@
                                     <h2>3d. Palvelun muut palvelupisteet</h2>
                                 </legend>
 
-                                <label for="SerPointOther_add">Palvelulla on kohdassa 2a ja 3b ilmoitettujen palvelupisteiden lisäksi myös muita palvelupisteitä.
+                                <label for="SerPointOther_add">
                                     <input type="checkbox" id="SerPointOther_add" name="SerPointOther_add" value="yes" onclick="showHideSerPointOther_add()">
+                                    Palvelulla on kohdassa 2a ja 3b ilmoitettujen palvelupisteiden lisäksi myös muita palvelupisteitä.
                                 </label>
                             </fieldset>
 
@@ -367,7 +370,7 @@
                                         <h2>Saman palvelun muut palvelupisteet</h2>
                                     </legend>
 
-                                    
+
                                     <label for="SerPointName_add">Palvelupisteen nimi<span style="color: red important!;">*</span></label>
                                     <p class="info"><a class="ohje">&#9432;</a> Yhteyspisteen tai palvelusta vastaavan henkilön nimi</p>
                                     <input type="text" id="SerPointName_add" name="SerPointName_add" class="field" required>
@@ -417,281 +420,284 @@
                             </div>
 
                         </fieldset>
-                    </form>
-    
-                    <!-- ------------------ EO main infra fields ----------------- -->
-                            <!-- ------------------EO  service ---------------- -->
+                </form>
 
-                            <!-- -------names not updated/section to be deleted?-----------Additional service (2nd) 5a-d ---------------- !-->
+                <!-- ------------------ EO main infra fields ----------------- -->
+                <!-- ------------------EO  service ---------------- -->
 
+                <!-- -------names not updated/section to be deleted?-----------Additional service (2nd) 5a-d ---------------- !-->
 
-                            <button class="cta-pal" id="2ndService" name="2ndService" value="yes" onclick="addSection('moreServices')" type="button">Lisää uusi palvelu</button>
 
-                            <div id="moreServices"></div>
+                <button class="cta-pal" id="2ndService" name="2ndService" value="yes" onclick="addSection('moreServices')" type="button">Lisää uusi palvelu</button>
 
-                            <div id="hidden_fields2ndSer" class="hide2ndSer">
+                <div id="moreServices"></div>
 
-                                <fieldset id=2ndSer>
+                <div id="hidden_fields2ndSer" class="hide2ndSer">
 
-                                    <!-- -------(_2nd)-------- 5a service information---------------- !-->
+                    <fieldset id=2ndSer>
 
+                        <!-- -------(_2nd)-------- 5a service information---------------- !-->
 
-                                    <legend>
-                                        <h2>5a. Palvelun tiedot</h2>
-                                    </legend>
 
-                                    <label for="nimiAdd_2nd">Palvelun nimi<span style="color: red important!;">*</span></label>
-                                    <input type="text" id="nimiAdd_2nd" name="nimiAdd_2nd" class="field require-if-active" required> <!-- https://css-tricks.com/exposing-form-fields-radio-button-css/ !-->
+                        <legend>
+                            <h2>5a. Palvelun tiedot</h2>
+                        </legend>
 
-                                    <label for="kuvausAdd_2nd">Palveun kuvaus </label>
-                                    <p class="info"><a class="ohje">&#9432;</a> Palvelun sisällön ja toiminnan yleinen kuvaus.</p>
-                                    <input type="text" id="kuvausAdd_2nd" name="kuvausAdd_2nd" class="field">
+                        <label for="nimiAdd_2nd">Palvelun nimi<span style="color: red important!;">*</span></label>
+                        <input type="text" id="nimiAdd_2nd" name="nimiAdd_2nd" class="field require-if-active" required> <!-- https://css-tricks.com/exposing-form-fields-radio-button-css/ !-->
 
-                                    <label for="kuvausTieAdd_2nd">Tieteellinen kuvaus</label>
-                                    <p class="info"><a class="ohje">&#9432;</a> Tarvittaessa tarkempi kuvaus palvelusta. Esimerkiksi laitteisto, tarjottavat mittausmenetelmät, jne.</p>
-                                    <input type="text" id="kuvausTieAdd_2nd" name="kuvausTieAdd_2nd" class="field">
+                        <label for="kuvausAdd_2nd">Palveun kuvaus </label>
+                        <p class="info"><a class="ohje">&#9432;</a> Palvelun sisällön ja toiminnan yleinen kuvaus.</p>
+                        <input type="text" id="kuvausAdd_2nd" name="kuvausAdd_2nd" class="field">
 
+                        <label for="kuvausTieAdd_2nd">Tieteellinen kuvaus</label>
+                        <p class="info"><a class="ohje">&#9432;</a> Tarvittaessa tarkempi kuvaus palvelusta. Esimerkiksi laitteisto, tarjottavat mittausmenetelmät, jne.</p>
+                        <input type="text" id="kuvausTieAdd_2nd" name="kuvausTieAdd_2nd" class="field">
 
-                                    <label for="lyhenneAdd_2nd">Lyhenne</label>
-                                    <p class="info"><a class="ohje">&#9432;</a> Mikäli palvelulla on vakiintunut ja käytössä oleva lyhenne tai lyhenne, jota halutaan käytettäväksi.</p>
-                                    <input type="text" id="lyhenneAdd_2nd" name="lyhenneAdd_2nd" class="field">
 
-                                    <label for="tyyppiAdd_2nd" class="dropdown">Palvelun tyyppi<span style="color: red important!;">*</span></label>
-                                    <select id="tyyppiAdd_2nd" name="tyyppiAdd_2nd" required>
-                                        <option selected value="base" disabled>Valitse</option>
-                                        <option value="aineisto">Aineisto</option>
-                                        <option value="laitteisto">Laitteisto</option>
-                                        <option value="palvelu">Palvelu</option>
-                                    </select>
+                        <label for="lyhenneAdd_2nd">Lyhenne</label>
+                        <p class="info"><a class="ohje">&#9432;</a> Mikäli palvelulla on vakiintunut ja käytössä oleva lyhenne tai lyhenne, jota halutaan käytettäväksi.</p>
+                        <input type="text" id="lyhenneAdd_2nd" name="lyhenneAdd_2nd" class="field">
 
+                        <label for="tyyppiAdd_2nd" class="dropdown">Palvelun tyyppi<span style="color: red important!;">*</span></label>
+                        <select id="tyyppiAdd_2nd" name="tyyppiAdd_2nd" required>
+                            <option selected value="base" disabled>Valitse</option>
+                            <option value="aineisto">Aineisto</option>
+                            <option value="laitteisto">Laitteisto</option>
+                            <option value="palvelu">Palvelu</option>
+                        </select>
 
 
-                                    <!-- --------(_2nd)---------- option checkbox / Servive contact information ---------------- !-->
 
-                                    <fieldset>
-                                        <legend>
-                                            <h2>4b. Palvelun yhteystiedot</h2>
-                                        </legend>
+                        <!-- --------(_2nd)---------- option checkbox / Servive contact information ---------------- !-->
 
-                                        <label for="PPadditional_2nd">Palvelun yhteystiedot ovat samat kuin kohdassa 2a.
-                                            <input type="checkbox" id="PPadditional_2nd" name="PPadditional_2nd" value="yes" onclick="showHidePPadditional()">
-                                        </label>
-                                    </fieldset>
+                        <fieldset>
+                            <legend>
+                                <h2>4b. Palvelun yhteystiedot</h2>
+                            </legend>
 
-                                    <!-- Tähän tarvitaan toiminto jos klikattu = kopioi tiedot kohdasta 2a. !-->
+                            <label for="PPadditional_2nd">
+                                <input type="checkbox" id="PPadditional_2nd" name="PPadditional_2nd" value="yes" onclick="showHidePPadditional()">
+                                Palvelun yhteystiedot ovat samat kuin kohdassa 2a.
+                            </label>
+                        </fieldset>
 
-                                    <!-- ------(_2nd)------ Option fields for service contact info (other than 2a)------------ !-->
+                        <!-- Tähän tarvitaan toiminto jos klikattu = kopioi tiedot kohdasta 2a. !-->
 
-                                    <fieldset id="PPlisapalvelu_2nd">
-                                        <div id="hidden_fields6">
+                        <!-- ------(_2nd)------ Option fields for service contact info (other than 2a)------------ !-->
 
-                                            <legend>
-                                                <h2>Palvelun yhteystiedot (eri kuin kohdassa 2a ilmoitetut)</h2>
-                                            </legend>
+                        <fieldset id="PPlisapalvelu_2nd">
+                            <div id="hidden_fields6">
 
-                                            <label for="PPnimiAdd_2nd">Palvelupisteen nimi<span style="color: red important!;">*</span></label>
-                                            <p class="info"><a class="ohje">&#9432;</a> Yhteyspisteen tai palvelusta vastaavan henkilön nimi</p>
-                                            <input type="text" id="PPnimiAdd_2nd" name="PPnimiAdd_2nd" class="field" required>
+                                <legend>
+                                    <h2>Palvelun yhteystiedot (eri kuin kohdassa 2a ilmoitetut)</h2>
+                                </legend>
 
+                                <label for="PPnimiAdd_2nd">Palvelupisteen nimi<span style="color: red important!;">*</span></label>
+                                <p class="info"><a class="ohje">&#9432;</a> Yhteyspisteen tai palvelusta vastaavan henkilön nimi</p>
+                                <input type="text" id="PPnimiAdd_2nd" name="PPnimiAdd_2nd" class="field" required>
 
-                                            <label for="PPkuvausAdd_2nd">Palvelupisteen kuvaus</label>
-                                            <p class="info"><a class="ohje">&#9432;</a> Tarvittaessa tarkempi kuvaus yhteystiedon roolista. Esimerkiksi onko kyse tutkimushenkilökunnasta, teknisestä tuesta, hallinnollisesta yhteyshenkilöstä jne.</p>
-                                            <textarea id="PPkuvausAdd_2nd" name="PPkuvausAdd_2nd" class="field"></textarea>
 
-                                            <label for="PPtelAdd_2nd">Puhelinnumero<span style="color: red important!;">*</span></label>
-                                            <input type="tel" id="PPtelAdd_2nd" name="PPtelAdd_2nd" class="field" required>
+                                <label for="PPkuvausAdd_2nd">Palvelupisteen kuvaus</label>
+                                <p class="info"><a class="ohje">&#9432;</a> Tarvittaessa tarkempi kuvaus yhteystiedon roolista. Esimerkiksi onko kyse tutkimushenkilökunnasta, teknisestä tuesta, hallinnollisesta yhteyshenkilöstä jne.</p>
+                                <textarea id="PPkuvausAdd_2nd" name="PPkuvausAdd_2nd" class="field"></textarea>
 
-                                            <label for="PPemailAdd_2nd">Sähköposti<span style="color: red important!;">*</span> </label>
-                                            <input type="email" id="PPemailAdd_2nd" name="PPemailAdd_2nd" class="field" required>
+                                <label for="PPtelAdd_2nd">Puhelinnumero<span style="color: red important!;">*</span></label>
+                                <input type="tel" id="PPtelAdd_2nd" name="PPtelAdd_2nd" class="field" required>
 
-                                            <label for="PPosoiteAdd_2nd">Postiosoite<span style="color: red important!;">*</span></label>
-                                            <input type="text" id="PPosoiteAdd_2nd" name="PPosoiteAdd_2nd" class="field" required>
+                                <label for="PPemailAdd_2nd">Sähköposti<span style="color: red important!;">*</span> </label>
+                                <input type="email" id="PPemailAdd_2nd" name="PPemailAdd_2nd" class="field" required>
 
-                                            <label for="PPlisatiedotAdd_2nd">Linkki lisätietoihin</label>
-                                            <p class="info"><a class="ohje">&#9432;</a> Esimerkiksi infrastruktuurin kotisivu jne.</p>
-                                            <input type="url" id="PPlisatiedotAdd_2nd" name="PPlisatiedotAdd_2nd" class="field">
+                                <label for="PPosoiteAdd_2nd">Postiosoite<span style="color: red important!;">*</span></label>
+                                <input type="text" id="PPosoiteAdd_2nd" name="PPosoiteAdd_2nd" class="field" required>
 
-                                            <label for="PPehdotAdd_2nd">Linkki käyttöehtoihin</label>
-                                            <p class="info"><a class="ohje">&#9432;</a> Tutkimusinfrastruktuurin käyttöehdot kertova dokumentti tai verkkosivu.</p>
-                                            <input type="url" id="PPehdotAdd_2nd" name="PPehdotAdd_2nd" class="field">
+                                <label for="PPlisatiedotAdd_2nd">Linkki lisätietoihin</label>
+                                <p class="info"><a class="ohje">&#9432;</a> Esimerkiksi infrastruktuurin kotisivu jne.</p>
+                                <input type="url" id="PPlisatiedotAdd_2nd" name="PPlisatiedotAdd_2nd" class="field">
 
+                                <label for="PPehdotAdd_2nd">Linkki käyttöehtoihin</label>
+                                <p class="info"><a class="ohje">&#9432;</a> Tutkimusinfrastruktuurin käyttöehdot kertova dokumentti tai verkkosivu.</p>
+                                <input type="url" id="PPehdotAdd_2nd" name="PPehdotAdd_2nd" class="field">
 
-                                            <label for="PPkuntaAdd_2nd">Kuntatieto <a href="#" target="_blank">(koodisto)</a><span style="color: red important!;">*</span></label>
-                                            <input type="text" id="PPkuntaAdd_2nd" name="PPkuntaAdd_2nd" class="field" required>
 
-                                            <label for="countryAdd_2nd" class="dropdown">Maa<span style="color: red important!;">*</span></label>
+                                <label for="PPkuntaAdd_2nd">Kuntatieto <a href="#" target="_blank">(koodisto)</a><span style="color: red important!;">*</span></label>
+                                <input type="text" id="PPkuntaAdd_2nd" name="PPkuntaAdd_2nd" class="field" required>
 
-                                            <select id="countryAdd_2nd" name="countryAdd_2nd" required>
-                                               
-                                            </select>
+                                <label for="countryAdd_2nd" class="dropdown">Maa<span style="color: red important!;">*</span></label>
 
-                                            <label for="PPLeAasteAdd_2nd">Leveysaste</label>
-                                            <p class="info"><a class="ohje">&#9432;</a> <strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</p>
-                                            <input type="number" min="0" value="0" step=".01" id="PPAsteLeAdd_2nd" name="PPAsteLeAdd_2nd" class="field">
+                                <select id="countryAdd_2nd" name="countryAdd_2nd" required>
 
-                                            <label for="PPPiAsteAdd_2nd">Pituusaste</label>
-                                            <p class="info"><a class="ohje">&#9432;</a> <strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</p>
-                                            <input type="number" min="0" value="0" step=".01" id="PPAstePiAdd_2nd" name="PPAstePiAdd_2nd" class="field">
-                                            >
+                                </select>
 
-                                        </div>
-                                    </fieldset>
+                                <label for="PPLeAasteAdd_2nd">Leveysaste</label>
+                                <p class="info"><a class="ohje">&#9432;</a> <strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</p>
+                                <input type="number" min="0" value="0" step=".01" id="PPAsteLeAdd_2nd" name="PPAsteLeAdd_2nd" class="field">
 
+                                <label for="PPPiAsteAdd_2nd">Pituusaste</label>
+                                <p class="info"><a class="ohje">&#9432;</a> <strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</p>
+                                <input type="number" min="0" value="0" step=".01" id="PPAstePiAdd_2nd" name="PPAstePiAdd_2nd" class="field">
+                                >
 
-                                    <!-- -------(_2nd)------ Option checkbox / responsible organisation ---------------- !-->
+                            </div>
+                        </fieldset>
 
-                                    <fieldset>
-                                        <legend>
-                                            <h2>5c. Koordinoiva organisaatio</h2>
-                                        </legend>
 
-                                        <label for="VOadditional_2nd">Palvelua koordinoiva organisaatio on sama kuin kohdassa 2b.
-                                            <input type="checkbox" id="VOadditional_2nd" name="VOadditional_2nd" value="yes" onclick="showHideVOadditional()">
-                                        </label>
+                        <!-- -------(_2nd)------ Option checkbox / responsible organisation ---------------- !-->
 
-                                    </fieldset>
+                        <fieldset>
+                            <legend>
+                                <h2>5c. Koordinoiva organisaatio</h2>
+                            </legend>
 
-                                    <!-- -----(_2nd)------- 5c option fields for responsible organisation (other than 2b) --->
+                            <label for="VOadditional_2nd">
+                                <input type="checkbox" id="VOadditional_2nd" name="VOadditional_2nd" value="yes" onclick="showHideVOadditional()">
+                                Palvelua koordinoiva organisaatio on sama kuin kohdassa 2b.
+                            </label>
 
+                        </fieldset>
 
-                                    <fieldset id="VOlisapalvelu_2nd">
-                                        <div id="hidden_fields7">
+                        <!-- -----(_2nd)------- 5c option fields for responsible organisation (other than 2b) --->
 
-                                            <legend>
-                                                <h2>Koordinoiva organisaatio (eri kuin kohdassa 2b)</h2>
-                                            </legend>
 
-                                            <label for="VOnimiAdd_2nd">Organisaation nimi<span style="color: red important!;" required>*</span></label>
-                                            <input type="text" id="VOnimiAdd_2nd" name="VOnimiAdd_2nd" class="field">
+                        <fieldset id="VOlisapalvelu_2nd">
+                            <div id="hidden_fields7">
 
-                                            <label for="VOytunnusAdd_2nd">Y-tunnus<span style="color: red important!;" required>*</span></label>
-                                            <input type="text" id="VOytunnusAdd_2nd" name="VOytunnusAdd_2nd" class="field" pattern="([0-9]{7} - [0-9]{1})" placeholder="1234567-8">
+                                <legend>
+                                    <h2>Koordinoiva organisaatio (eri kuin kohdassa 2b)</h2>
+                                </legend>
 
-                                            <label for="VOisniAdd_2nd">ISNI</label>
-                                            <input type="text" id="VOisniAdd_2nd" name="VOisniAdd_2nd" class="field" pattern="([0-9]{15} [a-zA-Z0-9]{1})" placeholder="0000 0000 0000 0000">
+                                <label for="VOnimiAdd_2nd">Organisaation nimi<span style="color: red important!;" required>*</span></label>
+                                <input type="text" id="VOnimiAdd_2nd" name="VOnimiAdd_2nd" class="field">
 
-                                        </div>
-                                    </fieldset>
+                                <label for="VOytunnusAdd_2nd">Y-tunnus<span style="color: red important!;" required>*</span></label>
+                                <input type="text" id="VOytunnusAdd_2nd" name="VOytunnusAdd_2nd" class="field" pattern="([0-9]{7} - [0-9]{1})" placeholder="1234567-8">
 
+                                <label for="VOisniAdd_2nd">ISNI</label>
+                                <input type="text" id="VOisniAdd_2nd" name="VOisniAdd_2nd" class="field" pattern="([0-9]{15} [a-zA-Z0-9]{1})" placeholder="0000 0000 0000 0000">
 
+                            </div>
+                        </fieldset>
 
-                                    <!-- --------(_2nd)-----Option checkbox / additional contact information ---------------- -->
 
-                                    <fieldset>
-                                        <legend>
-                                            <h2>5d. Palvelun muut palvelupisteet</h2>
-                                        </legend>
 
-                                        <label for="MuuPPadditional_2nd">Palvelulla on kohdassa 2a ja 5b ilmoitettujen palvelupisteiden lisäksi myös muita palvelupisteitä.
-                                            <input type="checkbox" id="MuuPPadditional_2nd" name="MuuPPadditional_2nd" value="yes" onclick="showHideMuuPPadditional()">
-                                        </label>
-                                    </fieldset>
+                        <!-- --------(_2nd)-----Option checkbox / additional contact information ---------------- -->
 
-                                    <!-- ------(_2nd)------ 5d option fields for additional contact information ----------- -->
+                        <fieldset>
+                            <legend>
+                                <h2>5d. Palvelun muut palvelupisteet</h2>
+                            </legend>
 
+                            <label for="MuuPPadditional_2nd">
+                                <input type="checkbox" id="MuuPPadditional_2nd" name="MuuPPadditional_2nd" value="yes" onclick="showHideMuuPPadditional()">
+                                Palvelulla on kohdassa 2a ja 5b ilmoitettujen palvelupisteiden lisäksi myös muita palvelupisteitä.
+                            </label>
+                        </fieldset>
 
-                                    <div id="hidden_fields8" class="hide5d">
-                                        <fieldset id="MuuPPlisapalvelu_2nd">
+                        <!-- ------(_2nd)------ 5d option fields for additional contact information ----------- -->
 
 
-                                            <legend>
-                                                <h2>Saman palvelun muut palvelupisteet</h2>
-                                            </legend>
+                        <div id="hidden_fields8" class="hide5d">
+                            <fieldset id="MuuPPlisapalvelu_2nd">
 
-                                            <label for="PPnimiAdd_2nd">Palvelupisteen nimi<span style="color: red important!;">*</span></label>
-                                            <p class="info"><a class="ohje">&#9432;</a> Yhteyspisteen tai palvelusta vastaavan henkilön nimi</p>
-                                            <input type="text" id="PPnimiAdd_2nd" name="PPnimiAdd_2nd" class="field" required>
 
-                                            <label for="PPkuvausAdd_2nd">Palvelupisteen kuvaus</label>
-                                            <p class="info"><a class="ohje">&#9432;</a> Tarvittaessa tarkempi kuvaus yhteystiedon roolista. Esimerkiksi onko kyse tutkimushenkilökunnasta, teknisestä tuesta, hallinnollisesta yhteyshenkilöstä jne.</p>
-                                            <textarea id="PPkuvausAdd_2nd" name="PPkuvausAdd_2nd" class="field"></textarea>
+                                <legend>
+                                    <h2>Saman palvelun muut palvelupisteet</h2>
+                                </legend>
 
-                                            <label for="PPtelAdd_2nd">Puhelinnumero<span style="color: red important!;">*</span></label>
-                                            <input type="tel" id="PPtelAdd_2nd" name="PPtelAdd_2nd" class="field" required>
+                                <label for="PPnimiAdd_2nd">Palvelupisteen nimi<span style="color: red important!;">*</span></label>
+                                <p class="info"><a class="ohje">&#9432;</a> Yhteyspisteen tai palvelusta vastaavan henkilön nimi</p>
+                                <input type="text" id="PPnimiAdd_2nd" name="PPnimiAdd_2nd" class="field" required>
 
-                                            <label for="PPemailAdd_2nd">Sähköposti<span style="color: red important!;">*</span> </label>
-                                            <input type="email" id="PPemailAdd_2nd" name="PPemailAdd_2nd" class="field" required>
+                                <label for="PPkuvausAdd_2nd">Palvelupisteen kuvaus</label>
+                                <p class="info"><a class="ohje">&#9432;</a> Tarvittaessa tarkempi kuvaus yhteystiedon roolista. Esimerkiksi onko kyse tutkimushenkilökunnasta, teknisestä tuesta, hallinnollisesta yhteyshenkilöstä jne.</p>
+                                <textarea id="PPkuvausAdd_2nd" name="PPkuvausAdd_2nd" class="field"></textarea>
 
-                                            <label for="PPosoiteAdd_2nd">Postiosoite<span style="color: red important!;">*</span></label>
-                                            <input type="text" id="PPosoiteAdd_2nd" name="PPosoiteAdd_2nd" class="field" required>
+                                <label for="PPtelAdd_2nd">Puhelinnumero<span style="color: red important!;">*</span></label>
+                                <input type="tel" id="PPtelAdd_2nd" name="PPtelAdd_2nd" class="field" required>
 
-                                            <label for="PPlisatiedotAdd_2nd">Linkki lisätietoihin</label>
-                                            <p class="info"><a class="ohje">&#9432;</a> Esimerkiksi infrastruktuurin kotisivu jne.</p>
-                                            <input type="url" id="PPlisatiedotAdd_2nd" name="PPlisatiedotAdd_2nd" class="field">
+                                <label for="PPemailAdd_2nd">Sähköposti<span style="color: red important!;">*</span> </label>
+                                <input type="email" id="PPemailAdd_2nd" name="PPemailAdd_2nd" class="field" required>
 
+                                <label for="PPosoiteAdd_2nd">Postiosoite<span style="color: red important!;">*</span></label>
+                                <input type="text" id="PPosoiteAdd_2nd" name="PPosoiteAdd_2nd" class="field" required>
 
-                                            <label for="PPehdotAdd_2nd">Linkki käyttöehtoihin</label>
-                                            <p class="info"><a class="ohje">&#9432;</a> Tutkimusinfrastruktuurin käyttöehdot kertova dokumentti tai verkkosivu.</p>
-                                            <input type="url" id="PPehdotAdd_2nd" name="PPehdotAdd_2nd" class="field">
+                                <label for="PPlisatiedotAdd_2nd">Linkki lisätietoihin</label>
+                                <p class="info"><a class="ohje">&#9432;</a> Esimerkiksi infrastruktuurin kotisivu jne.</p>
+                                <input type="url" id="PPlisatiedotAdd_2nd" name="PPlisatiedotAdd_2nd" class="field">
 
 
-                                            <label for="PPkuntaAdd_2nd">Kuntatieto <a href="#" target="_blank">(koodisto)</a><span style="color: red important!;">*</span></label>
-                                            <input type="text" id="PPkuntaAdd_2nd" name="PPkuntaAdd_2nd" class="field" required>
+                                <label for="PPehdotAdd_2nd">Linkki käyttöehtoihin</label>
+                                <p class="info"><a class="ohje">&#9432;</a> Tutkimusinfrastruktuurin käyttöehdot kertova dokumentti tai verkkosivu.</p>
+                                <input type="url" id="PPehdotAdd_2nd" name="PPehdotAdd_2nd" class="field">
 
-                                            <label for="countryAdd_2nd" class="dropdown">Maa<span style="color: red important!;">*</span></label>
 
-                                            <select id="countryAdd_2nd" name="countryAdd_2nd" required>
-                                            </select>
+                                <label for="PPkuntaAdd_2nd">Kuntatieto <a href="#" target="_blank">(koodisto)</a><span style="color: red important!;">*</span></label>
+                                <input type="text" id="PPkuntaAdd_2nd" name="PPkuntaAdd_2nd" class="field" required>
 
-                                            <label for="PPLeAasteAdd_2nd">Leveysaste</label>
-                                            <p class="info"><a class="ohje">&#9432;</a> <strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</p>
-                                            <input type="number" min="0" value="0" step=".01" id="PPLeAsteAdd_2nd" name="PPLeAsteAdd_2nd" class="field">
+                                <label for="countryAdd_2nd" class="dropdown">Maa<span style="color: red important!;">*</span></label>
 
-                                            <label for="PPPiAsteAdd_2nd">Pituusaste</label>
-                                            <p class="info"><a class="ohje">&#9432;</a> <strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</p>
-                                            <input type="numer" min="0" value="0" step=".01" id="PPPiAsteAdd_2nd" name="PPPiAsteAdd_2nd" class="field">
+                                <select id="countryAdd_2nd" name="countryAdd_2nd" required>
+                                </select>
 
-                                            <label for="PPavainAdd_2nd">Avainsanat</label>
-                                            <p class="info"><a class="ohje">&#9432;</a> Avainsanat, jotka helpottavat infrastruktuurin löytämistä. Myös laitteistojen, mittausmenetelmien jne. akronyymit.</p>
-                                            <input type="text" id="PPAvainAdd_2nd" name="PPAvainAdd_2nd" class="field">
+                                <label for="PPLeAasteAdd_2nd">Leveysaste</label>
+                                <p class="info"><a class="ohje">&#9432;</a> <strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</p>
+                                <input type="number" min="0" value="0" step=".01" id="PPLeAsteAdd_2nd" name="PPLeAsteAdd_2nd" class="field">
 
+                                <label for="PPPiAsteAdd_2nd">Pituusaste</label>
+                                <p class="info"><a class="ohje">&#9432;</a> <strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</p>
+                                <input type="numer" min="0" value="0" step=".01" id="PPPiAsteAdd_2nd" name="PPPiAsteAdd_2nd" class="field">
 
+                                <label for="PPavainAdd_2nd">Avainsanat</label>
+                                <p class="info"><a class="ohje">&#9432;</a> Avainsanat, jotka helpottavat infrastruktuurin löytämistä. Myös laitteistojen, mittausmenetelmien jne. akronyymit.</p>
+                                <input type="text" id="PPAvainAdd_2nd" name="PPAvainAdd_2nd" class="field">
 
-                                        </fieldset>
-                                    </div>
 
 
+                            </fieldset>
+                        </div>
 
-                                </fieldset> <!-- EO 2nd service-->
-                            </div> <!-- EO 2nd service-->
 
 
-                        </fieldset> <!-- Nested fieldset #palveluinfo !-->
-                    </div> <!-- sulkee hiddenFields1 !-->
-                </form> <!-- sulkee lisäpalvelut !-->
+                    </fieldset> <!-- EO 2nd service-->
+                </div> <!-- EO 2nd service-->
 
 
-                <!-- ------------ eo lisäpalvelut ------------ !-->
+                </fieldset> <!-- Nested fieldset #palveluinfo !-->
+            </div> <!-- sulkee hiddenFields1 !-->
+            </form> <!-- sulkee lisäpalvelut !-->
 
-                <!-- ------------ lähetys ------------ !-->
 
-                <fieldset>
-                    <legend>
-                        <h2>Lomakkeen lähetys</h2>
-                    </legend>
+            <!-- ------------ eo lisäpalvelut ------------ !-->
 
-                    <form onsubmit="return checkForm(this);">
+            <!-- ------------ lähetys ------------ !-->
 
-                        <label for="conditions">Olen lukenut <a href="#" target="_blank">tietosuojaselosteen</a><span style="color: red important!;">*</span>.
-                            <input type="checkbox" id="conditions" name="conditions" name="terms" required>
-                        </label>
+            <fieldset>
+                <legend>
+                    <h2>Lomakkeen lähetys</h2>
+                </legend>
 
-                        <input type="submit" value="Tallenna" class="cta">
+                <form onsubmit="return checkForm(this);">
 
-                    </form>
-                </fieldset>
+                    <label for="conditions">Olen lukenut <a href="#" target="_blank">tietosuojaselosteen</a><span style="color: red important!;">*</span>.
+                        <input type="checkbox" id="conditions" name="conditions" name="terms" required>
+                    </label>
 
+                    <input type="submit" value="Tallenna" class="cta">
 
+                </form>
+            </fieldset>
 
 
-                
-            </div> <!-- content 60 !-->
+
+
+
+        </div> <!-- content 60 !-->
         </div> <!-- background white !-->
 
         <!-- footer !-->
 
         <footer>
-            <div class="content100">
+            <div class="content w100">
                 <p>Footer</p>
             </div> <!-- content 100 -->
         </footer>
