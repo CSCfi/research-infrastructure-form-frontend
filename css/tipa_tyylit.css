@@ -11,27 +11,45 @@ body {
 
 * {
   box-sizing: border-box;
-  line-height: 100%;
+  line-height: 150% !important;
+  text-align: left;
 }
 
 
-
 main {
-  max-width: 1000px;
+  max-width: 95%;
   margin: 10px auto;
   background-color: #FFF;
   overflow: auto;
   position: relative;
 }
 
+/* content box colors*/
+
+.light-grey{
+background-color: #f9f9f9;
+margin: 1rem;
+    margin-top: 1rem;
+padding: 1rem 1rem 0.5rem 1rem; 
+}
+
+
+.white{
+background-color: white;
+margin: 1rem;
+    margin-top: 1rem;
+padding: 1rem 1rem 0.5rem 1rem; 
+}
+
 /* banner style*/
 
 .hero {
   background-image: url("ttv_banneri_uusi.png");
-}
-
-img {
-  margin-bottom: -3px;
+  max-width: 100%;
+  height: auto;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
 }
 
 /* body and fieldset styles*/
@@ -61,15 +79,25 @@ h2 {
   margin-bottom: 0;
 }
 
+h3 {
+  color: darkslategray;
+  text-align: left;
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+/*Sheet info subheading*/
+
 .subheading {
   color: #22225A;
   text-align: center;
+align-content: center;
 }
 
 .legend_border {    /* subheading box style*/
   display: inline-block;
   padding: 2px;
-  border: solid;
+  border: transparent;
   border-width: thin;
   border-color: #22225A;
   font-weight: bold;
@@ -86,13 +114,16 @@ h2 {
   color: #32842F;
 }
 
+
+/* input styles  */
+
 input {
   width: 100%;
   margin: 5px 0;
   border: 1px solid #555;
   border-radius: 4px;
   margin-bottom: 1.5em;
-  float: left;
+  float: left !important;
 }
 
 input[type=checkbox] {
@@ -118,9 +149,8 @@ textarea:focus {
   border: 2px solid #555;
   border-radius: 4px;
   padding-top: -1em;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5em; 
 }
-
 
 select {
   width: 30%;
@@ -130,6 +160,7 @@ select {
   background-color: #f1f1f1;
 }
 
+
 /*Field for answer bar size */
 
 .field {
@@ -138,7 +169,7 @@ select {
   margin-bottom: 1em;
 }
 
-/* Label ja input aloittamaan palkit samalta kohtaa */
+/* Label & input answer bars inline */
 
 label {
   float: left;
@@ -165,7 +196,7 @@ label {
   width: 100%
 }
 
-/* Osion otsikon tyyli */
+/* Legend style*/
 
 legend {
   display: block;
@@ -176,9 +207,18 @@ legend {
   margin-bottom: 10px;
 }
 
+/* third ticet styles*/
+
+.third-tickets {
+width: 33%;
+float: left;
+margin-right: 3px;
+padding: 0rem; 
+}
 
 
-/* Seliterivi */
+
+/* info style */
 
 .info {
   font-size: .8em;
@@ -190,7 +230,7 @@ legend {
   color: dimgrey;
 }
 
-/* selite isompi */
+/* info style large */
 
 .infoXL {
   font-size: .95em;
@@ -202,9 +242,9 @@ legend {
   color: dimgrey;
 }
 
-/* Button styles */
+/* Button style */
 
-.cta {
+.cta {                          /* Send form */
   background-color: #3e3fa8;
   color: #ffffff;
   padding: 1rem;
@@ -221,31 +261,12 @@ input:hover.cta {
   background-color: #22225A;
 }
 
-.cta-pp {
-  background-color: #FFF;
-  border: 2px solid #3AAA35;
-  color: #3AAA35;
-  padding: 0.5rem;
-  display: inline;
-  text-align: center;
-  max-width: 250px;
-  margin: 2.5rem auto;
-  border-radius: 30px;
-  text-transform: uppercase;
-  font-weight: 300;
-  font-size: -1rem;
-}
-
-button:hover.cta-pp {
-  background-color: azure;
-}
-
-.cta-pal {
+.cta-pal {                   /* Add new service */
   background-color: #FFF;
   border: 2px solid #32842F;
   color: #32842F;
   padding: 0.5rem;
-  display: inline;
+  display: inline-block;
   text-align: center;
   max-width: 150px;
   margin: 2.5rem auto;
@@ -277,19 +298,7 @@ button:hover.cta-pal {
   display: none;
 }
 
-/* reveal-if-active not working.....*/
 
-.reveal-if-active {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-}
-
-input[type="checkbox"]:checked~.reveal-if-active {
-  opacity: 1;
-  max-height: 100px;
-  overflow: visible;
-}
 
 /* footer */
 
@@ -302,4 +311,5 @@ footer {
   margin-bottom: 0rem;
   display: inline-block;
   width: 100%;
+ align-content: center !important!;
 }
