@@ -38,11 +38,11 @@
                         </legend>
 
                         <label for="TTV_yes">
-                            <input type="checkbox" id="TTV_yes" name="TTV_yes" value="yes" onclick="toggleElement('hidden_fieldsTTV', this.checked)" />
+                            <input type="checkbox" id="TTV_yes" name="TTV_yes" value="yes" onclick="toggleElement('hidden_fields1', this.checked)" />
                             Tutkimusinfrastruktuurin tiedot ovat tutkimustietovarannossa?
                         </label>
 
-                        <div id="hidden_fieldsTTV" class="hidden">
+                        <div id="hidden_fields1" class="hidden">
                             <fieldset id=TTVcode>
 
 
@@ -259,7 +259,7 @@
                                 </legend>
 
                                 <label for="SerPointSame">
-                                    <input type="checkbox" id="SerPointSame" name="SerPointSame" value="yes" onclick="showHideSerPointSame()">
+                                    <input type="checkbox" id="SerPointSame" name="SerPointSame" value="yes" onclick="toggleElement('hidden_fields2', this.checked)" />
                                     Palvelun yhteystiedot ovat samat kuin kohdassa 2a.
                                 </label>
                             </fieldset>
@@ -268,8 +268,9 @@
 
                             <!-- -------(SerPoint)----- Option fields for service contact info (other than 2a)------------ -->
 
-                            <fieldset id="SerPointOther">
-                                <div id="hidden_fields2">
+                            
+                                <div id="hidden_fields2" class="hidden">
+                                    <fieldset id="SerPointOther">
 
                                     <legend>
                                         <h3>Palvelun yhteystiedot (eri kuin kohdassa 2a ilmoitetut)</h3>
@@ -318,9 +319,9 @@
                                     <p class="info"><a class="ohje">&#9432;</a> <strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</p>
                                     <input type="number" min="0" value="0" step=".01" id="SerPointLongitude" name="SerPointLongitude" class="field">
 
-
+                                    </fieldset>
                                 </div>
-                            </fieldset>
+                            
 
 
                             <!-- -------(SerCoOrg)------ Option checkbox / responsible organisation ---------------- !-->
@@ -442,19 +443,21 @@
                         <!-- -------names not updated/section to be deleted? > MA: yes, deleted. -----------Additional services (2nd) 5a-d ---------------- !-->
 
 
-                        <button class="cta-pal" id="2ndService" name="2ndService" value="yes" onclick="addSection('moreServices')" type="button" >Lisää uusi palvelu</button>
+                        <button class="cta-pal" value="yes" onclick="addSection('moreServices')" type="button" >Lisää uusi palvelu</button>
+                    
+                    <!--  id="2ndService" name="2ndService" -->
 
                         <div id="moreServices"></div>
 
-                        <div id="hidden_fields2ndSer" class="hide2ndSer"></div>
+                       <!--   <div id="hidden_fields2ndSer" class="hide2ndSer"></div> -->
 
-                            <fieldset id=2ndSer>
+                           <!--  <fieldset id=2ndSer> -->
 
                     <!-- ----------- EO add services------------ -->
 
 
 
-                    </fieldset> <!-- Nested fieldset #palveluinfo !-->
+                  <!--   </fieldset> Nested fieldset #palveluinfo !-->  
            <!-- </div>  sulkee hiddenFields1 !-->
 
 

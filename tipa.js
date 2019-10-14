@@ -276,17 +276,17 @@ function showHidePalveluInfo() {
 
 // HideShow 3b
 
-function showHideSerPointSame() {
-  var checkBox = document.getElementById("SerPointSame")
-  var text = document.getElementById("SerPointOther")
+//  function showHideSerPointSame() {
+ //  var checkBox = document.getElementById("SerPointSame")
+ //  var text = document.getElementById("SerPointOther")
 
-  if (checkBox.checked == true) {
-    text.style.display = "none";
-  }
-  else {
-    text.style.display = "block";
-  }
-}
+//   if (checkBox.checked == true) {
+ //   text.style.display = "none";
+//   }
+ //  else {
+ //    text.style.display = "block";
+ //  }
+// }
 
 // HideShow 3c
 
