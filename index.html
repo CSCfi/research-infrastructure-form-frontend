@@ -260,7 +260,7 @@
 
                                 <label for="SerPointSame">
                                     <input type="checkbox" id="SerPointSame" name="SerPointSame" value="yes" onclick="toggleElement('hidden_fields2', this.checked)" />
-                                    Palvelun yhteystiedot ovat samat kuin kohdassa 2a.
+                                    Palvelun yhteystiedot ovat eri kuin kohdassa 2a.
                                 </label>
                             </fieldset>
 
@@ -332,8 +332,8 @@
                                 </legend>
 
                                 <label for="SerCoOrg">
-                                    <input type="checkbox" id="SerCoOrg" name="SerCoOrg" value="yes" onclick="showHideSerCoOrg()">
-                                    Palvelua koordinoiva organisaatio on sama kuin kohdassa 2b.
+                                    <input type="checkbox" id="SerCoOrg" name="SerCoOrg" value="yes" onclick="toggleElement('hidden_fields3', this.checked)"/>
+                                    Palvelua koordinoiva organisaatio on eri kuin kohdassa 2b.
                                 </label>
 
                             </fieldset>
@@ -341,8 +341,9 @@
                             <!-- -----(CoOrg_oth)------- 3c option fields for responsible organisation (other than 2b) --->
 
 
-                            <fieldset id="SerCoOrgOther">
-                                <div id="hidden_fields3">
+                           <div id="hidden_fields3" class="hidden"> 
+                           <fieldset id="SerCoOrgOther">
+                                
 
                                     <legend>
                                         <h2>Koordinoiva organisaatio (eri kuin kohdassa 2b)</h2>
@@ -357,8 +358,9 @@
                                     <label for="CoOrgIsni_oth">ISNI</label>
                                     <input type="text" id="CoOrgIsni_oth" name="CoOrgIsni_oth" class="field" pattern="([0-9]{15} [a-zA-Z0-9]{1})" placeholder="0000 0000 0000 0000">
 
-                                </div>
-                            </fieldset>
+                               </fieldset> 
+                               </div>
+                            
 
 
 
@@ -370,7 +372,7 @@
                                 </legend>
 
                                 <label for="SerPointOther_add">
-                                    <input type="checkbox" id="SerPointOther_add" name="SerPointOther_add" value="yes" onclick="showHideSerPointOther_add()">
+                                    <input type="checkbox" id="SerPointOther_add" name="SerPointOther_add" value="yes" onclick="toggleElement('hidden_fields4', this.checked)"/>
                                     Palvelulla on kohdassa 2a ja 3b ilmoitettujen palvelupisteiden lisäksi myös muita palvelupisteitä.
                                 </label>
                             </fieldset>
@@ -378,7 +380,7 @@
                             <!-- ------(_Add)------ 3d option fields for additional contact information ----------- -->
 
 
-                            <div id="hidden_fields4" class="hide4d">
+                            <div id="hidden_fields4" class="hidden">
                                 <fieldset id="AddOtherSerPoint">
 
 
