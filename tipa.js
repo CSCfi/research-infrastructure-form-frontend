@@ -24,7 +24,7 @@ function addSection(id) {
           <h3>3a. Palvelun tiedot</h3>
       </legend>
 
-      <label for="serName${addedDivs}">Palvelun nimi<span style="color: red !important;">*</span></label>
+      <label class="required" for="serName${addedDivs}">Palvelun nimi</label>
       <input type="text" id="serName${addedDivs}" name="serName${addedDivs}"> 
       
       <label for="serDescr${addedDivs}">Palvelun kuvaus </label>
@@ -40,7 +40,7 @@ function addSection(id) {
       <p class="info"><a class="ohje">&#9432;</a> Mikäli palvelulla on vakiintunut ja käytössä oleva lyhenne tai lyhenne, jota halutaan käytettäväksi.</p>
       <input type="text" id="serAbbrev${addedDivs}" name="serAbbrev${addedDivs}" class="field">
 
-      <label for="serType${addedDivs}" class="dropdown">Palvelun tyyppi<span style="color: red !important;">*</span>
+      <label class="required" for="serType${addedDivs}" class="dropdown">Palvelun tyyppi
       <select id="serType${addedDivs}" name="serType${addedDivs}">
           <option selected value="base" disabled>Valitse</option>
           <option value="aineisto">Aineisto</option>
@@ -73,7 +73,7 @@ function addSection(id) {
               <h3>Palvelun yhteystiedot (eri kuin kohdassa 2a ilmoitetut)</h3>
           </legend>
 
-          <label for="SerPointName${addedDivs}">Palvelupisteen nimi<span style="color: red !important;">*</span></label>
+          <label class="required" for="SerPointName${addedDivs}">Palvelupisteen nimi</label>
           <p class="info"><a class="ohje">&#9432;</a> Yhteyspisteen tai palvelusta vastaavan henkilön nimi</p>
           <input type="text" id="SerPointName${addedDivs}" name="SerPointName${addedDivs}" class="field">
 
@@ -82,13 +82,13 @@ function addSection(id) {
           <p class="info"><a class="ohje">&#9432;</a> Tarvittaessa tarkempi kuvaus yhteystiedon roolista. Esimerkiksi onko kyse tutkimushenkilökunnasta, teknisestä tuesta, hallinnollisesta yhteyshenkilöstä jne.</p>
           <textarea id="SerPointDescr${addedDivs}" name="SerPointDescr${addedDivs}" class="field"></textarea>
 
-          <label for="SerPointTel${addedDivs}">Puhelinnumero<span style="color: red !important;">*</span></label>
+          <label class="required" for="SerPointTel${addedDivs}">Puhelinnumero</label>
           <input type="tel" id="SerPointTel${addedDivs}" name="SerPointTel${addedDivs}" class="field">
 
-          <label for="SerPointEmail${addedDivs}">Sähköposti<span style="color: red !important;">*</span> </label>
+          <label class="required" for="SerPointEmail${addedDivs}">Sähköposti </label>
           <input type="email" id="SerPointEmail${addedDivs}" name="SerPointEmail${addedDivs}" class="field">
 
-          <label for="SerPointPost${addedDivs}">Postiosoite<span style="color: red !important;">*</span></label>
+          <label class="required" for="SerPointPost${addedDivs}">Postiosoite</label>
           <input type="text" id="SerPointPost${addedDivs}" name="SerPointPost${addedDivs}" class="field">
 
           <label for="SerPointInfo${addedDivs}">Linkki lisätietoihin</label>
@@ -100,10 +100,10 @@ function addSection(id) {
           <input type="url" id="SerPointTerms${addedDivs}" name="SerPointTerms${addedDivs}" class="field">
 
 
-          <label for="SerPointMuninci${addedDivs}">Kuntatieto <a href="#" target="_blank">(koodisto)</a><span style="color: red !important;">*</span></label>
+          <label class="required" for="SerPointMuninci${addedDivs}">Kuntatieto <a href="#" target="_blank">(koodisto)</a></label>
           <input type="text" id="SerPointMuninci${addedDivs}" name="SerPointMuninci${addedDivs}" class="field">
 
-          <label for="SerPointCountry${addedDivs}" class="dropdown">Maa<span style="color: red !important;">*</span></label>
+          <label class="required" for="SerPointCountry${addedDivs}" class="dropdown">Maa</label>
 
           <select id="SerPointCountry${addedDivs}" name="SerPointCountry${addedDivs}">
           </select>
@@ -146,10 +146,10 @@ function addSection(id) {
               <h2>Koordinoiva organisaatio (eri kuin kohdassa 2b)</h2>
           </legend>
 
-          <label for="CoOrgName_oth${addedDivs}">Organisaation nimi<span style="color: red !important;">*</span></label>
+          <label class="required" for="CoOrgName_oth${addedDivs}">Organisaation nimi</label>
           <input type="text" id="CoOrgName_oth${addedDivs}" name="CoOrgName_oth${addedDivs}" class="field">
 
-          <label for="CoOrgID_oth${addedDivs}">Y-tunnus<span style="color: red !important;">*</span></label>
+          <label class="required" for="CoOrgID_oth${addedDivs}">Y-tunnus</label>
           <input type="text" id="CoOrgID_oth${addedDivs}" name="CoOrgID_oth${addedDivs}" class="field" pattern="([0-9]{7} - [0-9]{1})" placeholder="1234567-8">
 
           <label for="CoOrgIsni_oth${addedDivs}">ISNI</label>
@@ -186,7 +186,7 @@ function addSection(id) {
           </legend>
 
 
-          <label for="SerPointName_add${addedDivs}">Palvelupisteen nimi<span style="color: red !important;">*</span></label>
+          <label class="required" for="SerPointName_add${addedDivs}">Palvelupisteen nimi</label>
           <p class="info"><a class="ohje">&#9432;</a> Yhteyspisteen tai palvelusta vastaavan henkilön nimi</p>
           <input type="text" id="SerPointName_add${addedDivs}" name="SerPointName_add${addedDivs}" class="field">
 
@@ -195,13 +195,13 @@ function addSection(id) {
           <p class="info"><a class="ohje">&#9432;</a> Tarvittaessa tarkempi kuvaus yhteystiedon roolista. Esimerkiksi onko kyse tutkimushenkilökunnasta, teknisestä tuesta, hallinnollisesta yhteyshenkilöstä jne.</p>
           <textarea id="SerPointDescr_add${addedDivs}" name="SerPointDescr_add${addedDivs}" class="field"></textarea>
 
-          <label for="SerPointTel_add${addedDivs}">Puhelinnumero<span style="color: red !important;">*</span></label>
+          <label class="required" for="SerPointTel_add${addedDivs}">Puhelinnumero</label>
           <input type="tel" id="SerPointTel_add${addedDivs}" name="SerPointTel_add${addedDivs}" class="field">
 
-          <label for="SerPointEmail_add${addedDivs}">Sähköposti<span style="color: red !important;">*</span> </label>
+          <label class="required" for="SerPointEmail_add${addedDivs}">Sähköposti </label>
           <input type="email" id="SerPointEmail_add${addedDivs}" name="SerPointEmail_add${addedDivs}" class="field">
 
-          <label for="SerPointPost_add${addedDivs}">Postiosoite<span style="color: red !important;">*</span></label>
+          <label class="required" for="SerPointPost_add${addedDivs}">Postiosoite</label>
           <input type="text" id="SerPointPost_add${addedDivs}" name="SerPointPost_add${addedDivs}" class="field">
 
           <label for="SerPointInfo_add${addedDivs}">Linkki lisätietoihin</label>
@@ -213,10 +213,10 @@ function addSection(id) {
           <input type="url" id="SerPointTerms_add${addedDivs}" name="SerPointTerms_add${addedDivs}" class="field">
 
 
-          <label for="SerPointMuninci_add${addedDivs}">Kuntatieto <a href="#" target="_blank">(koodisto)</a><span style="color: red !important;">*</span></label>
+          <label class="required" for="SerPointMuninci_add${addedDivs}">Kuntatieto <a href="#" target="_blank">(koodisto)</a></label>
           <input type="text" id="SerPointMuninci_add${addedDivs}" name="SerPointMuninci_add${addedDivs}" class="field">
 
-          <label for="SerPointCountry_add${addedDivs}" class="dropdown">Maa<span style="color: red !important;">*</span></label>
+          <label class="required" for="SerPointCountry_add${addedDivs}" class="dropdown">Maa</label>
 
           <select id="SerPointCountry_add${addedDivs}" name="SerPointCountry_add${addedDivs}">
           </select>
@@ -243,7 +243,7 @@ function addSection(id) {
                           
     <button class="cta-pal" value="yes" onclick="removeSection('newService${addedDivs}')" type="button" >Poista palvelu</button>
   </div>
-  
+
   </div>
   `;
   addedDivs++;

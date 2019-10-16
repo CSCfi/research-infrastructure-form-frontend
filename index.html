@@ -64,20 +64,20 @@
                         </legend>
 
                         <div class="third-tickets">
-                            <label for="infraNameFi">Infrastruktuurin nimi (FI)</label>
-                            <p class="info required"><a class="ohje">&#9432;</a> Täytä vähintään yksi (FI/SV/EN)</p>
+                            <label for="infraNameFi" class="required">Infrastruktuurin nimi (FI)</label>
+                            <p class="info"><a class="ohje">&#9432;</a> Täytä vähintään yksi (FI/SV/EN)</p>
                             <textarea id="infraNameFi" name="infraNameFi" class="field"></textarea>
                         </div>
 
                         <div class="third-tickets">
-                            <label for="infraNameSv">Infrastruktuurin nimi (SV)</label>
-                            <p class="info required"><a class="ohje">&#9432;</a> Täytä vähintään yksi (FI/SV/EN)</p>
+                            <label for="infraNameSv" class="required">Infrastruktuurin nimi (SV)</label>
+                            <p class="info"><a class="ohje">&#9432;</a> Täytä vähintään yksi (FI/SV/EN)</p>
                             <textarea id="infraNameSv" name="infraNameSv" class="field"></textarea>
                         </div>
 
                         <div class="third-tickets">
-                            <label for="infraNameEn">Infrastruktuurin nimi (EN)</label>
-                            <p class="info required"><a class="ohje">&#9432;</a> Täytä vähintään yksi (FI/SV/EN)</p>
+                            <label for="infraNameEn" class="required">Infrastruktuurin nimi (EN)</label>
+                            <p class="info"><a class="ohje">&#9432;</a> Täytä vähintään yksi (FI/SV/EN)</p>
                             <textarea id="infraNameEn" name="infraNameEn" class="field"></textarea>
                         </div>
 
@@ -142,8 +142,8 @@
                         </legend>
                         <p class="info infoXL"><a class="ohje">&#9432;</a> Tutkimusinfrastruktuurin yhteystiedot toimitetaan tässä. Yhteystiedot ovat palvelukohtaisia, mutta palveluilla voi olla tietenkin samat yhteystiedot. Palvelukohtaisia yhteistietoja tarvitaan esimerkiksi silloin, kun infrastruktuuri on hajautettu, sen palveluita tuottaa useampi kuin yksi organisaatio ja palveluiden käyttö organisaatioiden kautta erikseen. </p>
 
-                        <label for="infraConName">Palvelupisteen nimi</label>
-                        <p class="info required"><a class="ohje">&#9432;</a> Yhteyspisteen tai palvelusta vastaavan henkilön nimi</p>
+                        <label for="infraConName" class="required">Palvelupisteen nimi</label>
+                        <p class="info"><a class="ohje">&#9432;</a> Yhteyspisteen tai palvelusta vastaavan henkilön nimi</p>
                         <input type="text" id="infraConName" name="infraConName" class="field">
 
                         <label for="infraConDescr">Palvelupisteen kuvaus</label>
@@ -159,8 +159,8 @@
                         <label for="infraConPost" class="required">Postiosoite</label>
                         <input type="text" id="infraConPost" name="infraConPost" class="field">
 
-                        <label for="infraConInfo">Linkki lisätietoihin</label>
-                        <p class="info required"><a class="ohje">&#9432;</a> Esimerkiksi infrastruktuurin kotisivu jne.</p>
+                        <label for="infraConInfo" class="required">Linkki lisätietoihin</label>
+                        <p class="info"><a class="ohje">&#9432;</a> Esimerkiksi infrastruktuurin kotisivu jne.</p>
                         <input type="url" id="infraConInfo" name="infraConInfo" class="field">
 
 
@@ -169,13 +169,12 @@
                         <input type="url" id="infraConTerms" name="infraConTerms" class="field">
 
 
-                        <label for="infraConMuninc" class="required>Kuntatieto <a href="#" target="_blank">(koodisto)</a></label>
+                        <label for="infraConMuninc" class="required">Kuntatieto <a href="#" target="_blank">(koodisto)</a></label>
                         <input type="text" id="infraConMuninc" name="infraConMuninc" class="field">
 
-                        <label for="infraCountry" class="dropdown required">Maa
+                        <label for="infraCountry" class="dropdown required">Maa</label>
 
-                            <select id="infraCountry" name="infraCountry">
-                            </select></label>
+                        <select id="infraCountry" name="infraCountry"></select>
 
                         <label for="infraConLatitude">Leveysaste</label>
                         <p class="info"><a class="ohje">&#9432;</a> <strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</p>
@@ -243,13 +242,13 @@
                         <p class="info"><a class="ohje">&#9432;</a> Mikäli palvelulla on vakiintunut ja käytössä oleva lyhenne tai lyhenne, jota halutaan käytettäväksi.</p>
                         <input type="text" id="serAbbrev" name="serAbbrev" class="field">
 
-                        <label for="serType" class="dropdown required">Palvelun tyyppi
-                            <select id="serType" name="serType">
-                                <option selected value="base" disabled>Valitse</option>
-                                <option value="aineisto">Aineisto</option>
-                                <option value="laitteisto">Laitteisto</option>
-                                <option value="palvelu">Palvelu</option>
-                            </select></label>
+                        <label for="serType" class="dropdown required">Palvelun tyyppi</label>
+                        <select id="serType" name="serType">
+                            <option selected value="base" disabled>Valitse</option>
+                            <option value="aineisto">Aineisto</option>
+                            <option value="laitteisto">Laitteisto</option>
+                            <option value="palvelu">Palvelu</option>
+                        </select>
 
                         <!-- ------------------ option checkbox / Servive contact information ---------------- -->
 
@@ -419,9 +418,8 @@
 
                                 <label for="SerPointCountry_add" class="dropdown required">Maa</label>
 
-                                <select id="SerPointCountry_add" name="SerPointCountry_add">
-                                </select>
-
+                                <select id="SerPointCountry_add" name="SerPointCountry_add"></select>
+                                
                                 <label for="SerPointLatitude_add">Leveysaste</label>
                                 <p class="info"><a class="ohje">&#9432;</a> <strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</p>
                                 <input type="number" min="0" value="0" step=".01" id="SerPointLatitude_add" name="SerPointLatitude_add" class="field">
@@ -459,9 +457,12 @@
                             <h2>Lomakkeen lähetys</h2>
                         </legend>
 
-                        <label for="terms" class="required">Olen lukenut <a href="#" target="_blank">tietosuojaselosteen</a>.
+                        
+                        <label for="terms" class="required">
                             <input type="checkbox" id="terms" name="terms" required>
+                            Olen lukenut <a href="#" target="_blank">tietosuojaselosteen</a>.
                         </label>
+                        
 
 
                     </fieldset>
