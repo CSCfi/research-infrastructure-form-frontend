@@ -49,6 +49,10 @@ main {
   background-size: cover;
 }
 
+.logopic {
+  margin-bottom: -7px;
+}
+
 /* body and fieldset styles*/
 
 body {
