@@ -26,10 +26,10 @@
         <div class="content w80">
             <h1>Tutkimusinfrastruktuurien tietojen toimitus tutkimustietovarantoon</h1>
             <p class="subheading legend_border w80">Selite lomakkeesta, käyttötarkoituksesta, kenelle suunnattu jne. tiedot kirjoitetaan tähän.Selite lomakkeesta, käyttötarkoituksesta, kenelle suunnattu jne. tiedot kirjoitetaan tähän.Selite lomakkeesta, käyttötarkoituksesta, kenelle suunnattu jne. tiedot kirjoitetaan tähän.</p>
-        </div>
+        <!-- </div> -->
         <div style="background-color: #fff; width: 100%;">
 
-            <div class="content w60" ;>
+            <!-- <div class="content w60" ;> -->
 
                 <form action="#" method="post">
                    <fieldset class="white">
@@ -55,7 +55,7 @@
 
                     </fieldset>
 
-                    <!-- ------------------ 1 basic description for main infrstucture ------------------ !-->
+                    <!-- ------------------ 1 basic description for main infrstucture ------------------ -->
 
                     <fieldset class="light-grey">
                     
@@ -65,20 +65,20 @@
                         
                         <div class="third-tickets">
                             <label for="infraNameFi">Infrastruktuurin nimi (FI)</label>
-                            <p class="info"><a class="ohje">&#9432;</a> Täytä vähintään yksi (FI/SV/EN)</p>
-                            <input type="text" name="infraNameFi" id="infraNameFi" class="field">                      
+                            <p class="info"><a class="ohje">&#9432;</a> Täytä vähintään yksi (FI/SV/EN)<span style="color: red !important;">*</span></p>
+                            <textarea id="infraNameFi" name="infraNameFi" class="field"></textarea>                  
                         </div>
                         
                         <div class="third-tickets">
-                            <label for="infraNameSv">Infrastruktuurin nimi (SV) </label>
-                            <p class="info"><a class="ohje">&#9432;</a> Täytä vähintään yksi (FI/SV/EN)</p>
-                            <input type="text" name="infraNameSv" id="infraNameSv" class="field">
+                            <label for="infraNameSv">Infrastruktuurin nimi (SV)</label>
+                            <p class="info"><a class="ohje">&#9432;</a> Täytä vähintään yksi (FI/SV/EN)<span style="color: red !important;">*</span></p>
+                            <textarea id="infraNameSv" name="infraNameSv" class="field"></textarea> 
                         </div>
                         
                         <div class="third-tickets">    
                             <label for="infraNameEn">Infrastruktuurin nimi (EN)</label>
-                            <p class="info"><a class="ohje">&#9432;</a> Täytä vähintään yksi (FI/SV/EN)</p>
-                            <input type="text" name="infraNameEn" id="infraNameEn" class="field">                        
+                            <p class="info"><a class="ohje">&#9432;</a> Täytä vähintään yksi (FI/SV/EN)<span style="color: red !important;">*</span></p>
+                            <textarea id="infraNameEn" name="infraNameEn" class="field"></textarea>                         
                         </div>
                         
                         <label for="infraAbbrev">Infrastruktuurin vakiintunut lyhenne</label>
@@ -111,7 +111,7 @@
                         <textarea id="kuvausTie" name="infraDescrSci" id="infraDescrSci" class="field"></textarea>
 
 
-                        <label for="startYear"> Toiminnan aloitusvuosi<span style="color: red important!;">*</span></label>
+                        <label for="startYear"> Toiminnan aloitusvuosi<span style="color: red !important;">*</span></label>
                         <input type="number" id="startYear" name="startYear" class="field">
 
                         <label for="endYear"> Toiminnan lopetusvuosi</label>
@@ -142,7 +142,7 @@
                         </legend>
                         <p class="info infoXL"><a class="ohje">&#9432;</a> Tutkimusinfrastruktuurin yhteystiedot toimitetaan tässä. Yhteystiedot ovat palvelukohtaisia, mutta palveluilla voi olla tietenkin samat yhteystiedot. Palvelukohtaisia yhteistietoja tarvitaan esimerkiksi silloin, kun infrastruktuuri on hajautettu, sen palveluita tuottaa useampi kuin yksi organisaatio ja palveluiden käyttö organisaatioiden kautta erikseen. </p>
 
-                        <label for="infraConName">Palvelupisteen nimi<span style="color: red important!;">*</span></label>
+                        <label for="infraConName">Palvelupisteen nimi<span style="color: red !important;">*</span></label>
                         <p class="info"><a class="ohje">&#9432;</a> Yhteyspisteen tai palvelusta vastaavan henkilön nimi</p>
                         <input type="text" id="infraConName" name="infraConName" class="field">
 
@@ -150,13 +150,13 @@
                         <p class="info"><a class="ohje">&#9432;</a> Tarvittaessa tarkempi kuvaus yhteystiedon roolista. Esimerkiksi onko kyse tutkimushenkilökunnasta, teknisestä tuesta, hallinnollisesta yhteyshenkilöstä jne.</p>
                         <textarea id="infraConDescr" name="infraConDescr" class="field"></textarea>
 
-                        <label for="infraConTel">Puhelinnumero<span style="color: red important!;">*</span></label>
+                        <label for="infraConTel">Puhelinnumero<span style="color: red !important;">*</span></label>
                         <input type="tel" id="infraConTel" name="infraConTel" class="field">
 
-                        <label for="infraConTel">Sähköposti<span style="color: red important!;">*</span> </label>
+                        <label for="infraConTel">Sähköposti<span style="color: red !important;">*</span> </label>
                         <input type="email" id="infraConTel" name="infraConTel" class="field">
 
-                        <label for="infraConPost">Postiosoite<span style="color: red important!;">*</span></label>
+                        <label for="infraConPost">Postiosoite<span style="color: red !important;">*</span></label>
                         <input type="text" id="infraConPost" name="infraConPost" class="field">
 
                         <label for="infraConInfo">Linkki lisätietoihin</label>
@@ -169,10 +169,10 @@
                         <input type="url" id="infraConTerms" name="infraConTerms" class="field">
 
 
-                        <label for="infraConMuninc">Kuntatieto <a href="#" target="_blank">(koodisto)</a><span style="color: red important!;">*</span></label>
+                        <label for="infraConMuninc">Kuntatieto <a href="#" target="_blank">(koodisto)</a><span style="color: red !important;">*</span></label>
                         <input type="text" id="infraConMuninc" name="infraConMuninc" class="field">
 
-                        <label for="infraCountry" class="dropdown">Maa<span style="color: red important!;">*</span>
+                        <label for="infraCountry" class="dropdown">Maa<span style="color: red !important;">*</span>
 
                         <select id="infraCountry" name="infraCountry">
                         </select></label>
@@ -200,10 +200,10 @@
                                 <h2>2b. Koordinoiva organisaatio</h2>
                             </legend>
 
-                            <label for="CoOrgName">Organisaation nimi<span style="color: red important!;">*</span></label>
+                            <label for="CoOrgName">Organisaation nimi<span style="color: red !important;">*</span></label>
                             <input type="text" id="CoOrgName" name="CoOrgName" class="field">
 
-                            <label for="CoOrgID">Y-tunnus<span style="color: red important!;">*</span></label>
+                            <label for="CoOrgID">Y-tunnus<span style="color: red !important;">*</span></label>
                             <input type="text" id="CoOrgID" name="CoOrgID" class="field" pattern="([0-9]{7} - [0-9]{1})" placeholder="1234567-8">
 
                             <label for="CoOrgIsni">ISNI</label>
@@ -227,7 +227,7 @@
                                 <h3>3a. Palvelun tiedot</h3>
                             </legend>
 
-                            <label for="serName">Palvelun nimi<span style="color: red important!;">*</span></label>
+                            <label for="serName">Palvelun nimi<span style="color: red !important;">*</span></label>
                             <input type="text" id="serName" name="serName" class="field require-if-active"> <!-- https://css-tricks.com/exposing-form-fields-radio-button-css/ !-->
 
                             <label for="serDescr">Palvelun kuvaus </label>
@@ -243,7 +243,7 @@
                             <p class="info"><a class="ohje">&#9432;</a> Mikäli palvelulla on vakiintunut ja käytössä oleva lyhenne tai lyhenne, jota halutaan käytettäväksi.</p>
                             <input type="text" id="serAbbrev" name="serAbbrev" class="field">
 
-                            <label for="serType" class="dropdown">Palvelun tyyppi<span style="color: red important!;">*</span>
+                            <label for="serType" class="dropdown">Palvelun tyyppi<span style="color: red !important;">*</span>
                             <select id="serType" name="serType">
                                 <option selected value="base" disabled>Valitse</option>
                                 <option value="aineisto">Aineisto</option>
@@ -276,7 +276,7 @@
                                         <h3>Palvelun yhteystiedot (eri kuin kohdassa 2a ilmoitetut)</h3>
                                     </legend>
 
-                                    <label for="SerPointName">Palvelupisteen nimi<span style="color: red important!;">*</span></label>
+                                    <label for="SerPointName">Palvelupisteen nimi<span style="color: red !important;">*</span></label>
                                     <p class="info"><a class="ohje">&#9432;</a> Yhteyspisteen tai palvelusta vastaavan henkilön nimi</p>
                                     <input type="text" id="SerPointName" name="SerPointName" class="field">
 
@@ -285,13 +285,13 @@
                                     <p class="info"><a class="ohje">&#9432;</a> Tarvittaessa tarkempi kuvaus yhteystiedon roolista. Esimerkiksi onko kyse tutkimushenkilökunnasta, teknisestä tuesta, hallinnollisesta yhteyshenkilöstä jne.</p>
                                     <textarea id="SerPointDescr" name="SerPointDescr" class="field"></textarea>
 
-                                    <label for="SerPointTel">Puhelinnumero<span style="color: red important!;">*</span></label>
+                                    <label for="SerPointTel">Puhelinnumero<span style="color: red !important;">*</span></label>
                                     <input type="tel" id="SerPointTel" name="SerPointTel" class="field">
 
-                                    <label for="SerPointEmail">Sähköposti<span style="color: red important!;">*</span> </label>
+                                    <label for="SerPointEmail">Sähköposti<span style="color: red !important;">*</span> </label>
                                     <input type="email" id="SerPointEmail" name="SerPointEmail" class="field">
 
-                                    <label for="SerPointPost">Postiosoite<span style="color: red important!;">*</span></label>
+                                    <label for="SerPointPost">Postiosoite<span style="color: red !important;">*</span></label>
                                     <input type="text" id="SerPointPost" name="SerPointPost" class="field">
 
                                     <label for="SerPointInfo">Linkki lisätietoihin</label>
@@ -303,10 +303,10 @@
                                     <input type="url" id="SerPointTerms" name="SerPointTerms" class="field">
 
 
-                                    <label for="SerPointMuninci">Kuntatieto <a href="#" target="_blank">(koodisto)</a><span style="color: red important!;">*</span></label>
+                                    <label for="SerPointMuninci">Kuntatieto <a href="#" target="_blank">(koodisto)</a><span style="color: red !important;">*</span></label>
                                     <input type="text" id="SerPointMuninci" name="SerPointMuninci" class="field">
 
-                                    <label for="SerPointCountry" class="dropdown">Maa<span style="color: red important!;">*</span></label>
+                                    <label for="SerPointCountry" class="dropdown">Maa<span style="color: red !important;">*</span></label>
 
                                     <select id="SerPointCountry" name="SerPointCountry">
                                     </select>
@@ -349,10 +349,10 @@
                                         <h2>Koordinoiva organisaatio (eri kuin kohdassa 2b)</h2>
                                     </legend>
 
-                                    <label for="CoOrgName_oth">Organisaation nimi<span style="color: red important!;">*</span></label>
+                                    <label for="CoOrgName_oth">Organisaation nimi<span style="color: red !important;">*</span></label>
                                     <input type="text" id="CoOrgName_oth" name="CoOrgName_oth" class="field">
 
-                                    <label for="CoOrgID_oth">Y-tunnus<span style="color: red important!;">*</span></label>
+                                    <label for="CoOrgID_oth">Y-tunnus<span style="color: red !important;">*</span></label>
                                     <input type="text" id="CoOrgID_oth" name="CoOrgID_oth" class="field" pattern="([0-9]{7} - [0-9]{1})" placeholder="1234567-8">
 
                                     <label for="CoOrgIsni_oth">ISNI</label>
@@ -389,7 +389,7 @@
                                     </legend>
 
 
-                                    <label for="SerPointName_add">Palvelupisteen nimi<span style="color: red important!;">*</span></label>
+                                    <label for="SerPointName_add">Palvelupisteen nimi<span style="color: red !important;">*</span></label>
                                     <p class="info"><a class="ohje">&#9432;</a> Yhteyspisteen tai palvelusta vastaavan henkilön nimi</p>
                                     <input type="text" id="SerPointName_add" name="SerPointName_add" class="field">
 
@@ -398,13 +398,13 @@
                                     <p class="info"><a class="ohje">&#9432;</a> Tarvittaessa tarkempi kuvaus yhteystiedon roolista. Esimerkiksi onko kyse tutkimushenkilökunnasta, teknisestä tuesta, hallinnollisesta yhteyshenkilöstä jne.</p>
                                     <textarea id="SerPointDescr_add" name="SerPointDescr_add" class="field"></textarea>
 
-                                    <label for="SerPointTel_add">Puhelinnumero<span style="color: red important!;">*</span></label>
+                                    <label for="SerPointTel_add">Puhelinnumero<span style="color: red !important;">*</span></label>
                                     <input type="tel" id="SerPointTel_add" name="SerPointTel_add" class="field">
 
-                                    <label for="SerPointEmail_add">Sähköposti<span style="color: red important!;">*</span> </label>
+                                    <label for="SerPointEmail_add">Sähköposti<span style="color: red !important;">*</span> </label>
                                     <input type="email" id="SerPointEmail_add" name="SerPointEmail_add" class="field">
 
-                                    <label for="SerPointPost_add">Postiosoite<span style="color: red important!;">*</span></label>
+                                    <label for="SerPointPost_add">Postiosoite<span style="color: red !important;">*</span></label>
                                     <input type="text" id="SerPointPost_add" name="SerPointPost_add" class="field">
 
                                     <label for="SerPointInfo_add">Linkki lisätietoihin</label>
@@ -416,10 +416,10 @@
                                     <input type="url" id="SerPointTerms_add" name="SerPointTerms_add" class="field">
 
 
-                                    <label for="SerPointMuninci_add">Kuntatieto <a href="#" target="_blank">(koodisto)</a><span style="color: red important!;">*</span></label>
+                                    <label for="SerPointMuninci_add">Kuntatieto <a href="#" target="_blank">(koodisto)</a><span style="color: red !important;">*</span></label>
                                     <input type="text" id="SerPointMuninci_add" name="SerPointMuninci_add" class="field">
 
-                                    <label for="SerPointCountry_add" class="dropdown">Maa<span style="color: red important!;">*</span></label>
+                                    <label for="SerPointCountry_add" class="dropdown">Maa<span style="color: red !important;">*</span></label>
 
                                     <select id="SerPointCountry_add" name="SerPointCountry_add">
                                     </select>
@@ -446,10 +446,12 @@
 
 
                         <button class="cta-pal" value="yes" onclick="addSection('moreServices')" type="button" >Lisää uusi palvelu</button>
+                        <div id="moreServices"></div>
                     
                     <!--  id="2ndService" name="2ndService" -->
 
-                        <div id="moreServices"></div>
+                        <button class="cta-pal" value="yes" onclick="removeSection('delServices')" type="button" >Poista palvelu</button>
+                        <div id="delServices"></div>
 
                        <!--   <div id="hidden_fields2ndSer" class="hide2ndSer"></div> -->
 
@@ -481,7 +483,7 @@
                     <h2>Lomakkeen lähetys</h2>
                 </legend>
 
-                <label for="terms">Olen lukenut <a href="#" target="_blank">tietosuojaselosteen</a><span style="color: red important!;">*</span>.
+                <label for="terms">Olen lukenut <a href="#" target="_blank">tietosuojaselosteen</a><span style="color: red !important;">*</span>.
                     <input type="checkbox" id="terms" name="terms">
                 </label>
 
@@ -495,15 +497,15 @@
 
 
 
-        </div> <!-- content 60 !-->
+        <!-- </div>  content 60 !-->
         </div> <!-- background white !-->
 
         <!-- footer !-->
 
         <footer>
             <div class="content w100">
-                <p><a href="www.research.fi" target="_blank">www.research.fi</a> <br>
-                &#9993; <a href="mailto:tutkimustietovaranto@csc.fi">tutkimustieotvaranto@csc.fi</a></p>
+                <p><a href="https://research.fi/" target="_blank">www.research.fi</a> <br>
+                &#9993; <a href="mailto:tutkimustietovaranto@csc.fi">tutkimustietovaranto@csc.fi</a></p>
             </div> <!-- content 100 -->
         </footer>
 
