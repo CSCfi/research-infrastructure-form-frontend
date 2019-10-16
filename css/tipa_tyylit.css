@@ -233,6 +233,11 @@ legend {
   width: auto;
 }
 
+.required::after {
+  content: '*';
+  color: red;
+}
+
 /* info style large */
 
 .infoXL {
@@ -275,7 +280,8 @@ input:hover.cta {
   padding: 0.5rem;
   display: inline-block;
   text-align: center;
-  max-width: 150px;
+  width: 180px;
+  height: 60px;
   margin: 2.5rem auto;
   border-radius: 30px;
   text-transform: uppercase;
@@ -310,9 +316,13 @@ footer {
 Media query
 */
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 472px) {
   h1 {
     font-size: 1.5rem;
+  }
+
+  .cta-pal {
+    margin: 15px 0;
   }
 }
 
