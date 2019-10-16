@@ -105,7 +105,7 @@ function addSection(id) {
 
             <label for="SerPointCountry" class="dropdown">Maa<span style="color: red important!;">*</span></label>
 
-            <select id="SerPointCountry" name="SerPointCountry">
+            <select id="SerPointCountry${addedDivs}" name="SerPointCountry">
             </select>
 
             <label for="SerPointLatitude">Leveysaste</label>
@@ -217,7 +217,7 @@ function addSection(id) {
 
             <label for="SerPointCountry_add" class="dropdown">Maa<span style="color: red important!;">*</span></label>
 
-            <select id="SerPointCountry_add" name="SerPointCountry_add">
+            <select id="SerPointCountry_add${addedDivs}" name="SerPointCountry_add">
             </select>
 
             <label for="SerPointLatitude_add">Leveysaste</label>
@@ -238,18 +238,26 @@ function addSection(id) {
   const newDiv = document.createElement("div");
   newDiv.innerHTML = markup;
   document.getElementById(id).append(newDiv);
+
+  countrySelectIds.slice(1).map(s => s + (addedDivs-1)).forEach(id => {
+    populateCountryList(id);
+  })
+}
+
+function populateCountryList(id) {
+  // Get the element reference
+  let select = document.getElementById(id);
+  // Add each country option to the select list
+  countryList.forEach(elem => {
+    select.options.add(new Option(elem.text, elem.code));
+  });
 }
 
 // Wait for DOM to load, then populate selects
 window.addEventListener("DOMContentLoaded", function() {
   // Go through each select list
   countrySelectIds.forEach(id => {
-    // Get the current select element
-    let select = document.getElementById(id);
-    // Add each country option to the select list
-    countryList.forEach(elem => {
-      select.options.add(new Option(elem.text, elem.code));
-    });
+    populateCountryList(id);
   });
 }, false)
 
