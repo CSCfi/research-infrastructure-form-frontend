@@ -123,14 +123,11 @@ input {
   margin-bottom: 1.5em;
 }
 
-input:focus {
-  width: 100%;
-  margin: 5px 0;
+input:not([type=submit]):not([type=checkbox]):focus {
   box-sizing: border-box;
   border: 2px solid blue;
   border-radius: 4px;
   padding-top: -1em;
-  margin-bottom: 1.5em;
 }
 
 input[type=checkbox] {
@@ -145,18 +142,13 @@ input[type=checkbox] {
   box-sizing: border-box;
   border: 1px solid #555;
   border-radius: 4px;
-  padding-top: -1em;
-  margin-bottom: 1.5em;
 }
 
 textarea:focus {
-  width: 100%;
-  margin: 5px 0;
   box-sizing: border-box;
   border: 2px solid blue;
   border-radius: 4px;
   padding-top: -1em;
-  margin-bottom: 1.5em;
 }
 
 select {
