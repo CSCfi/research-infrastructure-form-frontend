@@ -25,8 +25,8 @@ function addSection(id) {
       </legend>
 
       <label for="serName${addedDivs}">Palvelun nimi<span style="color: red !important;">*</span></label>
-      <input type="text" id="serName${addedDivs}" name="serName${addedDivs}" class="field require-if-active"> <!-- https://css-tricks.com/exposing-form-fields-radio-button-css/ !-->
-
+      <input type="text" id="serName${addedDivs}" name="serName${addedDivs}"> 
+      
       <label for="serDescr${addedDivs}">Palvelun kuvaus </label>
       <p class="info"><a class="ohje">&#9432;</a> Palvelun sisällön ja toiminnan yleinen kuvaus.</p>
       <input type="text" id="serDescr${addedDivs}" name="serDescr${addedDivs}" class="field">
