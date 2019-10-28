@@ -74,7 +74,7 @@ h1 {
 }
 
 h2 {
-  color: #32842F;
+  color: #FFF;
   text-align: left;
   font-size: 1em;
   margin-bottom: 0;
@@ -82,11 +82,39 @@ h2 {
 }
 
 h3 {
-  color: darkslategray;
+  color: #FFF;
   text-align: left;
   font-size: 0.8em;
   margin-bottom: 0;
 }
+
+/*form-header bar styles: main header and sub header within section 3*/
+
+.form-header{
+  box-sizing: border-box;
+  display: block;
+  float: none;
+  line-height: 26.4px;
+  position: static;
+  z-index: auto;
+  background-color: #22225A;
+  color: #FFF;
+  padding: 6px 12px; 
+}
+
+
+
+.sub-header{
+  box-sizing: border-box;
+  display: block;
+  float: none;
+  line-height: 20px;
+  position: static;
+  z-index: auto;
+  background-color:  #474794;
+  padding: 5px 10px; 
+}
+
 
 /*Sheet info subheading*/
 
@@ -251,7 +279,7 @@ legend {
 /* Send form */
 
 .cta {
-  background-color: #3e3fa8;
+  background-color: rgb(43, 43, 126);
   color: #ffffff;
   padding: 1rem;
   display: block;
@@ -264,28 +292,48 @@ legend {
 }
 
 input:hover.cta {
-  background-color: #22225A;
+  background-color: rgb(17, 17, 47);
 }
 
-/* Add new service */
+/* Buttons add new service / remove added service */
 
 .cta-pal {
-  background-color: #FFF;
-  border: 2px solid #32842F;
-  color: #32842F;
+  background-color: #32842F;
+  border: none;
+  color: #FFF;
   padding: 0.5rem;
   display: inline-block;
   text-align: center;
   width: 180px;
-  height: 60px;
+  min-height: 1px;
   margin: 2.5rem auto;
   border-radius: 30px;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 200;
+  position: relative;
 }
 
 button:hover.cta-pal {
-  background-color: lavender;
+  background-color: rgb(43, 88, 42);
+}
+
+.cta-del {
+  background-color: rgb(167, 6, 6);
+  border: none;
+  color: #FFF;
+  padding: 0.5rem;
+  display: inline-block;
+  text-align: center;
+  width: 180px;
+  min-height: 1px;
+  margin: 2.5rem auto;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+button:hover.cta-del {
+  background-color: rgb(117, 5, 5);
 }
 
 /* -------------- hidden field specs -----------*/

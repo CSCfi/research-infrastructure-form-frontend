@@ -241,7 +241,7 @@ function addSection(id) {
   <div>
     <button class="cta-pal" value="yes" onclick="addSection('moreServices')" type="button" >Lisää uusi palvelu</button>
                           
-    <button class="cta-pal" value="yes" onclick="removeSection('newService${addedDivs}')" type="button" >Poista palvelu</button>
+    <button class="cta-del" value="yes" onclick="removeSection('newService${addedDivs}')" type="button" >Poista palvelu</button>
   </div>
 
   </div>

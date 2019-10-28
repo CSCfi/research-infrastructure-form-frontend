@@ -34,19 +34,20 @@
                 <form action="#" method="post">
                     <fieldset class="white">
                         <legend>
-                            <h2>Ovatko tutkimusinfrastruktuurin tiedot jo tutkimustietovarannossa?</h2>
+                            <h2 class="form-header">Ovatko tutkimusinfrastruktuurin tiedot jo tutkimustietovarannossa?</h2>
                         </legend>
 
                         <label for="TTV_yes">
                             <input type="checkbox" id="TTV_yes" name="TTV_yes" value="yes" onclick="toggleElement('hidden_fields1', this.checked)" />
-                            Tutkimusinfrastruktuurin tiedot ovat tutkimustietovarannossa?
+                            Kyllä, tutkimusinfrastruktuurin tiedot ovat tutkimustietovarannossa
                         </label>
+                       
 
                         <div id="hidden_fields1" class="hidden">
                             <fieldset id=TTVcode>
 
 
-                                <label for="ttv_id">Jos kyllä, kerro tutkimusinfrastruktuurin tunniste tässä</label>
+                                <label for="ttv_id">Tutkimusinfrastruktuurin tunniste:</label>
                                 <p class="info"><a class="ohje">&#9432;</a> Tarkista tunniste <a href="www.research.fi" target="_blank">portaalista</a>.</p>
                                 <input type="text" class="field" name="ttv_id" id="ttv_id">
 
@@ -60,7 +61,7 @@
                     <fieldset class="light-grey">
 
                         <legend>
-                            <h2>1. Tutkimusinfrastruktuurin kuvailutiedot</h2>
+                            <h2 class="form-header">1. Tutkimusinfrastruktuurin kuvailutiedot</h2>
                         </legend>
 
                         <div class="third-tickets">
@@ -138,7 +139,7 @@
 
                     <fieldset class="white">
                         <legend>
-                            <h2>2a. Tutkimusinfrastruktuurin yhteystiedot</h2>
+                            <h2 class="form-header">2a. Tutkimusinfrastruktuurin yhteystiedot</h2>
                         </legend>
                         <p class="info infoXL"><a class="ohje">&#9432;</a> Tutkimusinfrastruktuurin yhteystiedot toimitetaan tässä. Yhteystiedot ovat palvelukohtaisia, mutta palveluilla voi olla tietenkin samat yhteystiedot. Palvelukohtaisia yhteistietoja tarvitaan esimerkiksi silloin, kun infrastruktuuri on hajautettu, sen palveluita tuottaa useampi kuin yksi organisaatio ja palveluiden käyttö organisaatioiden kautta erikseen. </p>
 
@@ -196,7 +197,7 @@
 
                     <fieldset class="light-grey">
                         <legend>
-                            <h2>2b. Koordinoiva organisaatio</h2>
+                            <h2 class="form-header">2b. Koordinoiva organisaatio</h2>
                         </legend>
 
                         <label for="CoOrgName" class="required">Organisaation nimi</label>
@@ -217,13 +218,13 @@
 
                     <fieldset class="white">
                         <legend>
-                            <h2>3. Tutkimusinfrastruktuurin palvelu</h2>
+                            <h2 class="form-header">3. Tutkimusinfrastruktuurin palvelu</h2>
                         </legend>
 
                         <!-- --------------- 3a service information---------------- -->
 
                         <legend>
-                            <h3>3a. Palvelun tiedot</h3>
+                            <h3 class="sub-header">3a. Palvelun tiedot</h3>
                         </legend>
 
                         <label for="serName" class="required">Palvelun nimi</label>
@@ -254,7 +255,7 @@
 
                         <fieldset>
                             <legend>
-                                <h3>3b. Palvelun yhteystiedot</h3>
+                                <h3 class="sub-header">3b. Palvelun yhteystiedot</h3>
                             </legend>
 
                             <label for="SerPointSame">
@@ -270,7 +271,7 @@
                             <fieldset id="SerPointOther">
 
                                 <legend>
-                                    <h3>Palvelun yhteystiedot (eri kuin kohdassa 2a ilmoitetut)</h3>
+                                    <h3 class="sub-header">Palvelun yhteystiedot (eri kuin kohdassa 2a ilmoitetut)</h3>
                                 </legend>
 
                                 <label for="SerPointName" class="required">Palvelupisteen nimi</label>
@@ -325,7 +326,7 @@
 
                         <fieldset>
                             <legend>
-                                <h3>3c. Koordinoiva organisaatio</h3>
+                                <h3 class="sub-header">3c. Koordinoiva organisaatio</h3>
                             </legend>
 
                             <label for="SerCoOrg">
@@ -343,7 +344,7 @@
 
 
                                 <legend>
-                                    <h2>Koordinoiva organisaatio (eri kuin kohdassa 2b)</h2>
+                                    <h2 class="form-header">Koordinoiva organisaatio (eri kuin kohdassa 2b)</h2>
                                 </legend>
 
                                 <label for="CoOrgName_oth" class="required">Organisaation nimi</label>
@@ -365,7 +366,7 @@
 
                         <fieldset>
                             <legend>
-                                <h3>3d. Palvelun muut palvelupisteet</h3>
+                                <h3 class="sub-header">3d. Palvelun muut palvelupisteet</h3>
                             </legend>
 
                             <label for="SerPointOther_add">
@@ -382,7 +383,7 @@
 
 
                                 <legend>
-                                    <h3>Saman palvelun muut palvelupisteet</h3>
+                                    <h3 class="sub-header">Saman palvelun muut palvelupisteet</h3>
                                 </legend>
 
 
@@ -444,7 +445,7 @@
                     <button class="cta-pal" value="yes" onclick="addSection('moreServices')" type="button">Lisää uusi palvelu</button>
                     <div id="moreServices"></div>
 
-                    <h2> <label for="end_notes">Lisätietoja tai tarkennuksia infrastrukruurin tietoihin.</label></h2>
+                    <h2 class="form-header"> <label for="end_notes">Lisätietoja tai tarkennuksia infrastrukruurin tietoihin.</label></h2>
                     <p class="info infoXL"><a class="ohje">&#9432;</a> Tähän joku teksti kuvailemaan mitä tässä voi ilmoittaa </p>
 
                     <textarea id="end_notes" name="end_notes" class="field"></textarea>
