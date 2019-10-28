@@ -9,8 +9,9 @@
     <meta name="viewport" content="width=device-width">
     <title>Tutkimusinfrastruktuurien tietojen toimitus tutkimustietovarantoon</title>
     <meta name="Tutkimusinfrastruktuurien tietojen toimitus tutkimustietovarantoon" content="Lomake jolla voidaan toimittaa tutkimusorganisaation tutkimusinfrastruktuurin tiedot kansalliseen tutkimustietovarantoon.">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" ref="https://fonts.googleapis.com/css?family=Roboto:400,700" >
     <link rel="stylesheet" href="css/tipa_tyylit.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="countries.js"></script>
     <script src="tipa.js"></script>
 </head>
@@ -30,12 +31,14 @@
             <div style="background-color: #fff; width: 100%;">
 
                 <!-- <div class="content w60" ;> -->
-
+                
                 <form action="#" method="post">
                     <fieldset class="white">
                         <legend>
                             <h2 class="form-header">Ovatko tutkimusinfrastruktuurin tiedot jo tutkimustietovarannossa?</h2>
                         </legend>
+
+
 
                         <label for="TTV_yes">
                             <input type="checkbox" id="TTV_yes" name="TTV_yes" value="yes" onclick="toggleElement('hidden_fields1', this.checked)" />
@@ -48,7 +51,7 @@
 
 
                                 <label for="ttv_id">Tutkimusinfrastruktuurin tunniste:</label>
-                                <p class="info"><a class="ohje">&#9432;</a> Tarkista tunniste <a href="www.research.fi" target="_blank">portaalista</a>.</p>
+                                <!--<p class="info"><a class="ohje">&#9432;</a>--> <p><i class="fa fa-info-circle"></i>Tarkista tunniste <a href="www.research.fi" target="_blank">portaalista</a>.</p>
                                 <input type="text" class="field" name="ttv_id" id="ttv_id">
 
                             </fieldset>
