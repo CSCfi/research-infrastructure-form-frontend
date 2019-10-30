@@ -50,8 +50,7 @@
                             <fieldset id=TTVcode>
 
 
-                                <label for="ttv_id">Tutkimusinfrastruktuurin tunniste:</label>
-                                <!--<p class="info"><a class="ohje">&#9432;</a>--> <p><i class="fa fa-info-circle"></i>Tarkista tunniste <a href="www.research.fi" target="_blank">portaalista</a>.</p>
+                                <label for="ttv_id">Tutkimusinfrastruktuurin tunniste (tarkista tunniste <a href="www.research.fi" target="_blank">portaalista</a>):</label>
                                 <input type="text" class="field" name="ttv_id" id="ttv_id">
 
                             </fieldset>
@@ -67,51 +66,52 @@
                             <h2 class="form-header">1. Tutkimusinfrastruktuurin kuvailutiedot</h2>
                         </legend>
 
-                        <div class="third-tickets">
-                            <label for="infraNameFi" class="required">Infrastruktuurin nimi (FI)</label>
-                            <p class="info"><a class="ohje">&#9432;</a> Täytä vähintään yksi (FI/SV/EN)</p>
+                        
+                            <label for="infraNameFi" class="required">Infrastruktuurin nimi (FI)
+                            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="
+                                tooltiptext">Täytä vähintään yksi (FI/SV/EN)</span></div></label>
                             <textarea id="infraNameFi" name="infraNameFi" class="field"></textarea>
-                        </div>
+                        
 
-                        <div class="third-tickets">
+                        
                             <label for="infraNameSv" class="required">Infrastruktuurin nimi (SV)</label>
-                            <p class="info"><a class="ohje">&#9432;</a> Täytä vähintään yksi (FI/SV/EN)</p>
+                            <p class="info"><i class="fa fa-info-circle"></i> Täytä vähintään yksi (FI/SV/EN)</p>
                             <textarea id="infraNameSv" name="infraNameSv" class="field"></textarea>
-                        </div>
+                       
 
-                        <div class="third-tickets">
+                        
                             <label for="infraNameEn" class="required">Infrastruktuurin nimi (EN)</label>
-                            <p class="info"><a class="ohje">&#9432;</a> Täytä vähintään yksi (FI/SV/EN)</p>
+                            <p class="info"><i class="fa fa-info-circle"></i>Täytä vähintään yksi (FI/SV/EN)</p>
                             <textarea id="infraNameEn" name="infraNameEn" class="field"></textarea>
-                        </div>
+                        
 
                         <label for="infraAbbrev">Infrastruktuurin vakiintunut lyhenne</label>
-                        <p class="info"><a class="ohje">&#9432;</a> Jos infralla on vakiintunut ja käytössä oleva lyhenne tai lyhenne, jota halutaan käytettäväksi, sen voi toimittaa tässä. Esimerkiksi CERN, OtaNano, ESRF, jne.</p>
+                        <p class="info"><i class="fa fa-info-circle"></i> Jos infralla on vakiintunut ja käytössä oleva lyhenne tai lyhenne, jota halutaan käytettäväksi, sen voi toimittaa tässä. Esimerkiksi CERN, OtaNano, ESRF, jne.</p>
                         <input type="text" name="infraAbbrev" id="infraAbbrev" class="field">
 
                         <div class="third-tickets">
                             <label for="infraDescrFi">Infrastruktuurin kuvaus (FI)</label>
-                            <p class="info"><a class="ohje">&#9432;</a> Täytä vähintään yksi (FI/SV/EN).
+                            <p class="info"><i class="fa fa-info-circle"></i> Täytä vähintään yksi (FI/SV/EN).
                                 Yleistajuinen kuvaus tutkimusinfrastruktuurista, sen käyttötarkoituksista, tavoitteista jne.</p>
                             <textarea id="infraDescrFi" name="infraDescrFi" class="field"></textarea>
                         </div>
 
                         <div class="third-tickets">
                             <label for="infraDescrSv">Infrastruktuurin kuvaus (SV)</label>
-                            <p class="info"><a class="ohje">&#9432;</a> Täytä vähintään yksi (FI/SV/EN).
+                            <p class="info"><i class="fa fa-info-circle"></i> Täytä vähintään yksi (FI/SV/EN).
                                 Yleistajuinen kuvaus tutkimusinfrastruktuurista, sen käyttötarkoituksista, tavoitteista jne.</p>
                             <textarea id="infraDescrSv" name="infraDescrSv" class="field"></textarea>
                         </div>
 
                         <div class="third-tickets">
                             <label for="infraDescrEn">Infrastruktuurin kuvaus (EN)</label>
-                            <p class="info"><a class="ohje">&#9432;</a> Täytä vähintään yksi (FI/SV/EN).
+                            <p class="info"><i class="fa fa-info-circle"></i> Täytä vähintään yksi (FI/SV/EN).
                                 Yleistajuinen kuvaus tutkimusinfrastruktuurista, sen käyttötarkoituksista, tavoitteista jne.</p>
                             <textarea id="infraDescrEn" name="infraDescrEn" class="field"></textarea>
                         </div>
 
                         <label for="infraDescrSci">Tieteellinen kuvaus</label>
-                        <p class="info"><a class="ohje">&#9432;</a> Tarvittaessa tarkempi kuvaus tutkimusinfrastruktuurin edustaman tieteenalan tai tieteenalojen mukaisesti. Kuvaus, jonka avulla tutkija voi päätellä onko tutkimusinfrastruktuuri käytettävissä hänen tarpeisiinsa.</p>
+                        <p class="info"><i class="fa fa-info-circle"></i> Tarvittaessa tarkempi kuvaus tutkimusinfrastruktuurin edustaman tieteenalan tai tieteenalojen mukaisesti. Kuvaus, jonka avulla tutkija voi päätellä onko tutkimusinfrastruktuuri käytettävissä hänen tarpeisiinsa.</p>
                         <textarea id="kuvausTie" name="infraDescrSci" id="infraDescrSci" class="field"></textarea>
 
 
@@ -123,7 +123,7 @@
 
 
                         <label for="infraReplace">Infrastruktuurin tunniste, jonka infrastruktuuri korvaa</label>
-                        <p class="info"><a class="ohje">&#9432;</a> Uusi infrastruktuuri on aiemman infran seuraaja. Se korvaa aiemman toiminnan.</p>
+                        <p class="info"><i class="fa fa-info-circle"></i> Uusi infrastruktuuri on aiemman infran seuraaja. Se korvaa aiemman toiminnan.</p>
                         <input type="text" name="infraReplace" id="infraReplace" class="field">
 
 
@@ -448,8 +448,8 @@
                     <button class="cta-pal" value="yes" onclick="addSection('moreServices')" type="button">Lisää uusi palvelu</button>
                     <div id="moreServices"></div>
 
-                    <h2 class="form-header"> <label for="end_notes">Lisätietoja tai tarkennuksia infrastrukruurin tietoihin.</label></h2>
-                    <p class="info infoXL"><a class="ohje">&#9432;</a> Tähän joku teksti kuvailemaan mitä tässä voi ilmoittaa </p>
+                    <h2 class="form-header"> <label for="end_notes">Lisätietoja tai tarkennuksia infrastrukruurin tietoihin</label></h2>
+                    
 
                     <textarea id="end_notes" name="end_notes" class="field"></textarea>
 

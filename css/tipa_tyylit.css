@@ -77,7 +77,7 @@ h2 {
   color: #FFF;
   text-align: left;
   font-size: 1em;
-  margin-bottom: 0;
+  margin-bottom: 1em;
   margin-top: 5px;
 }
 
@@ -144,19 +144,24 @@ h3 {
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black;
 }
 
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
-  background-color: black;
-  color: #fff;
+  background-color: #fff;
+  color: rgb(32, 31, 31);
   text-align: center;
-  border-radius: 6px;
+  border-radius: 4px;
+  border-color: #859db1;
+  box-shadow: 0 0 10px #859db1;
   padding: 5px 0;
   position: absolute;
   z-index: 1;
+  font-size: 0.8em;
+  padding: 2px;
+  top: -5px;
+  left: 205%; 
 }
 
 .tooltip:hover .tooltiptext {
@@ -167,6 +172,14 @@ h3 {
   color: #32842F;
 }
 
+/* label  */
+label {
+  text-align: right;
+  clear: both;
+  float:left;
+  margin-right:15px;
+}
+
 /* input styles  */
 
 input {
@@ -175,11 +188,13 @@ input {
   border: 1px solid #555;
   border-radius: 4px;
   margin-bottom: 1.5em;
+  float: left;
 }
 
 input:not([type=submit]):not([type=checkbox]):focus {
   box-sizing: border-box;
-  border: 2px solid blue;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
   border-radius: 4px;
   padding-top: -1em;
 }
@@ -191,18 +206,24 @@ input[type=checkbox] {
 }
 
 .textarea {
-  width: auto;
-  margin: auto;
+  width: 100%;
+  height: 34px;
+  padding 6px 12px;
+  line-height: 1.42857;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+ border-radius: 4px;
   box-sizing: border-box;
   border: 1px solid #555;
-  border-radius: 4px;
 }
 
 textarea:focus {
   box-sizing: border-box;
-  border: 2px solid blue;
   border-radius: 4px;
-  padding-top: -1em;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
 }
 
 select {
@@ -217,17 +238,11 @@ select {
 
 .field {
   width: 100%;
-  display: inline-block;
+  display: block;
   margin-bottom: 1em;
 }
 
-/* Label & input answer bars inline */
-
-label {
-  float: left;
-  width: 100%;
-  text-align: left;
-}
+/* input answer bars inline */
 
 .content {
   margin-left: auto;
@@ -236,7 +251,7 @@ label {
   padding-top: 1rem;
   align-content: center;
   text-align: center;
-}
+} 
 
 .w80 {
   width: 80%
@@ -252,6 +267,7 @@ label {
 
 legend {
   display: block;
+  width: 100%;
   padding: 2px;
   border: none;
   font-weight: bold;
@@ -284,16 +300,14 @@ legend {
   color: red;
 }
 
-/* info style large */
+/* info style large 
 
 .infoXL {
   font-size: .95em;
-  margin-top: 0px;
-  margin-bottom: 2em;
   font-style: italic;
   display: block;
   float: left;
-  color: dimgrey;
+  color: dimgrey; */
 }
 
 /* Button style */
