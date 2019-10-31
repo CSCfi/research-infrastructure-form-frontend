@@ -19,7 +19,7 @@
 <body>
     <header>
         <div class="hero">
-            <div class="logo"><img class="logopic" alt="logo" src="css/Capture.PNG" /></div>
+            <div class="logo"><img class="logopic" alt="logo" src="images/ttv_banner.png" /></div>
         </div>
     </header>
 
@@ -286,13 +286,15 @@
                                     <h3 class="sub-header">Palvelun yhteystiedot (eri kuin kohdassa 2a ilmoitetut)</h3>
                                 </legend>
 
-                                <label for="SerPointName" class="required">Palvelupisteen nimi</label>
-                                <p class="info"><a class="ohje">&#9432;</a> Yhteyspisteen tai palvelusta vastaavan henkilön nimi</p>
+                                <label for="SerPointName" class="required">Palvelupisteen nimi
+                                    <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Yhteyspisteen tai palvelusta vastaavan henkilön nimi</span></div>
+                                </label>
                                 <input type="text" id="SerPointName" name="SerPointName" class="field">
 
 
-                                <label for="SerPointDescr">Palvelupisteen kuvaus</label>
-                                <p class="info"><a class="ohje">&#9432;</a> Tarvittaessa tarkempi kuvaus yhteystiedon roolista. Esimerkiksi onko kyse tutkimushenkilökunnasta, teknisestä tuesta, hallinnollisesta yhteyshenkilöstä jne.</p>
+                                <label for="SerPointDescr">Palvelupisteen kuvaus
+                                    <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tarvittaessa tarkempi kuvaus yhteystiedon roolista. Esimerkiksi onko kyse tutkimushenkilökunnasta, teknisestä tuesta, hallinnollisesta yhteyshenkilöstä jne.</span></div>
+                                </label>
                                 <textarea id="SerPointDescr" name="SerPointDescr" class="field"></textarea>
 
                                 <label for="SerPointTel" class="required">Puhelinnumero</label>
@@ -304,12 +306,14 @@
                                 <label for="SerPointPost" class="required">Postiosoite</label>
                                 <input type="text" id="SerPointPost" name="SerPointPost" class="field">
 
-                                <label for="SerPointInfo">Linkki lisätietoihin</label>
-                                <p class="info"><a class="ohje">&#9432;</a> Esimerkiksi infrastruktuurin kotisivu jne.</p>
+                                <label for="SerPointInfo">Linkki lisätietoihin
+                                    <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Esimerkiksi infrastruktuurin kotisivu jne.</span></div>
+                                </label>
                                 <input type="url" id="SerPointInfo" name="SerPointInfo" class="field">
 
-                                <label for="SerPointTerms">Linkki käyttöehtoihin</label>
-                                <p class="info"><a class="ohje">&#9432;</a> Tutkimusinfrastruktuurin käyttöehdot kertova dokumentti tai verkkosivu.</p>
+                                <label for="SerPointTerms">Linkki käyttöehtoihin
+                                    <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tutkimusinfrastruktuurin käyttöehdot kertova dokumentti tai verkkosivu.Esimerkiksi infrastruktuurin kotisivu jne.</span></div>
+                                </label>
                                 <input type="url" id="SerPointTerms" name="SerPointTerms" class="field">
 
 
@@ -321,12 +325,14 @@
                                 <select id="SerPointCountry" name="SerPointCountry">
                                 </select>
 
-                                <label for="SerPointLatitude">Leveysaste</label>
-                                <p class="info"><a class="ohje">&#9432;</a> <strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</p>
+                                <label for="SerPointLatitude">Leveysaste
+                                    <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext"><strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</span></div>
+                                </label> 
                                 <input type="number" min="0" value="0" step=".01" id="SerPointLatitude" name="SerPointLatitude" class="field">
 
-                                <label for="SerPointLongitude">Pituusaste</label>
-                                <p class="info"><a class="ohje">&#9432;</a> <strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</p>
+                                <label for="SerPointLongitude">Pituusaste
+                                    <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext"><strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</span></div>
+                                </label> 
                                 <input type="number" min="0" value="0" step=".01" id="SerPointLongitude" name="SerPointLongitude" class="field">
 
                             </fieldset>
@@ -356,7 +362,7 @@
 
 
                                 <legend>
-                                    <h2 class="form-header">Koordinoiva organisaatio (eri kuin kohdassa 2b)</h2>
+                                    <h2 class="sub-header">Koordinoiva organisaatio (eri kuin kohdassa 2b)</h2>
                                 </legend>
 
                                 <label for="CoOrgName_oth" class="required">Organisaation nimi</label>
@@ -399,13 +405,15 @@
                                 </legend>
 
 
-                                <label for="SerPointName_add" class="required">Palvelupisteen nimi</label>
-                                <p class="info"><a class="ohje">&#9432;</a> Yhteyspisteen tai palvelusta vastaavan henkilön nimi</p>
+                                <label for="SerPointName_add" class="required">Palvelupisteen nimi
+                                    <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Yhteyspisteen tai palvelusta vastaavan henkilön nimi</span></div>
+                                </label>
                                 <input type="text" id="SerPointName_add" name="SerPointName_add" class="field">
 
 
-                                <label for="SerPointDescr_add">Palvelupisteen kuvaus</label>
-                                <p class="info"><a class="ohje">&#9432;</a> Tarvittaessa tarkempi kuvaus yhteystiedon roolista. Esimerkiksi onko kyse tutkimushenkilökunnasta, teknisestä tuesta, hallinnollisesta yhteyshenkilöstä jne.</p>
+                                <label for="SerPointDescr_add">Palvelupisteen kuvaus
+                                    <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tarvittaessa tarkempi kuvaus yhteystiedon roolista. Esimerkiksi onko kyse tutkimushenkilökunnasta, teknisestä tuesta, hallinnollisesta yhteyshenkilöstä jne.</span></div>
+                                </label>
                                 <textarea id="SerPointDescr_add" name="SerPointDescr_add" class="field"></textarea>
 
                                 <label for="SerPointTel_add" class="required">Puhelinnumero</label>
@@ -417,12 +425,14 @@
                                 <label for="SerPointPost_add" class="required">Postiosoite</label>
                                 <input type="text" id="SerPointPost_add" name="SerPointPost_add" class="field">
 
-                                <label for="SerPointInfo_add">Linkki lisätietoihin</label>
-                                <p class="info"><a class="ohje">&#9432;</a> Esimerkiksi infrastruktuurin kotisivu jne.</p>
+                                <label for="SerPointInfo_add">Linkki lisätietoihin
+                                        <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Esimerkiksi infrastruktuurin kotisivu jne.</span></div>
+                                    </label>
                                 <input type="url" id="SerPointInfo_add" name="SerPointInfo_add" class="field">
 
-                                <label for="SerPointTerms_add">Linkki käyttöehtoihin</label>
-                                <p class="info"><a class="ohje">&#9432;</a> Tutkimusinfrastruktuurin käyttöehdot kertova dokumentti tai verkkosivu.</p>
+                                <label for="SerPointTerms_add">Linkki käyttöehtoihin
+                                    <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tutkimusinfrastruktuurin käyttöehdot kertova dokumentti tai verkkosivu.</span></div>
+                                </label>
                                 <input type="url" id="SerPointTerms_add" name="SerPointTerms_add" class="field">
 
 
@@ -433,12 +443,14 @@
 
                                 <select id="SerPointCountry_add" name="SerPointCountry_add"></select>
                                 
-                                <label for="SerPointLatitude_add">Leveysaste</label>
-                                <p class="info"><a class="ohje">&#9432;</a> <strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</p>
+                                <label for="SerPointLatitude_add">Leveysaste
+                                    <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext"><strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</span></div>
+                                </label> 
                                 <input type="number" min="0" value="0" step=".01" id="SerPointLatitude_add" name="SerPointLatitude_add" class="field">
 
-                                <label for="SerPointLongitude_add">Pituusaste</label>
-                                <p class="info"><a class="ohje">&#9432;</a> <strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</p>
+                                <label for="SerPointLongitude_add">Pituusaste
+                                    <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext"><strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</span></div>
+                                </label> 
                                 <input type="number" min="0" value="0" step=".01" id="SerPointLongitude_add" name="SerPointLongitude_add" class="field">
 
 

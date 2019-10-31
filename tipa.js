@@ -26,18 +26,21 @@ function addSection(id) {
 
       <label class="required" for="serName${addedDivs}">Palvelun nimi</label>
       <input type="text" id="serName${addedDivs}" name="serName${addedDivs}"> 
-      
-      <label for="serDescr${addedDivs}">Palvelun kuvaus </label>
-      <p class="info"><a class="ohje">&#9432;</a> Palvelun sisällön ja toiminnan yleinen kuvaus.</p>
+
+      <label for="serDescr${addedDivs}">Palvelun kuvaus
+        <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Palvelun sisällön ja toiminnan yleinen kuvaus</span></div>
+      </label>
       <input type="text" id="serDescr${addedDivs}" name="serDescr${addedDivs}" class="field">
 
-      <label for="serDescriptionsci${addedDivs}">Tieteellinen kuvaus</label>
-      <p class="info"><a class="ohje">&#9432;</a> Tarvittaessa tarkempi kuvaus palvelusta. Esimerkiksi laitteisto, tarjottavat mittausmenetelmät, jne.</p>
+      <label for="serDescriptionsci${addedDivs}">Tieteellinen kuvaus
+        <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tarvittaessa tarkempi kuvaus palvelusta. Esimerkiksi laitteisto, tarjottavat mittausmenetelmät, jne.</span></div>
+      </label>
       <input type="text" id="serDescrsci${addedDivs}" name="serDescrsci${addedDivs}" class="field">
 
 
-      <label for="serAbbrev${addedDivs}">Lyhenne</label>
-      <p class="info"><a class="ohje">&#9432;</a> Mikäli palvelulla on vakiintunut ja käytössä oleva lyhenne tai lyhenne, jota halutaan käytettäväksi.</p>
+      <label for="serAbbrev${addedDivs}">Lyhenne
+        <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Mikäli palvelulla on vakiintunut ja käytössä oleva lyhenne tai lyhenne, jota halutaan käytettäväksi</span></div>
+      </label>
       <input type="text" id="serAbbrev${addedDivs}" name="serAbbrev${addedDivs}" class="field">
 
       <label class="required" for="serType${addedDivs}" class="dropdown">Palvelun tyyppi
@@ -73,13 +76,14 @@ function addSection(id) {
               <h3>Palvelun yhteystiedot (eri kuin kohdassa 2a ilmoitetut)</h3>
           </legend>
 
-          <label class="required" for="SerPointName${addedDivs}">Palvelupisteen nimi</label>
-          <p class="info"><a class="ohje">&#9432;</a> Yhteyspisteen tai palvelusta vastaavan henkilön nimi</p>
+          <label class="required" for="SerPointName${addedDivs}">Palvelupisteen nimi
+             <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Yhteyspisteen tai palvelusta vastaavan henkilön nimi</span></div>
+          </label>
           <input type="text" id="SerPointName${addedDivs}" name="SerPointName${addedDivs}" class="field">
 
-
-          <label for="SerPointDescr${addedDivs}">Palvelupisteen kuvaus</label>
-          <p class="info"><a class="ohje">&#9432;</a> Tarvittaessa tarkempi kuvaus yhteystiedon roolista. Esimerkiksi onko kyse tutkimushenkilökunnasta, teknisestä tuesta, hallinnollisesta yhteyshenkilöstä jne.</p>
+          <label for="SerPointDescr${addedDivs}">Palvelupisteen kuvaus
+             <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tarvittaessa tarkempi kuvaus yhteystiedon roolista. Esimerkiksi onko kyse tutkimushenkilökunnasta, teknisestä tuesta, hallinnollisesta yhteyshenkilöstä jne.</span></div>
+          </label>
           <textarea id="SerPointDescr${addedDivs}" name="SerPointDescr${addedDivs}" class="field"></textarea>
 
           <label class="required" for="SerPointTel${addedDivs}">Puhelinnumero</label>
@@ -91,12 +95,14 @@ function addSection(id) {
           <label class="required" for="SerPointPost${addedDivs}">Postiosoite</label>
           <input type="text" id="SerPointPost${addedDivs}" name="SerPointPost${addedDivs}" class="field">
 
-          <label for="SerPointInfo${addedDivs}">Linkki lisätietoihin</label>
-          <p class="info"><a class="ohje">&#9432;</a> Esimerkiksi infrastruktuurin kotisivu jne.</p>
+          <label for="SerPointInfo${addedDivs}">Linkki lisätietoihin
+            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Esimerkiksi infrastruktuurin kotisivu jne.</span></div>
+          </label>
           <input type="url" id="SerPointInfo${addedDivs}" name="SerPointInfo${addedDivs}" class="field">
 
-          <label for="SerPointTerms${addedDivs}">Linkki käyttöehtoihin</label>
-          <p class="info"><a class="ohje">&#9432;</a> Tutkimusinfrastruktuurin käyttöehdot kertova dokumentti tai verkkosivu.</p>
+          <label for="SerPointTerms${addedDivs}">Linkki käyttöehtoihin
+            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tutkimusinfrastruktuurin käyttöehdot kertova dokumentti tai verkkosivu</span></div>
+          </label>
           <input type="url" id="SerPointTerms${addedDivs}" name="SerPointTerms${addedDivs}" class="field">
 
 
@@ -108,12 +114,14 @@ function addSection(id) {
           <select id="SerPointCountry${addedDivs}" name="SerPointCountry${addedDivs}">
           </select>
 
-          <label for="SerPointLatitude${addedDivs}">Leveysaste</label>
-          <p class="info"><a class="ohje">&#9432;</a> <strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</p>
+          <label for="SerPointLatitude${addedDivs}">Leveysaste
+            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext"><strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</span></div>
+          </label>
           <input type="number" min="0" value="0" step=".01" id="SerPointLatitude${addedDivs}" name="SerPointLatitude${addedDivs}" class="field">
 
-          <label for="SerPointLongitude${addedDivs}">Pituusaste</label>
-          <p class="info"><a class="ohje">&#9432;</a> <strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</p>
+          <label for="SerPointLongitude${addedDivs}">Pituusaste
+          <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext"><strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</span></div>
+             </label>
           <input type="number" min="0" value="0" step=".01" id="SerPointLongitude${addedDivs}" name="SerPointLongitude${addedDivs}" class="field">
 
           </fieldset>
@@ -186,13 +194,14 @@ function addSection(id) {
           </legend>
 
 
-          <label class="required" for="SerPointName_add${addedDivs}">Palvelupisteen nimi</label>
-          <p class="info"><a class="ohje">&#9432;</a> Yhteyspisteen tai palvelusta vastaavan henkilön nimi</p>
+          <label class="required" for="SerPointName_add${addedDivs}">Palvelupisteen nimi
+            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Yhteyspisteen tai palvelusta vastaavan henkilön nimi</span></div>
+          </label>
           <input type="text" id="SerPointName_add${addedDivs}" name="SerPointName_add${addedDivs}" class="field">
 
-
-          <label for="SerPointDescr_add${addedDivs}">Palvelupisteen kuvaus</label>
-          <p class="info"><a class="ohje">&#9432;</a> Tarvittaessa tarkempi kuvaus yhteystiedon roolista. Esimerkiksi onko kyse tutkimushenkilökunnasta, teknisestä tuesta, hallinnollisesta yhteyshenkilöstä jne.</p>
+          <label for="SerPointDescr_add${addedDivs}">Palvelupisteen kuvaus
+            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tarvittaessa tarkempi kuvaus yhteystiedon roolista. Esimerkiksi onko kyse tutkimushenkilökunnasta, teknisestä tuesta, hallinnollisesta yhteyshenkilöstä jne.</span></div>
+          </label>
           <textarea id="SerPointDescr_add${addedDivs}" name="SerPointDescr_add${addedDivs}" class="field"></textarea>
 
           <label class="required" for="SerPointTel_add${addedDivs}">Puhelinnumero</label>
@@ -204,12 +213,14 @@ function addSection(id) {
           <label class="required" for="SerPointPost_add${addedDivs}">Postiosoite</label>
           <input type="text" id="SerPointPost_add${addedDivs}" name="SerPointPost_add${addedDivs}" class="field">
 
-          <label for="SerPointInfo_add${addedDivs}">Linkki lisätietoihin</label>
-          <p class="info"><a class="ohje">&#9432;</a> Esimerkiksi infrastruktuurin kotisivu jne.</p>
+          <label for="SerPointInfo_add${addedDivs}">Linkki lisätietoihin
+             <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Esimerkiksi infrastruktuurin kotisivu jne.</span></div>
+          </label>
           <input type="url" id="SerPointInfo_add${addedDivs}" name="SerPointInfo_add${addedDivs}" class="field">
 
           <label for="SerPointTerms_add${addedDivs}">Linkki käyttöehtoihin</label>
-          <p class="info"><a class="ohje">&#9432;</a> Tutkimusinfrastruktuurin käyttöehdot kertova dokumentti tai verkkosivu.</p>
+            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext"> Tutkimusinfrastruktuurin käyttöehdot kertova dokumentti tai verkkosivu</span></div>
+          </label>
           <input type="url" id="SerPointTerms_add${addedDivs}" name="SerPointTerms_add${addedDivs}" class="field">
 
 
@@ -221,12 +232,14 @@ function addSection(id) {
           <select id="SerPointCountry_add${addedDivs}" name="SerPointCountry_add${addedDivs}">
           </select>
 
-          <label for="SerPointLatitude_add${addedDivs}">Leveysaste</label>
-          <p class="info"><a class="ohje">&#9432;</a> <strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</p>
+          <label for="SerPointLatitude_add${addedDivs}">Leveysaste
+          <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext"><strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</span></div>
+          </label>
           <input type="number" min="0" value="0" step=".01" id="SerPointLatitude_add${addedDivs}" name="SerPointLatitude_add${addedDivs}" class="field">
 
-          <label for="SerPointLongitude_add${addedDivs}">Pituusaste</label>
-          <p class="info"><a class="ohje">&#9432;</a> <strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</p>
+          <label for="SerPointLongitude_add${addedDivs}">Pituusaste
+          <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext"><strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</span></div>
+          </label>
           <input type="number" min="0" value="0" step=".01" id="SerPointLongitude_add${addedDivs}" name="SerPointLongitude_add${addedDivs}" class="field">
         </fieldset>
       </div>
