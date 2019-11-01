@@ -449,11 +449,13 @@ button:hover.cta-del {
 }
 
 .tags-input .main-input {
-  border: 0;
-  outline: 0;
+  border: 1px;
+  outline: 1px;
   padding: 0.5em 0.1em;
-  max-width: 80%;
-  
+}
+
+.main-input :not(:checked){
+  border: 1px solid red;
 }
 
 /* -------------- hidden field specs -----------*/

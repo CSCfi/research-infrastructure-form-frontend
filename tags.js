@@ -28,7 +28,7 @@
             removeTag(tags.length - 1);
         }
 
-       if (keyCode === 13 && mainInput.value.length > 0 && tags.length > 0) {
+       if (event.keyCode === 13 && mainInput.value.length > 0 && tags.length > 0) {
              addTag(mainInput.value);
              mainInput.value ="";
         }
@@ -84,3 +84,13 @@
         return tag.replace(/[^\w -]/g, '').trim().replace(/\W+/g, '-');
     }
 });
+
+// adjust width of input to its input
+
+var input = document.querySelector('input'); // get the input element
+input.addEventListener('input', resizeInput); // bind the "resizeInput" callback on "input" event
+resizeInput.call(inputFlex); // immediately call the function
+
+function resizeInput() {
+  this.style.width = this.value.length + "ch";
+}
