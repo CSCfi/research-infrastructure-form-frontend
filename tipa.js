@@ -15,13 +15,13 @@ function addSection(id) {
   <div id="newService${addedDivs}">
     <fieldset class="white">
       <legend>
-          <h2>3. Tutkimusinfrastruktuurin palvelu</h2>
+      <h2 class="form-header">3. Tutkimusinfrastruktuurin palvelu</h2>
       </legend>
 
       <!-- --------------- 3a service information---------------- -->
 
       <legend>
-          <h3>3a. Palvelun tiedot</h3>
+      <h3 class="sub-header">3a. Palvelun tiedot</h3>
       </legend>
 
       <label class="required" for="serName${addedDivs}">Palvelun nimi</label>
@@ -55,7 +55,7 @@ function addSection(id) {
 
       <fieldset>
           <legend>
-              <h3>3b. Palvelun yhteystiedot</h3>
+            <h3 class="sub-header">3b. Palvelun yhteystiedot</h3>
           </legend>
 
           <label for="SerPointSame${addedDivs}">
@@ -73,7 +73,7 @@ function addSection(id) {
           <fieldset id="SerPointOther${addedDivs}">
 
           <legend>
-              <h3>Palvelun yhteystiedot (eri kuin kohdassa 2a ilmoitetut)</h3>
+            <h3 class="sub-header">Palvelun yhteystiedot (eri kuin kohdassa 2a ilmoitetut)</h3>
           </legend>
 
           <label class="required" for="SerPointName${addedDivs}">Palvelupisteen nimi
@@ -133,7 +133,7 @@ function addSection(id) {
 
       <fieldset>
           <legend>
-              <h3>3c. Koordinoiva organisaatio</h3>
+          <h3 class="sub-header">3c. Koordinoiva organisaatio</h3>
           </legend>
 
           <label for="SerCoOrg${addedDivs}">
@@ -151,7 +151,7 @@ function addSection(id) {
             
 
           <legend>
-              <h2>Koordinoiva organisaatio (eri kuin kohdassa 2b)</h2>
+            <h3 class="sub-header">Koordinoiva organisaatio (eri kuin kohdassa 2b)</h3>
           </legend>
 
           <label class="required" for="CoOrgName_oth${addedDivs}">Organisaation nimi</label>
@@ -173,7 +173,7 @@ function addSection(id) {
 
       <fieldset>
           <legend>
-              <h3>3d. Palvelun muut palvelupisteet</h3>
+            <h3 class="sub-header">3d. Palvelun muut palvelupisteet</h3>
           </legend>
 
           <label for="SerPointOther_add${addedDivs}">
@@ -190,7 +190,7 @@ function addSection(id) {
 
 
           <legend>
-              <h3>Saman palvelun muut palvelupisteet</h3>
+            <h3 class="sub-header">Saman palvelun muut palvelupisteet</h3>
           </legend>
 
 
