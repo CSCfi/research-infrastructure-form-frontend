@@ -41,7 +41,7 @@
 
 
                         <label for="TTV_yes">
-                            <input type="checkbox" id="TTV_yes" name="TTV_yes" value="yes" onclick="toggleElement('hidden_fields1', this.checked)" />
+                            <input type="checkbox" class="box" id="TTV_yes" name="TTV_yes" value="yes" onclick="toggleElement('hidden_fields1', this.checked)" />
                             Kyllä, tutkimusinfrastruktuurin tiedot ovat tutkimustietovarannossa
                         </label>
                        
@@ -116,10 +116,10 @@
 
 
                         <label for="startYear" class="required"> Toiminnan aloitusvuosi</label>
-                        <input type="number" id="startYear" name="startYear" class="field">
+                        <input type="number" id="startYear" name="startYear" min="1900" max="2100" placeholder="yyyy" class="field">
 
                         <label for="endYear"> Toiminnan lopetusvuosi</label>
-                        <input type="number" id="endYear" name="endYear" class="field">
+                        <input type="number" id="endYear" name="endYear" min="1900" max="2100" placeholder="yyyy" class="field">
 
 
                         <label for="infraReplace">Infrastruktuurin tunniste, jonka infrastruktuuri korvaa
@@ -127,14 +127,13 @@
                         </label>
                         <input type="text" name="infraReplace" id="infraReplace" class="field">
 
+                        <label for="infraMeril"> Infrastruktuurin luokitus MERIL-luokittelussa <small><a href="https://portal.meril.eu/meril/" target="_blank">(koodisto)</a></small></label>
+                        <input type="text" name="infraMeril" id="infraMeril" class="field">
 
                         <label for="infraAcafi">
                             <input type="checkbox" name="infraAcafi" id="infraAcafi" class="box">
                             Infrastruktuuri on Suomen Akatemian tiekartalla
                         </label>
-
-                        <label for="infraMeril"> Infrastruktuurin luokitus MERIL-luokittelussa <a href="#" target="_blank">(koodisto)</a></label>
-                        <input type="text" name="infraMeril" id="infraMeril" class="field">
 
 
                     </fieldset>
@@ -271,7 +270,7 @@
                             </legend>
 
                             <label for="SerPointSame">
-                                <input type="checkbox" id="SerPointSame" name="SerPointSame" value="yes" onclick="toggleElement('hidden_fields2', this.checked)" />
+                                <input type="checkbox" class="box" id="SerPointSame" name="SerPointSame" value="yes" onclick="toggleElement('hidden_fields2', this.checked)" />
                                 Palvelun yhteystiedot ovat eri kuin kohdassa 2a.
                             </label>
                         </fieldset>
@@ -348,7 +347,7 @@
                             </legend>
 
                             <label for="SerCoOrg">
-                                <input type="checkbox" id="SerCoOrg" name="SerCoOrg" value="yes" onclick="toggleElement('hidden_fields3', this.checked)" />
+                                <input type="checkbox" class="box" id="SerCoOrg" name="SerCoOrg" value="yes" onclick="toggleElement('hidden_fields3', this.checked)" />
                                 Palvelua koordinoiva organisaatio on eri kuin kohdassa 2b.
                             </label>
 
@@ -388,7 +387,7 @@
                             </legend>
 
                             <label for="SerPointOther_add">
-                                <input type="checkbox" id="SerPointOther_add" name="SerPointOther_add" value="yes" onclick="toggleElement('hidden_fields4', this.checked)" />
+                                <input type="checkbox" class="box" id="SerPointOther_add" name="SerPointOther_add" value="yes" onclick="toggleElement('hidden_fields4', this.checked)" />
                                 Palvelulla on kohdassa 2a ja 3b ilmoitettujen palvelupisteiden lisäksi myös muita palvelupisteitä.
                             </label>
                         </fieldset>
@@ -484,7 +483,7 @@
 
                         
                         <label for="terms" class="required">
-                            <input type="checkbox" id="terms" name="terms" required>
+                            <input type="checkbox" class="box" id="terms" name="terms" required>
                             Olen lukenut <a href="#" target="_blank">tietosuojaselosteen</a>.
                         </label>
                         

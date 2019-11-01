@@ -59,7 +59,7 @@ function addSection(id) {
           </legend>
 
           <label for="SerPointSame${addedDivs}">
-              <input type="checkbox" id="SerPointSame${addedDivs}" name="SerPointSame${addedDivs}" value="yes" onclick="toggleElement('hidden_fields2${addedDivs}', this.checked)" />
+              <input type="checkbox" class="box" id="SerPointSame${addedDivs}" name="SerPointSame${addedDivs}" value="yes" onclick="toggleElement('hidden_fields2${addedDivs}', this.checked)" />
               Palvelun yhteystiedot ovat eri kuin kohdassa 2a.
           </label>
       </fieldset>
@@ -137,7 +137,7 @@ function addSection(id) {
           </legend>
 
           <label for="SerCoOrg${addedDivs}">
-              <input type="checkbox" id="SerCoOrg${addedDivs}" name="SerCoOrg${addedDivs}" value="yes" onclick="toggleElement('hidden_fields3${addedDivs}', this.checked)"/>
+              <input type="checkbox" class="box" id="SerCoOrg${addedDivs}" name="SerCoOrg${addedDivs}" value="yes" onclick="toggleElement('hidden_fields3${addedDivs}', this.checked)"/>
               Palvelua koordinoiva organisaatio on eri kuin kohdassa 2b.
           </label>
 
@@ -177,7 +177,7 @@ function addSection(id) {
           </legend>
 
           <label for="SerPointOther_add${addedDivs}">
-              <input type="checkbox" id="SerPointOther_add${addedDivs}" name="SerPointOther_add${addedDivs}" value="yes" onclick="toggleElement('hidden_fields4${addedDivs}', this.checked)"/>
+              <input type="checkbox" class="box" id="SerPointOther_add${addedDivs}" name="SerPointOther_add${addedDivs}" value="yes" onclick="toggleElement('hidden_fields4${addedDivs}', this.checked)"/>
               Palvelulla on kohdassa 2a ja 3b ilmoitettujen palvelupisteiden lisäksi myös muita palvelupisteitä.
           </label>
       </fieldset>
