@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="countries.js"></script>
     <script src="tipa.js"></script>
+    <script src="tags.js"></script>
 </head>
 
 <body>
@@ -198,11 +199,16 @@
                         <label for="infraKeywords">Avainsanat
                             <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Avainsanat, jotka helpottavat infrastruktuurin löytämistä. Myös laitteistojen, mittausmenetelmien jne. akronyymit.</span></div>
                         </label>
-                        <input type="text" id="infraKeywords" name="infraKeywords" class="field">
+
+                        <p>
+                          <div class="tags-input" data-name="tags-input"></div> 
+                        </p>
+                       <script src="tags.js"></script>
+                        <!-- <input type="text" id="infraKeywords" name="infraKeywords" class="field">-->
 
                     </fieldset>
 
-                    <!-- -------CoOrg----------- 2b coordinating organization for main infra ------------------ !-->
+                    <!-- -------CoOrg----------- 2b coordinating organization for main infra ------------------ -->
 
                     <fieldset class="light-grey">
                         <legend>
