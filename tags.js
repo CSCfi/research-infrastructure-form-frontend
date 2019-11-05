@@ -1,6 +1,15 @@
 // keywords  https://stackoverflow.com/questions/49527155/tag-key-how-to-add-an-tag-while-pressing-enter-button/49527330
 
-[].forEach.call(document.getElementsByClassName('tags-input'), function (el) {
+// Intercept document sending with enter
+function interceptEnter(evt) {
+    if (evt.keyCode === 13) return false;
+}
+document.onkeypress = interceptEnter;
+
+window.addEventListener("DOMContentLoaded", initTags);
+
+function initTags() {
+    const el = document.getElementById('tags-input');
     let hiddenInput = document.createElement('input'),
         mainInput = document.createElement('input'),
         tags = [];
@@ -24,13 +33,14 @@
 
     mainInput.addEventListener('keydown', function (e) {
         let keyCode = e.which || e.keyCode;
-        if (keyCode === 8 && mainInput.value.length === 0 && tags.length > 0) {
+        if (keyCode === 8 && mainInput.value.length === 0) {
             removeTag(tags.length - 1);
         }
 
-       if (event.keyCode === 13 && mainInput.value.length > 0 && tags.length > 0) {
-             addTag(mainInput.value);
-             mainInput.value ="";
+       if (event.keyCode === 13 && mainInput.value.length > 0 ||
+           event.keyCode ===  9 && mainInput.value.length > 0) {
+            addTag(mainInput.value);
+            mainInput.value ="";
         }
 
 
@@ -39,8 +49,6 @@
     el.appendChild(mainInput);
     el.appendChild(hiddenInput);
     
-//addTag('');
-     
 
     function addTag (text) {
         let tag = {
@@ -83,14 +91,14 @@
     function filterTag (tag) {
         return tag.replace(/[^\w -]/g, '').trim().replace(/\W+/g, '-');
     }
-});
+}
 
 // adjust width of input to its input
 
-var input = document.querySelector('input'); // get the input element
-input.addEventListener('input', resizeInput); // bind the "resizeInput" callback on "input" event
-resizeInput.call(inputFlex); // immediately call the function
+// var input = document.querySelector('input'); // get the input element
+// input.addEventListener('input', resizeInput); // bind the "resizeInput" callback on "input" event
+// resizeInput.call(inputFlex); // immediately call the function
 
-function resizeInput() {
-  this.style.width = this.value.length + "ch";
-}
+// function resizeInput() {
+//   this.style.width = this.value.length + "ch";
+// }
