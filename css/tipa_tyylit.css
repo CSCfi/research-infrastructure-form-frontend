@@ -397,12 +397,12 @@ button:hover.cta-del {
   background-color: rgb(117, 5, 5);
 }
 
-/* keyword tags */
+/* keyword tags 
 
 .main-input {
   width: auto;
   float: none;
-}
+}*/
 
 .tags-input {
   border: 1px solid #333;
@@ -438,15 +438,16 @@ button:hover.cta-del {
   color: red;
 }
 
-.tags-input .main-input {
+.tags-input /* .main-input */ {
   border: 1px;
   outline: 1px;
   padding: 0.5em 0.1em;
 }
 
-.main-input :not(:checked){
+/*
+.tags-input :not(:checked){
   border: 1px solid red;
-}
+} */
 
 /* -------------- hidden field specs -----------*/
 

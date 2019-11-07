@@ -11,15 +11,15 @@ window.addEventListener("DOMContentLoaded", initTags);
 function initTags() {
     const el = document.getElementById('tags-input');
     let hiddenInput = document.createElement('input'),
-        mainInput = document.createElement('input'),
+        tagsInput = document.createElement('input'),
         tags = [];
     
     hiddenInput.setAttribute('type', 'hidden');
     hiddenInput.setAttribute('name', el.getAttribute('data-name'));
 
-    mainInput.setAttribute('type', 'text');
-    mainInput.classList.add('main-input');
-    mainInput.addEventListener('input', function () {
+    tagsInput.setAttribute('type', 'text');
+    tagsInput.classList.add('main-input');
+    tagsInput.addEventListener('input', function () {
         let enteredTags = mainInput.value.split(',');
         if (enteredTags.length > 1) {
             enteredTags.forEach(function (t) {
@@ -27,26 +27,26 @@ function initTags() {
                 if (filteredTag.length > 0)
                     addTag(filteredTag);
             });
-            mainInput.value = '';
+            tagsInput.value = '';
         }
     });
 
-    mainInput.addEventListener('keydown', function (e) {
+    tagsInput.addEventListener('keydown', function (e) {
         let keyCode = e.which || e.keyCode;
-        if (keyCode === 8 && mainInput.value.length === 0) {
+        if (keyCode === 8 && tagsInput.value.length === 0) {
             removeTag(tags.length - 1);
         }
 
-       if (event.keyCode === 13 && mainInput.value.length > 0 ||
-           event.keyCode ===  9 && mainInput.value.length > 0) {
-            addTag(mainInput.value);
-            mainInput.value ="";
+       if (event.keyCode === 13 && tagsInput.value.length > 0 ||
+           event.keyCode ===  9 && tagsInput.value.length > 0) {
+            addTag(tagsInput.value);
+            tagsInput.value ="";
         }
 
 
     });
 
-    el.appendChild(mainInput);
+    el.appendChild(tagsInput);
     el.appendChild(hiddenInput);
     
 
@@ -68,7 +68,7 @@ function initTags() {
 
         tags.push(tag);
 
-        el.insertBefore(tag.element, mainInput);
+        el.insertBefore(tag.element, tagsInput);
 
         refreshTags();
     }
