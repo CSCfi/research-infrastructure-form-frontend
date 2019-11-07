@@ -434,7 +434,7 @@ button:hover.cta-del {
   margin-left: 0.75em;
 }
 
-.tags-input .tag .close:hover::after {
+.tags-input:hover .tag:hover .close::after {
   color: red;
 }
 
