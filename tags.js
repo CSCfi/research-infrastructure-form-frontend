@@ -61,7 +61,7 @@ function initTags() {
 
         let closeBtn = document.createElement('span');
         closeBtn.classList.add('close');
-        closeBtn.addEventListener('click', function () {
+        tag.element.addEventListener('click', function () {
             removeTag(tags.indexOf(tag));
         });
         tag.element.appendChild(closeBtn);
