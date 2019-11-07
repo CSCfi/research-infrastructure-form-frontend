@@ -423,7 +423,7 @@ button:hover.cta-del {
 }
 
 .tags-input .tag:hover {
-  background-color: rgb(170, 165, 165);
+  background-color: rgb(180, 180, 180);
   color: white;
 }
 
@@ -459,14 +459,17 @@ button:hover.cta-del {
 /* footer */
 
 footer {
-  background-color: lightgrey;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(233, 230, 230);
   color: black;
   text-align: center;
   padding: 4rem 2rem 2rem 2rem;
   clear: both;
   margin-bottom: 0rem;
-  display: inline-block;
-  width: 100%;
+  display: block;
   align-content: center;
 }
 
