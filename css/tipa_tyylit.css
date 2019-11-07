@@ -422,7 +422,7 @@ button:hover.cta-del {
 }
 
 .tags-input .tag:hover {
-  background-color: #3af;
+  background-color: rgb(170, 165, 165);
   color: white;
 }
 
