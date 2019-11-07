@@ -38,7 +38,8 @@ function initTags() {
         }
 
        if (event.keyCode === 13 && tagsInput.value.length > 0 ||
-           event.keyCode ===  9 && tagsInput.value.length > 0) {
+           event.keyCode ===  9 && tagsInput.value.length > 0 ||
+           event.keyCode === 188 && tagsInput.value.length > 0 ) {
             addTag(tagsInput.value);
             tagsInput.value ="";
         }
