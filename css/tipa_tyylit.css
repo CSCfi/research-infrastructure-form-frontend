@@ -399,17 +399,12 @@ button:hover.cta-del {
 
 /* keyword tags 
 
-.main-input {
-  width: auto;
-  float: none;
-}*/
-
 .tags-input {
   border: 1px solid #333;
   display: inline-block;
   width: 100%;
   border-radius: 4px;
-}
+}*/
 
 .tags-input .tag {
   font-size: 85%;

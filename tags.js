@@ -18,9 +18,8 @@ function initTags() {
     hiddenInput.setAttribute('name', el.getAttribute('data-name'));
 
     tagsInput.setAttribute('type', 'text');
-    tagsInput.classList.add('main-input');
     tagsInput.addEventListener('input', function () {
-        let enteredTags = mainInput.value.split(',');
+        let enteredTags = tagsInput.value.split(',');
         if (enteredTags.length > 1) {
             enteredTags.forEach(function (t) {
                 let filteredTag = filterTag(t);
@@ -94,12 +93,3 @@ function initTags() {
     }
 }
 
-// adjust width of input to its input
-
-// var input = document.querySelector('input'); // get the input element
-// input.addEventListener('input', resizeInput); // bind the "resizeInput" callback on "input" event
-// resizeInput.call(inputFlex); // immediately call the function
-
-// function resizeInput() {
-//   this.style.width = this.value.length + "ch";
-// }
