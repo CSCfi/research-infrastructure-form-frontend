@@ -217,12 +217,15 @@
                         <input type="text" id="CoOrgName" name="CoOrgName" class="field">
 
                         <label for="CoOrgID" class="required">Y-tunnus</label>
-                        <input type="text" id="CoOrgID" name="CoOrgID" class="field" pattern="([0-9]{7} - [0-9]{1})" placeholder="1234567-8">
+                        <input type="text" id="CoOrgID" name="CoOrgID" class="field"  placeholder="1234567-8">
+
+                        <!--y tunnus, broken pattern="([0-9]{7} - [0-9]{1})" -->
 
                         <label for="CoOrgIsni">ISNI</label>
-                        <input type="text" id="CoOrgIsni" name="CoOrgIsni" class="field" pattern="([0-9]{15} [a-zA-Z0-9]{1})" placeholder="0000 0000 0000 0000">
+                        <input type="text" id="CoOrgIsni" name="CoOrgIsni" class="field"  placeholder="0000 0000 0000 0000">
+                        <!--ISNI, broken pattern="([0-9]{15} [a-zA-Z0-9]{1})" -->
                     </fieldset>
-
+                        
 
 
 
