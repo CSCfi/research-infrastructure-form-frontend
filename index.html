@@ -128,13 +128,19 @@
                         </label>
                         <input type="text" name="infraReplace" id="infraReplace" class="field">
 
-                        <label for="infraMeril"> Infrastruktuurin luokitus MERIL-luokittelussa <small><a href="https://portal.meril.eu/meril/" target="_blank">(koodisto)</a></small></label>
+                        <label for="infraMeril"> Infrastruktuurin luokitus MERIL-luokittelussa <small><a href="https://portal.meril.eu/meril/search/quick?keyword=&typeOfSearch=ris&_type=gr.ekt.cerif.entities.infrastructure.Facility" target="_blank">(koodisto)</a></small></label>
                         <input type="text" name="infraMeril" id="infraMeril" class="field">
 
                         <label for="infraAcafi">
                             <input type="checkbox" name="infraAcafi" id="infraAcafi" class="box">
                             Infrastruktuuri on Suomen Akatemian tiekartalla
                         </label>
+
+                        <label for="infraKeywords">Avainsanat
+                            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext"><strong>Lisää avainsana painamalla enter.</strong> Avainsanat, jotka helpottavat infrastruktuurin löytämistä. Myös laitteistojen, mittausmenetelmien jne. akronyymit.</span></div>
+                        </label>
+
+                        <div name="infraKeywords" class="tags-input" id="tags-input"></div>
 
 
                     </fieldset>
@@ -194,14 +200,8 @@
                                 <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext"><strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</span></div>
                             </label>
                         <input type="number" min="0" value="0" step=".01" id="infraConLongitude" name="infraConLongitude" class="field">
-
-
-                        <label for="infraKeywords">Avainsanat
-                            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext"><strong>Lisää avainsana painamalla enter.</strong> Avainsanat, jotka helpottavat infrastruktuurin löytämistä. Myös laitteistojen, mittausmenetelmien jne. akronyymit.</span></div>
-                        </label>
-
-                        <div class="tags-input" id="tags-input"></div> 
-                        <!-- <input type="text" id="infraKeywords" name="infraKeywords" class="field">-->
+ 
+                        
 
 
                     </fieldset>
