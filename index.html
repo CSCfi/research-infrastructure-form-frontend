@@ -165,8 +165,8 @@
                         <label for="infraConTel" class="required">Puhelinnumero</label>
                         <input type="tel" id="infraConTel" name="infraConTel" class="field">
 
-                        <label for="infraConTel" class="required">Sähköposti </label>
-                        <input type="email" id="infraConTel" name="infraConTel" class="field">
+                        <label for="infraConEmail" class="required">Sähköposti </label>
+                        <input type="email" id="infraConEmail" name="infraConEmail" class="field">
 
                         <label for="infraConPost" class="required">Postiosoite</label>
                         <input type="text" id="infraConPost" name="infraConPost" class="field">
@@ -275,7 +275,7 @@
                             </legend>
 
                             <label for="SerPointSame">
-                                <input type="checkbox" class="box" id="SerPointSame" name="SerPointSame" value="yes" onclick="toggleElement('hidden_fields2', this.checked)" />
+                                <input type="checkbox" class="box" id="SerPointSame" name="SerPointSame" value="Service has different contact information than the main infra" onclick="toggleElement('hidden_fields2', this.checked)" />
                                 Palvelun yhteystiedot ovat eri kuin kohdassa 2a.
                             </label>
                         </fieldset>
@@ -352,7 +352,7 @@
                             </legend>
 
                             <label for="SerCoOrg">
-                                <input type="checkbox" class="box" id="SerCoOrg" name="SerCoOrg" value="yes" onclick="toggleElement('hidden_fields3', this.checked)" />
+                                <input type="checkbox" class="box" id="SerCoOrg" name="SerCoOrg" value="Service is coordinated by a different organization than the main infra" onclick="toggleElement('hidden_fields3', this.checked)" />
                                 Palvelua koordinoiva organisaatio on eri kuin kohdassa 2b.
                             </label>
 
@@ -392,7 +392,7 @@
                             </legend>
 
                             <label for="SerPointOther_add">
-                                <input type="checkbox" class="box" id="SerPointOther_add" name="SerPointOther_add" value="yes" onclick="toggleElement('hidden_fields4', this.checked)" />
+                                <input type="checkbox" class="box" id="SerPointOther_add" name="SerPointOther_add" value="Service has additional service points" onclick="toggleElement('hidden_fields4', this.checked)" />
                                 Palvelulla on kohdassa 2a ja 3b ilmoitettujen palvelupisteiden lisäksi myös muita palvelupisteitä.
                             </label>
                         </fieldset>
