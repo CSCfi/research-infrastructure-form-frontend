@@ -263,6 +263,7 @@ function addSection(id) {
   const newDiv = document.createElement("div");
   newDiv.innerHTML = markup;
   document.getElementById(id).append(newDiv);
+  document.getElementById('extra-services').value = addedDivs.toString();
 
   countrySelectIds.slice(1).map(s => s + (addedDivs-1)).forEach(id => {
     populateCountryList(id);
