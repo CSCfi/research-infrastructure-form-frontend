@@ -154,14 +154,14 @@ function addSection(id) {
             <h3 class="sub-header">Koordinoiva organisaatio (eri kuin kohdassa 2b)</h3>
           </legend>
 
-          <label class="required" for="CoOrgName_oth${addedDivs}">Organisaation nimi</label>
-          <input type="text" id="CoOrgName_oth${addedDivs}" name="CoOrgName_oth${addedDivs}" class="field">
+          <label class="required" for="CoOrgOtherName${addedDivs}">Organisaation nimi</label>
+          <input type="text" id="CoOrgOtherName${addedDivs}" name="CoOrgOtherName${addedDivs}" class="field">
 
-          <label class="required" for="CoOrgID_oth${addedDivs}">Y-tunnus</label>
-          <input type="text" id="CoOrgID_oth${addedDivs}" name="CoOrgID_oth${addedDivs}" class="field" pattern="([0-9]{7} - [0-9]{1})" placeholder="1234567-8">
+          <label class="required" for="CoOrgOtherID${addedDivs}">Y-tunnus</label>
+          <input type="text" id="CoOrgOtherID${addedDivs}" name="CoOrgOtherID${addedDivs}" class="field" pattern="([0-9]{7} - [0-9]{1})" placeholder="1234567-8">
 
-          <label for="CoOrgIsni_oth${addedDivs}">ISNI</label>
-          <input type="text" id="CoOrgIsni_oth${addedDivs}" name="CoOrgIsni_oth${addedDivs}" class="field" pattern="([0-9]{15} [a-zA-Z0-9]{1})" placeholder="0000 0000 0000 0000">
+          <label for="CoOrgOtherIsni${addedDivs}">ISNI</label>
+          <input type="text" id="CoOrgOtherIsni${addedDivs}" name="CoOrgOtherIsni${addedDivs}" class="field" pattern="([0-9]{15} [a-zA-Z0-9]{1})" placeholder="0000 0000 0000 0000">
 
         </fieldset> 
       </div>
