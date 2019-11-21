@@ -294,7 +294,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
 
 // Variables related to populating the select fields
-let countrySelectIds = ['infraCountry', 'SerPointCountry', 'SerPointCountry_add'];
+let countrySelectIds = ['infraConCountry', 'SerPointCountry', 'SerPointCountry_add'];
 
 
 
