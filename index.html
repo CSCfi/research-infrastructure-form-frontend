@@ -27,7 +27,9 @@
     <main>
         <div class="content w80">
             <h1>Tutkimusinfrastruktuurien tietojen toimitus tutkimustietovarantoon</h1>
-            <p class="subheading legend_border w80">Selite lomakkeesta, käyttötarkoituksesta, kenelle suunnattu jne. tiedot kirjoitetaan tähän.Selite lomakkeesta, käyttötarkoituksesta, kenelle suunnattu jne. tiedot kirjoitetaan tähän.Selite lomakkeesta, käyttötarkoituksesta, kenelle suunnattu jne. tiedot kirjoitetaan tähän.</p>
+            <p class="subheading legend_border w80">Lomakkella toimitetaan utkimusinfrastruktuurien tietoja tutkimustietovarantoon. Lomake perustuu <a href="https://wiki.eduuni.fi/x/Vpz4Ag" target="_blank">yliopistojen tutkimuspalvelujen yhteistyöverkoston tutkimusinfrastruktuuriryhmän</a> kanssa tehtyyn työhön. Lomake on suunniteltu erityisesti niille tutkimusorganisaatioille, joiden järjestelmistä ei ole saatavissa suoraan tietoa tutkimusinfrastruktuureista. 
+            </p></br>
+            Huom. Lomake on beetaversio. Lisätietoja osoitteesta <a href="mailto:tutkimustietovaranto@csc.fi">tutkimustietovaranto@csc.fi</a></p>
             <!-- </div> -->
             <div style="background-color: #fff; width: 100%;">
 
@@ -37,13 +39,13 @@
                     <input type="number" class="hidden" id="extra-services" name="extra-services" value="0">
                     <fieldset>
                         <legend>
-                            <h2 class="form-header">Ovatko tutkimusinfrastruktuurin tiedot jo tutkimustietovarannossa?</h2>
+                            <h2 class="form-header">Onko tutkimusinfrastruktuurilla URN-tunniste</h2>
                         </legend>
 
 
                         <label for="TTV_yes">
                             <input type="checkbox" class="box" id="TTV_yes" name="TTV_yes" value="yes" onclick="toggleElement('hidden_fields1', this.checked)" />
-                            Kyllä, tutkimusinfrastruktuurin tiedot ovat tutkimustietovarannossa
+                            Kyllä, tutkimusmusinfrastruurilla on URN-tunniste
                         </label>
                        
 
@@ -51,7 +53,7 @@
                             <fieldset id=TTVcode>
 
 
-                                <label for="ttv_id">Tutkimusinfrastruktuurin tunniste (tarkista tunniste <a href="www.research.fi" target="_blank">portaalista</a>):</label>
+                                <label for="ttv_id">Tutkimusinfrastruktuurin tunniste:</label>
                                 <input type="text" class="field" name="ttv_id" id="ttv_id">
 
                             </fieldset>
@@ -151,7 +153,7 @@
                         <legend>
                             <h2 class="form-header">2a. Tutkimusinfrastruktuurin yhteystiedot</h2>
                         </legend>
-                        <p>Tutkimusinfrastruktuurin yhteystiedot toimitetaan tässä. Yhteystiedot ovat palvelukohtaisia, mutta palveluilla voi olla tietenkin samat yhteystiedot. Palvelukohtaisia yhteistietoja tarvitaan esimerkiksi silloin, kun infrastruktuuri on hajautettu, sen palveluita tuottaa useampi kuin yksi organisaatio ja palveluiden käyttö organisaatioiden kautta erikseen.</p>
+                        <p>Yhteystiedot ovat palvelukohtaisia, mutta eri palveluilla voi olla samat yhteystiedot. Palvelukohtaisia yhteistietoja tarvitaan esimerkiksi silloin, kun infrastruktuuri on hajautettu, sen palveluita tuottaa useampi kuin yksi organisaatio ja palveluiden käyttö organisaatioiden kautta erikseen.</p>
                     
                         <label for="infraConName" class="required">Palvelupisteen nimi</label>
                             
@@ -486,17 +488,19 @@
                             <h2>Lomakkeen lähetys</h2>
                         </legend>
 
-                        
+                        <p>(Lomakkeen lähetys vaatii tietosuojaselosteen hyväksynnän)</p>
+
+                            <!--
                         <label for="terms" class="required">
                             <input type="checkbox" class="box" id="terms" name="terms" required>
-                            Olen lukenut <a href="#" target="_blank">tietosuojaselosteen</a>.
+                            Olen lukenut <a href="#" target="_blank"></a>tietosuojaselosteen</a>.
                         </label>
-                        
+                        -->
 
 
                     </fieldset>
 
-                    <input type="submit" value="Tallenna" class="cta">
+                    <input type="submit" value="Tallenna ja lähetä" class="cta">
 
                 </form> <!-- closes first form tag !-->
 

@@ -349,7 +349,8 @@ legend {
   margin: 2.5rem auto;
   border-radius: 30px;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 input:hover.cta {
