@@ -105,14 +105,15 @@ function addSection(id) {
           </label>
           <input type="url" id="SerPointTerms${addedDivs}" name="SerPointTerms${addedDivs}" class="field">
 
-
-          <label class="required" for="SerPointMuninci${addedDivs}">Kuntatieto <a href="#" target="_blank">(koodisto)</a></label>
-          <input type="text" id="SerPointMuninci${addedDivs}" name="SerPointMuninci${addedDivs}" class="field">
-
           <label class="required" for="SerPointCountry${addedDivs}" class="dropdown">Maa</label>
 
           <select id="SerPointCountry${addedDivs}" name="SerPointCountry${addedDivs}">
           </select>
+
+          <label class="required" for="SerPointMuninci${addedDivs}">Kunta</label>
+          <input type="text" id="SerPointMuninci${addedDivs}" name="SerPointMuninci${addedDivs}" class="field">
+
+          
 
           <label for="SerPointLatitude${addedDivs}">Leveysaste
             <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext"><strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</span></div>
@@ -223,14 +224,13 @@ function addSection(id) {
           </label>
           <input type="url" id="SerPointTerms_add${addedDivs}" name="SerPointTerms_add${addedDivs}" class="field">
 
-
-          <label class="required" for="SerPointMuninci_add${addedDivs}">Kuntatieto <a href="#" target="_blank">(koodisto)</a></label>
-          <input type="text" id="SerPointMuninci_add${addedDivs}" name="SerPointMuninci_add${addedDivs}" class="field">
-
           <label class="required" for="SerPointCountry_add${addedDivs}" class="dropdown">Maa</label>
 
           <select id="SerPointCountry_add${addedDivs}" name="SerPointCountry_add${addedDivs}">
           </select>
+
+          <label class="required" for="SerPointMuninci_add${addedDivs}">Kunta</label>
+          <input type="text" id="SerPointMuninci_add${addedDivs}" name="SerPointMuninci_add${addedDivs}" class="field">
 
           <label for="SerPointLatitude_add${addedDivs}">Leveysaste
           <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext"><strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</span></div>
