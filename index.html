@@ -19,9 +19,7 @@
 
 <body>
     <header>
-        <div class="hero">
-            <div class="logo"><img class="logopic" alt="logo" src="images/ttv_banner.png" /></div>
-        </div>
+        <div class="hero"></div>
     </header>
 
     <main>
@@ -90,27 +88,30 @@
                         </label>
                         <input type="text" name="infraAbbrev" id="infraAbbrev" class="field">
 
-                        <div class="third-tickets">
-                            <label for="infraDescrFi">Infrastruktuurin kuvaus <small>(fi)</small>
-                                <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Täytä vähintään yksi (fi/sv/en).Yleistajuinen kuvaus tutkimusinfrastruktuurista, sen käyttötarkoituksista, tavoitteista jne.</span></div>
-                            </label>
-                            <textarea class="narrowtext" id="infraDescrFi" name="infraDescrFi" class="field"></textarea>
-                        </div>
+                        <div class="third-ticket-wrapper">
 
-                        <div class="third-tickets">
-                            <label for="infraDescrSv">Infrastruktuurin kuvaus <small>(sv)</small>
-                                <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Täytä vähintään yksi (fi/sv/en).Yleistajuinen kuvaus tutkimusinfrastruktuurista, sen käyttötarkoituksista, tavoitteista jne.</span></div>
-                            </label>
-                            <textarea class="narrowtext" id="infraDescrSv" name="infraDescrSv" class="field"></textarea>
-                        </div>
+                            <div class="third-tickets">
+                                <label for="infraDescrFi">Infrastruktuurin kuvaus <small>(fi)</small>
+                                    <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Täytä vähintään yksi (fi/sv/en).Yleistajuinen kuvaus tutkimusinfrastruktuurista, sen käyttötarkoituksista, tavoitteista jne.</span></div>
+                                </label>
+                                <textarea id="infraDescrFi" name="infraDescrFi" class="field"></textarea>
+                            </div>
+                            
+                            <div class="third-tickets">
+                                <label for="infraDescrSv">Infrastruktuurin kuvaus <small>(sv)</small>
+                                    <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Täytä vähintään yksi (fi/sv/en).Yleistajuinen kuvaus tutkimusinfrastruktuurista, sen käyttötarkoituksista, tavoitteista jne.</span></div>
+                                </label>
+                                <textarea id="infraDescrSv" name="infraDescrSv" class="field"></textarea>
+                            </div>
 
-                        <div class="third-tickets">
-                            <label for="infraDescrEn">Infrastruktuurin kuvaus <small>(en)</small>
+                            <div class="third-tickets">
+                                <label for="infraDescrEn">Infrastruktuurin kuvaus <small>(en)</small>
                                 <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Täytä vähintään yksi (fi/sv/en).Yleistajuinen kuvaus tutkimusinfrastruktuurista, sen käyttötarkoituksista, tavoitteista jne.</span></div>
-                            </label>
-                            <textarea  class="narrowtext" id="infraDescrEn" name="infraDescrEn" class="field"></textarea>
+                                </label>
+                                <textarea  id="infraDescrEn" name="infraDescrEn" class="field"></textarea>
+                            </div>
+                        
                         </div>
-
                         <label for="infraDescrSci">Tieteellinen kuvaus
                             <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tarvittaessa tarkempi kuvaus tutkimusinfrastruktuurin edustaman tieteenalan tai tieteenalojen mukaisesti. Kuvaus, jonka avulla tutkija voi päätellä onko tutkimusinfrastruktuuri käytettävissä hänen tarpeisiinsa.</span></div>
                         </label>
@@ -182,8 +183,10 @@
                          </label>
                         <input type="url" id="infraConTerms" name="infraConTerms" class="field">
 
-                        <label for="infraConCountry" class="dropdown required">Maa
-                        <select id="infraConCountry" name="infraConCountry"></select></label>
+                        <div class="drowdown-holder">
+                            <label for="infraConCountry" class="dropdown required">Maa</label>
+                            <select id="infraConCountry" name="infraConCountry"></select>
+                        </div>
 
                         <label for="infraConMunicipality" class="required">Kunta</label>
                         <input type="text" id="infraConMunicipality" name="infraConMunicipality" class="field">
@@ -498,17 +501,25 @@
                 <!-- </div>  content 60 !-->
             </div> <!-- background white !-->
 
-            <!-- footer !-->
+        </main>
+        <!-- footer !-->
 
-            <footer>
-                <div class="content w100">
-                    <p><i class="fa fa-home"><a href="https://research.fi/" target="_blank"> www.research.fi</a></i> 
-                        <i class="fa fa-envelope"><a href="mailto:tutkimustietovaranto@csc.fi"> tutkimustietovaranto@csc.fi</a></i></p>
-                </div> <!-- content 100 -->
-            </footer>
+        <footer>
+            <div class="content footer-wrapper">
+                <div class="footer-link-wrapper">
+                    <span class="home">
+                        <i class="fa fa-lg fa-home"></i><a href="https://research.fi/" target="_blank">www.research.fi</a>
+                    </span>
+                </div>
+                <div class="footer-link-wrapper">
+                    <span class="mail">
+                        <i class="fa fa-envelope"></i><a href="mailto:tutkimustietovaranto@csc.fi" target="_blank">tutkimustietovaranto@csc.fi</a>
+                    </span>
+                </div>
+            </div> <!-- content 100 -->
+        </footer>
 
-            <!-- EO footer !-->
-    </main>
+        <!-- EO footer !-->
 </body>
 
 </html>

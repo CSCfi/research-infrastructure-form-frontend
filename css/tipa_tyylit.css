@@ -25,10 +25,14 @@ main {
 
 /* banner style*/
 
+header {
+  overflow-x: hidden;
+}
+
 .hero {
   background-image: url("ttv_banneri_uusi.png");
   max-width: 100%;
-  height: auto;
+  min-height: 160px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -161,7 +165,7 @@ label {
   text-align: left;
   clear: both;
   float:left;
-  margin-right:15px;
+  margin: 5px 0;
 }
 
 /* input styles  */
@@ -187,11 +191,12 @@ input:not([type=submit]):not([type=checkbox]):focus {
 input[type=checkbox] {
   width: auto;
   margin: 0;
-  margin-right: 2px;
+  margin-right: 10px;
 }
 
 textarea {
-  width: 100%;
+  max-width: 100% !important;
+  resize: vertical;
   height: 34px;
   padding: 6px 12px;
   line-height: 1.42857;
@@ -283,6 +288,10 @@ select {
   text-align: center;
 }
 
+.mw100 {
+  max-width: 100%;
+}
+
 /* Legend style*/
 
 legend {
@@ -297,14 +306,15 @@ legend {
 
 /* third ticet styles*/
 
+.third-ticket-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .third-tickets {
   width: 33%;
   float: left;
-}
-
-.narrowtext{
-  min-width: 95%;
-  max-width: 95%;
 }
 
 /* info style */
@@ -454,19 +464,23 @@ button:hover.cta-del {
 
 /* footer */
 
-footer {
-  position: relative;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: rgb(233, 230, 230);
-  color: black;
-  text-align: center;
-  padding: 4rem 2rem 2rem 2rem;
-  clear: both;
-  margin-bottom: 0rem;
-  display: block;
-  align-content: center;
+.footer-wrapper {
+  background-color: #E2E2FF;
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 100px;
+  align-items: center;
+}
+
+.footer-link-wrapper {
+  font-size: large;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+.fa-home, .fa-envelope {
+  padding-right: 5px;
 }
 
 /*
@@ -486,6 +500,9 @@ Media query
 @media screen and (max-width: 860px) {
   h1 {
     font-size: 2rem;
+  }
+  .third-ticket-wrapper {
+    display: block;
   }
   .third-tickets {
     width: 100%;
