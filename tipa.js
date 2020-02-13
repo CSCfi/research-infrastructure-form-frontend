@@ -90,7 +90,7 @@ function addSection(id) {
           <label class="required" for="SerPointEmail${addedDivs}">Sähköposti </label>
           <input type="email" id="SerPointEmail${addedDivs}" name="SerPointEmail${addedDivs}" class="field">
 
-          <label class="required" for="SerPointPost${addedDivs}">Postiosoite</label>
+          <label for="SerPointPost${addedDivs}">Postiosoite</label>
           <input type="text" id="SerPointPost${addedDivs}" name="SerPointPost${addedDivs}" class="field">
 
           <label for="SerPointInfo${addedDivs}">Verkkosivu
@@ -207,7 +207,7 @@ function addSection(id) {
           <label class="required" for="SerPointEmail_add${addedDivs}">Sähköposti </label>
           <input type="email" id="SerPointEmail_add${addedDivs}" name="SerPointEmail_add${addedDivs}" class="field">
 
-          <label class="required" for="SerPointPost_add${addedDivs}">Postiosoite</label>
+          <label for="SerPointPost_add${addedDivs}">Postiosoite</label>
           <input type="text" id="SerPointPost_add${addedDivs}" name="SerPointPost_add${addedDivs}" class="field">
 
           <label for="SerPointInfo_add${addedDivs}">Verkkosivu
