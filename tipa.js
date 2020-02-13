@@ -64,8 +64,6 @@ function addSection(id) {
           </label>
       </fieldset>
 
-      <!-- Tähän tarvitaan toiminto jos klikattu = kopioi tiedot kohdasta 2a. -->
-
       <!-- -------(SerPoint)----- Option fields for service contact info (other than 2a)------------ -->
 
       
@@ -77,7 +75,7 @@ function addSection(id) {
           </legend>
 
           <label class="required" for="SerPointName${addedDivs}">Palvelupisteen nimi
-             <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Yhteyspisteen tai palvelusta vastaavan henkilön nimi</span></div>
+             <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tähän kirjoitetaan parhaiten yhteystietoa kuvaava nimi. Yhteyspisteen, asiakaspalvelusta vastaavaan henkilön tms. Infrastruktuurin yhteystietoa kuvaava nimi. Tähän ei täytetä palvelun nimeä.</span></div>
           </label>
           <input type="text" id="SerPointName${addedDivs}" name="SerPointName${addedDivs}" class="field">
 
@@ -95,7 +93,7 @@ function addSection(id) {
           <label class="required" for="SerPointPost${addedDivs}">Postiosoite</label>
           <input type="text" id="SerPointPost${addedDivs}" name="SerPointPost${addedDivs}" class="field">
 
-          <label for="SerPointInfo${addedDivs}">Linkki lisätietoihin
+          <label for="SerPointInfo${addedDivs}">Verkkosivu
             <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Esimerkiksi infrastruktuurin kotisivu jne.</span></div>
           </label>
           <input type="url" id="SerPointInfo${addedDivs}" name="SerPointInfo${addedDivs}" class="field">
@@ -110,7 +108,7 @@ function addSection(id) {
           <select id="SerPointCountry${addedDivs}" name="SerPointCountry${addedDivs}">
           </select>
 
-          <label class="required" for="SerPointMuninci${addedDivs}">Kunta</label>
+          <label for="SerPointMuninci${addedDivs}">Kunta</label>
           <input type="text" id="SerPointMuninci${addedDivs}" name="SerPointMuninci${addedDivs}" class="field">
 
           <label for="SerPointLatitude${addedDivs}">Leveysaste
@@ -194,7 +192,7 @@ function addSection(id) {
 
 
           <label class="required" for="SerPointName_add${addedDivs}">Palvelupisteen nimi
-            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Yhteyspisteen tai palvelusta vastaavan henkilön nimi</span></div>
+            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tähän kirjoitetaan parhaiten yhteystietoa kuvaava nimi. Yhteyspisteen, asiakaspalvelusta vastaavaan henkilön tms. Infrastruktuurin yhteystietoa kuvaava nimi. Tähän ei täytetä palvelun nimeä.</span></div>
           </label>
           <input type="text" id="SerPointName_add${addedDivs}" name="SerPointName_add${addedDivs}" class="field">
 
@@ -212,7 +210,7 @@ function addSection(id) {
           <label class="required" for="SerPointPost_add${addedDivs}">Postiosoite</label>
           <input type="text" id="SerPointPost_add${addedDivs}" name="SerPointPost_add${addedDivs}" class="field">
 
-          <label for="SerPointInfo_add${addedDivs}">Linkki lisätietoihin
+          <label for="SerPointInfo_add${addedDivs}">Verkkosivu
              <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Esimerkiksi infrastruktuurin kotisivu jne.</span></div>
           </label>
           <input type="url" id="SerPointInfo_add${addedDivs}" name="SerPointInfo_add${addedDivs}" class="field">
@@ -227,7 +225,7 @@ function addSection(id) {
           <select id="SerPointCountry_add${addedDivs}" name="SerPointCountry_add${addedDivs}">
           </select>
 
-          <label class="required" for="SerPointMuninci_add${addedDivs}">Kunta</label>
+          <label for="SerPointMuninci_add${addedDivs}">Kunta</label>
           <input type="text" id="SerPointMuninci_add${addedDivs}" name="SerPointMuninci_add${addedDivs}" class="field">
 
           <label for="SerPointLatitude_add${addedDivs}">Leveysaste

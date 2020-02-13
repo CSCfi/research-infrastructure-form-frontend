@@ -110,8 +110,9 @@ h3 {
 
 .subheading {
   color: #22225A;
-  text-align: center;
-  align-content: center;
+  text-align: left;
+  align-content: left;
+  width: 98%
 }
 
 .legend_border {
@@ -121,11 +122,11 @@ h3 {
   border: transparent;
   border-width: thin;
   border-color: #22225A;
-  font-weight: bold;
+  font-weight: normal;
   margin-top: 5px;
   margin-bottom: 5px;
-  align-content: center;
-  text-align: center;
+  align-content: left;
+  text-align: left;
   line-height: 200%;
 }
 
@@ -265,6 +266,13 @@ select {
   width: 100%;
   display: block;
   margin-bottom: 1em;
+}
+
+/*Fixedarea for larger textarea in the extra notes section*/
+
+.fixedArea {
+  min-height: 90px !important;
+  min-width: 100%;
 }
 
 /* input answer bars inline */
