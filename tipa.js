@@ -84,7 +84,7 @@ function addSection(id) {
           </label>
           <textarea id="SerPointDescr${addedDivs}" name="SerPointDescr${addedDivs}" class="field"></textarea>
 
-          <label class="required" for="SerPointTel${addedDivs}">Puhelinnumero</label>
+          <label for="SerPointTel${addedDivs}">Puhelinnumero</label>
           <input type="tel" id="SerPointTel${addedDivs}" name="SerPointTel${addedDivs}" class="field">
 
           <label class="required" for="SerPointEmail${addedDivs}">Sähköposti </label>
@@ -201,7 +201,7 @@ function addSection(id) {
           </label>
           <textarea id="SerPointDescr_add${addedDivs}" name="SerPointDescr_add${addedDivs}" class="field"></textarea>
 
-          <label class="required" for="SerPointTel_add${addedDivs}">Puhelinnumero</label>
+          <label for="SerPointTel_add${addedDivs}">Puhelinnumero</label>
           <input type="tel" id="SerPointTel_add${addedDivs}" name="SerPointTel_add${addedDivs}" class="field">
 
           <label class="required" for="SerPointEmail_add${addedDivs}">Sähköposti </label>

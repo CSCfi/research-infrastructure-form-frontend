@@ -27,7 +27,7 @@
         <div class="content w80">
             <h1>Tutkimusinfrastruktuurien tietojen toimitus tutkimustietovarantoon</h1>
            
-            <p class="subheading legend_border">Lomakkella toimitetaan tutkimusinfrastruktuurien tietoja tutkimustietovarantoon. Lomake perustuu <a href="https://wiki.eduuni.fi/x/Vpz4Ag" target="_blank">Finn-ARMA-verkoston tutkimusinfrastruktuuriryhmän</a> kanssa tehtyyn työhön. Lomake on suunniteltu erityisesti niille tutkimusorganisaatioille, joiden järjestelmistä ei ole saatavissa suoraan tietoa tutkimusinfrastruktuureista. 
+            <p class="subheading legend_border">Lomakkeella toimitetaan tutkimusinfrastruktuurien tietoja tutkimustietovarantoon. Lomake perustuu <a href="https://wiki.eduuni.fi/x/Vpz4Ag" target="_blank">Finn-ARMA-verkoston tutkimusinfrastruktuuriryhmän</a> kanssa tehtyyn työhön. Lomake on suunniteltu erityisesti niille tutkimusorganisaatioille, joiden järjestelmistä ei ole saatavissa suoraan tietoa tutkimusinfrastruktuureista. 
             </br>
             </br>Tutkimusinfrastruktuurit on hahmoteltu kokonaisuudeksi, joka muodostuu infrastruktuurin yleisestä kuvauksesta sekä yhdestä tai useammasta palvelusta. Lisäksi infrastruktuurilla ja palveluilla voi olla yksi tai useampia erillisiä yhteystietoja. Tutustu tarkemmin täällä: <a href="https://wiki.eduuni.fi/x/awgtBQ" target="_blank">https://wiki.eduuni.fi/x/awgtBQ</a>.
             </br>
@@ -136,6 +136,29 @@
                         </label>
                         <input type="text" name="infraReplace" id="infraReplace" class="field">
 
+                        <!--- field of science classification -->
+
+                        <label for="infraSciField">Infrastruktuuria koskevat tieteenalat (ks. <a href="https://www.stat.fi/meta/luokitukset/tieteenala/001-2010/index.html" target="_blank">Tilastokeskuksen tieteenalaluokitukset</a>)</label>
+                        
+                            <label for="sciFieldLuonnontieteet"> Luonnontieteet
+                                <input type="checkbox" id="sciFieldLuonnontieteet" name="sciFieldLuonnontieteet" value="Luonnontieteet" class="box">
+                            </label>
+                            <label for="sciFieldTekniikka"> Tekniikka
+                                <input type="checkbox" id="sciFieldTekniikka" name="sciFieldTekniikka" value="Tekniikka" class="box">
+                            </label>
+                            <label for="sciFieldTerveys"> Lääke- ja terveystieteet
+                                <input type="checkbox" id="sciFieldTerveys" name="sciFieldTerveys" value="Lääke- ja terveystieteet" class="box">
+                           </label>
+                           <label for="sciFieldMaametsa"> Maatalous- ja metsätieteet
+                                <input type="checkbox" id="sciFieldMaametsa" name="sciFieldMaametsa" value="Maatalous- ja metsätieteet" class="box">
+                            </label>
+                            <label for="sciFieldYhteiskuntatieteet"> Yhteiskuntatieteet
+                                <input type="checkbox" id="sciFieldYhteiskuntatieteet" name="sciFieldYhteiskuntatieteet" value="Yhteiskuntatieteet" class="box">
+                            </label>
+                            <label for="sciFieldHumanistiset"> Humanistiset tieteet
+                                <input type="checkbox" id="sciFieldHumanistiset" name="sciFieldHumanistiset" value="Humanistiset" class="box">
+                            </label>
+
                         <label for="infraMeril"> Infrastruktuurin luokitus MERIL-luokittelussa <small><a href="https://portal.meril.eu/meril/search/quick?keyword=&typeOfSearch=ris&_type=gr.ekt.cerif.entities.infrastructure.Facility" target="_blank">(koodisto)</a></small></label>
                         <input type="text" name="infraMeril" id="infraMeril" class="field">
 
@@ -172,7 +195,7 @@
                         </label>
                         <textarea id="infraConDescr" name="infraConDescr" class="field"></textarea>
 
-                        <label for="infraConTel" class="required">Puhelinnumero</label>
+                        <label for="infraConTel">Puhelinnumero</label>
                         <input type="tel" id="infraConTel" name="infraConTel" class="field">
 
                         <label for="infraConEmail" class="required">Sähköposti </label>
@@ -310,7 +333,7 @@
                                 </label>
                                 <textarea id="SerPointDescr" name="SerPointDescr" class="field"></textarea>
 
-                                <label for="SerPointTel" class="required">Puhelinnumero</label>
+                                <label for="SerPointTel">Puhelinnumero</label>
                                 <input type="tel" id="SerPointTel" name="SerPointTel" class="field">
 
                                 <label for="SerPointEmail" class="required">Sähköposti </label>
@@ -426,7 +449,7 @@
                                 </label>
                                 <textarea id="SerPointDescr_add" name="SerPointDescr_add" class="field"></textarea>
 
-                                <label for="SerPointTel_add" class="required">Puhelinnumero</label>
+                                <label for="SerPointTel_add">Puhelinnumero</label>
                                 <input type="tel" id="SerPointTel_add" name="SerPointTel_add" class="field">
 
                                 <label for="SerPointEmail_add" class="required">Sähköposti </label>
@@ -477,7 +500,7 @@
                     <button class="cta-pal" value="yes" onclick="addSection('moreServices')" type="button">Lisää uusi palvelu</button>
                     <div id="moreServices"></div>
 
-                    <label for="end_notes" class="form-header h2">Lisätietoja tai tarkennuksia infrastrukruurin tietoihin</label>
+                    <label for="end_notes" class="form-header h2">Lisätietoja tai tarkennuksia tutkimusinfrastruktuurin tietoihin</label>
                     
 
                     <textarea id="end_notes" name="end_notes" class="field, fixedArea"></textarea>
