@@ -138,28 +138,32 @@
 
                         <!--- field of science classification -->
 
-                        <label for="infraSciField">Infrastruktuuria koskevat tieteenalat (ks. <a href="https://www.stat.fi/meta/luokitukset/tieteenala/001-2010/index.html" target="_blank">Tilastokeskuksen tieteenalaluokitukset</a>)</label>
-                        
-                            <label for="sciFieldLuonnontieteet"> Luonnontieteet
-                                <input type="checkbox" id="sciFieldLuonnontieteet" name="sciFieldLuonnontieteet" value="Luonnontieteet" class="box">
-                            </label>
-                            <label for="sciFieldTekniikka"> Tekniikka
-                                <input type="checkbox" id="sciFieldTekniikka" name="sciFieldTekniikka" value="Tekniikka" class="box">
-                            </label>
-                            <label for="sciFieldTerveys"> Lääke- ja terveystieteet
-                                <input type="checkbox" id="sciFieldTerveys" name="sciFieldTerveys" value="Lääke- ja terveystieteet" class="box">
-                           </label>
-                           <label for="sciFieldMaametsa"> Maatalous- ja metsätieteet
-                                <input type="checkbox" id="sciFieldMaametsa" name="sciFieldMaametsa" value="Maatalous- ja metsätieteet" class="box">
-                            </label>
-                            <label for="sciFieldYhteiskuntatieteet"> Yhteiskuntatieteet
-                                <input type="checkbox" id="sciFieldYhteiskuntatieteet" name="sciFieldYhteiskuntatieteet" value="Yhteiskuntatieteet" class="box">
-                            </label>
-                            <label for="sciFieldHumanistiset"> Humanistiset tieteet
-                                <input type="checkbox" id="sciFieldHumanistiset" name="sciFieldHumanistiset" value="Humanistiset" class="box">
-                            </label>
+                        <label for="infraSciField">Infrastruktuuria koskevat tieteenalat <small>(ks. <a href="https://www.stat.fi/meta/luokitukset/tieteenala/001-2010/index.html" target="_blank">Tilastokeskuksen tieteenalaluokitukset</a>)</small></label>
+                            <div class="scifield">
+                                <label for="sciFieldLuonnontieteet"> Luonnontieteet
+                                    <input type="checkbox" id="sciFieldLuonnontieteet" name="sciFieldLuonnontieteet" value="yes" class="box">
+                                </label>
+                                <label for="sciFieldTekniikka"> Tekniikka
+                                    <input type="checkbox" id="sciFieldTekniikka" name="sciFieldTekniikka" value="yes" class="box">
+                                </label>
+                                <label for="sciFieldTerveys"> Lääke- ja terveystieteet
+                                    <input type="checkbox" id="sciFieldTerveys" name="sciFieldTerveys" value="yes" class="box">
+                                </label>
+                                <label for="sciFieldMaametsa"> Maatalous- ja metsätieteet
+                                    <input type="checkbox" id="sciFieldMaametsa" name="sciFieldMaametsa" value="yes" class="box">
+                                </label>
+                                <label for="sciFieldYhteiskuntatieteet"> Yhteiskuntatieteet
+                                    <input type="checkbox" id="sciFieldYhteiskuntatieteet" name="sciFieldYhteiskuntatieteet" value="yes" class="box">
+                                </label>
+                                <label for="sciFieldHumanistiset"> Humanistiset tieteet
+                                    <input type="checkbox" id="sciFieldHumanistiset" name="yes" value="Humanistiset" class="box">
+                                </label>
+                            </div>    
 
                         <label for="infraMeril"> Infrastruktuurin luokitus MERIL-luokittelussa <small><a href="https://portal.meril.eu/meril/search/quick?keyword=&typeOfSearch=ris&_type=gr.ekt.cerif.entities.infrastructure.Facility" target="_blank">(koodisto)</a></small></label>
+                        <input type="text" name="infraMeril" id="infraMeril" class="field">
+
+                        <label for="infraMeril"> Infrastruktuurin luokitus ESRFI-luokittelussa <small><a href="https://www.esfri.eu/esfri-ris" target="_blank">(koodisto)</a></small></label>
                         <input type="text" name="infraMeril" id="infraMeril" class="field">
 
                         <label for="infraAcafi">
@@ -167,13 +171,17 @@
                             Infrastruktuuri on Suomen Akatemian tiekartalla
                         </label>
 
-                        <label for="infraKeywords">Avainsanat
+                        <label for="infraKeywordsFi">Avainsanat <!-- <small>(fi)</small>!-->
                             <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext"><strong>Lisää avainsana painamalla enter.</strong> Avainsanat, jotka helpottavat infrastruktuurin löytämistä. Myös laitteistojen, mittausmenetelmien jne. akronyymit.</span></div>
                         </label>
 
-                        <div data-name="infraKeywords" class="tags-input" id="tags-input"></div>
+                        <div data-name="infraKeywordsFi" class="tags-input" id="tags-input"></div>
 
+                     <!--   <label for="infraKeywordsEn">Avainsanat <small>(en)</small>
+                            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext"><strong>Lisää avainsana painamalla enter.</strong> Avainsanat, jotka helpottavat infrastruktuurin löytämistä. Myös laitteistojen, mittausmenetelmien jne. akronyymit.</span></div>
+                        </label>
 
+                        <div data-name="infraKeywordsEn" class="tags-inputEn" id="tags-inputEn"></div>!-->
                     </fieldset>
 
                     <!-- ------infraCon------------ 2a contact information for main infra------------------ !-->

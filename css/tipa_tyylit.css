@@ -418,6 +418,13 @@ button:hover.cta-del {
   background-color: rgb(117, 5, 5);
 }
 
+/* -------------- scifield -----------*/
+
+.scifield{
+font-size: 85%;
+margin-left: 1em;
+}
+
 /* keyword tags 
 
 .tags-input {
@@ -465,6 +472,8 @@ button:hover.cta-del {
 .tags-input :not(:checked){
   border: 1px solid red;
 } */
+
+
 
 /* -------------- hidden field specs -----------*/
 
