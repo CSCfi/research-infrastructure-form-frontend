@@ -19,7 +19,7 @@ main {
   max-width: 100%;
   margin: 5px auto;
   background-color: #FFF;
-  overflow: auto;
+  overflow: hidden auto;
   position: relative;
 }
 
@@ -421,8 +421,8 @@ button:hover.cta-del {
 /* -------------- scifield -----------*/
 
 .scifield{
-font-size: 85%;
-margin-left: 1em;
+  font-size: 85%;
+  margin-left: 1em;
 }
 
 /* keyword tags 
