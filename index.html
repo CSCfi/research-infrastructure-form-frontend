@@ -46,8 +46,9 @@
                         </legend>
 
 
-                        <label for="TTV_yes">
-                            <input type="checkbox" class="box" id="TTV_yes" name="TTV_yes" value="yes" onclick="toggleElement('hidden_fields1', this.checked)" />
+                        <label for="URN_ready">
+                            <input type='hidden' value='0' name='URN_ready'>
+                            <input type="checkbox" class="box" id="URN_ready" name="URN_ready" value="1" onclick="toggleElement('hidden_fields1', this.checked)" />
                             Kyllä, infrastruktuurilla on URN-tunniste.
                         </label>
                        
@@ -177,7 +178,8 @@
                         <input type="text" name="infraEsfri" id="infraEsfri" class="field">
 
                         <label for="infraAcafi">
-                            <input type="checkbox" name="infraAcafi" id="infraAcafi" class="box">
+                            <input type='hidden' value='0' name='infraAcafi'>
+                            <input type="checkbox" value='1' name="infraAcafi" id="infraAcafi" class="box">
                             Infrastruktuuri on Suomen Akatemian tiekartalla
                         </label>
 
