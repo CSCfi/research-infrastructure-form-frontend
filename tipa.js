@@ -13,6 +13,7 @@ function toggleElement(id, visible) {
 function addSection(id) {
   const markup = `
   <div id="newService${addedDivs}">
+  <hr>
   <fieldset>
       <legend>
           <h2 class="form-header">3. Tutkimusinfrastruktuurin palvelu</h2>
@@ -240,12 +241,6 @@ function addSection(id) {
 
     </fieldset>
 
-    <div>
-      <button class="cta-pal" value="yes" onclick="addSection('moreServices')" type="button" >Lisää uusi palvelu</button>
-                            
-      <button class="cta-del" value="yes" onclick="removeSection('newService${addedDivs}')" type="button" >Poista palvelu</button>
-    </div>
-
   </div>
   </div>
   `;
@@ -254,15 +249,18 @@ function addSection(id) {
   newDiv.innerHTML = markup;
   document.getElementById(id).append(newDiv);
   document.getElementById('extra-services').value = addedDivs.toString();
+  toggleElement('remove-service', true)
 
   countrySelectIds.slice(1).map(s => s + (addedDivs-1)).forEach(id => {
     populateCountryList(id);
   })
 }
 
-function removeSection(id) {
-  const el = document.getElementById(id);
+function removeSection() {
+  const el = document.getElementById('newService' + (addedDivs-1));
   el.remove();
+  addedDivs--;
+  toggleElement('remove-service', addedDivs > 0);
 }
 
 function populateCountryList(id) {

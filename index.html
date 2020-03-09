@@ -521,8 +521,11 @@
                     <!-- --------Additional services 3a-d repeated ---------------- !-->
 
 
-                    <button class="cta-pal" value="yes" onclick="addSection('moreServices')" type="button">Lisää uusi palvelu</button>
                     <div id="moreServices"></div>
+                    <div>
+                        <button class="cta-pal" value="yes" onclick="addSection('moreServices')" type="button">Lisää uusi palvelu</button>
+                        <button class="cta-del hidden" value="yes" onclick="removeSection()" type="button" id="remove-service">Poista palvelu</button>
+                    </div>
 
                     <label for="end_notes" class="form-header h2">Lisätietoja tai tarkennuksia tutkimusinfrastruktuurin tietoihin</label>
                     
