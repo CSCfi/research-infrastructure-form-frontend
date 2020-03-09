@@ -47,9 +47,9 @@
 
 
                         <label for="URN_ready">
-                            <input type='hidden' value='0' name='URN_ready'>
                             <input type="checkbox" class="box" id="URN_ready" name="URN_ready" value="1" onclick="toggleElement('hidden_fields1', this.checked)" />
                             Kyllä, infrastruktuurilla on URN-tunniste.
+                            <input type='hidden' value='0' name='URN_ready'>
                         </label>
                        
 
@@ -147,27 +147,28 @@
                         <div class="scifield">
                             <label for="sciFieldLuonnontieteet"> Luonnontieteet
                                 <input type="checkbox" id="sciFieldLuonnontieteet" name="sciFieldLuonnontieteet" value="1" class="box">
-                                <input type="hidden" id="sciFieldLuonnontieteet" name="sciFieldLuonnontieteet" value="0" class="box">
+                                <input type="hidden" name="sciFieldLuonnontieteet" value="0">
                             </label>
                             <label for="sciFieldTekniikka"> Tekniikka
                                 <input type="checkbox" id="sciFieldTekniikka" name="sciFieldTekniikka" value="1" class="box">
-                                <input type="hidden" id="sciFieldTekniikka" name="sciFieldTekniikka" value="0" class="box">
+                                <input type="hidden" name="sciFieldTekniikka" value="0">
                             </label>
                             <label for="sciFieldTerveys"> Lääke- ja terveystieteet
                                 <input type="checkbox" id="sciFieldTerveys" name="sciFieldTerveys" value="1" class="box">
-                                <input type="hidden" id="sciFieldTerveys" name="sciFieldTerveys" value="0" class="box">
+                                <input type="hidden" name="sciFieldTerveys" value="0">
                             </label>
                             <label for="sciFieldMaametsa"> Maatalous- ja metsätieteet
                                 <input type="checkbox" id="sciFieldMaametsa" name="sciFieldMaametsa" value="1" class="box">
-                                <input type="hidden" id="sciFieldMaametsa" name="sciFieldMaametsa" value="0" class="box">
+                                <input type="hidden" name="sciFieldMaametsa" value="0">
                             </label>
                             <label for="sciFieldYhteiskuntatieteet"> Yhteiskuntatieteet
                                 <input type="checkbox" id="sciFieldYhteiskuntatieteet" name="sciFieldYhteiskuntatieteet" value="1" class="box">
-                                <input type="hidden" id="sciFieldYhteiskuntatieteet" name="sciFieldYhteiskuntatieteet" value="0" class="box">
+                                <input type="hidden" name="sciFieldYhteiskuntatieteet" value="0">
                             </label>
                             <label for="sciFieldHumanistiset"> Humanistiset tieteet
                                 <input type="checkbox" id="sciFieldHumanistiset" name="sciFieldHumanistiset" value="1" class="box">
-                                <input type="hidden" id="sciFieldHumanistiset" name="sciFieldHumanistiset" value="0" class="box">
+                                <input type="hidden" name="sciFieldHumanistiset" value="0">
+                                
                             </label>
                         </div>    
 
@@ -178,9 +179,9 @@
                         <input type="text" name="infraEsfri" id="infraEsfri" class="field">
 
                         <label for="infraAcafi">
-                            <input type='hidden' value='0' name='infraAcafi'>
                             <input type="checkbox" value='1' name="infraAcafi" id="infraAcafi" class="box">
                             Infrastruktuuri on Suomen Akatemian tiekartalla
+                            <input type='hidden' value='0' name='infraAcafi'>
                         </label>
 
                         <label for="infraKeywords">Avainsanat <small>(fi)</small>
@@ -327,8 +328,9 @@
                             </legend>
 
                             <label for="SerPointSame">
-                                <input type="checkbox" class="box" id="SerPointSame" name="SerPointSame" value="Service has different contact information than the main infra" onclick="toggleElement('hidden_fields2', this.checked)" />
+                                <input type="checkbox" class="box" id="SerPointSame" name="SerPointSame" value="1" onclick="toggleElement('hidden_fields2', this.checked)"/>
                                 Palvelun yhteystiedot ovat eri kuin kohdassa 2a.
+                                <input type="hidden" name="SerPointSame" value="0"/>
                             </label>
                         </fieldset>
 
@@ -401,8 +403,9 @@
                             </legend>
 
                             <label for="SerCoOrg">
-                                <input type="checkbox" class="box" id="SerCoOrg" name="SerCoOrg" value="Service is coordinated by a different organization than the main infra" onclick="toggleElement('hidden_fields3', this.checked)" />
+                                <input type="checkbox" class="box" id="SerCoOrg" name="SerCoOrg" value="1" onclick="toggleElement('hidden_fields3', this.checked)" />
                                 Palvelua koordinoiva organisaatio on eri kuin kohdassa 2b.
+                                <input type="hidden" name="SerCoOrg" value="0"/>
                             </label>
 
                         </fieldset>
@@ -441,8 +444,9 @@
                             </legend>
 
                             <label for="SerPointOther_add">
-                                <input type="checkbox" class="box" id="SerPointOther_add" name="SerPointOther_add" value="Service has additional service points" onclick="toggleElement('hidden_fields4', this.checked)" />
+                                <input type="checkbox" class="box" id="SerPointOther_add" name="SerPointOther_add" value="1" onclick="toggleElement('hidden_fields4', this.checked)" />
                                 Palvelulla on kohdassa 2a ja 3b ilmoitettujen palvelupisteiden lisäksi myös muita palvelupisteitä.
+                                <input type="hidden" name="SerPointOther_add" value="0"/>                                
                             </label>
                         </fieldset>
 

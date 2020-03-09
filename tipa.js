@@ -13,129 +13,129 @@ function toggleElement(id, visible) {
 function addSection(id) {
   const markup = `
   <div id="newService${addedDivs}">
-    <fieldset class="white">
+  <fieldset>
       <legend>
-      <h2 class="form-header">3. Tutkimusinfrastruktuurin palvelu</h2>
+          <h2 class="form-header">3. Tutkimusinfrastruktuurin palvelu</h2>
       </legend>
 
       <!-- --------------- 3a service information---------------- -->
 
       <legend>
-      <h3 class="sub-header">3a. Palvelun tiedot</h3>
+          <h3 class="sub-header">3a. Palvelun tiedot</h3>
       </legend>
 
-      <label class="required" for="serName${addedDivs}">Palvelun nimi</label>
+      <label for="serName${addedDivs}" class="required">Palvelun nimi</label>
       <input type="text" id="serName${addedDivs}" name="serName${addedDivs}"> 
 
-      <label for="serDescr${addedDivs}">Palvelun kuvaus
-        <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Palvelun sisällön ja toiminnan yleinen kuvaus</span></div>
+      <label for="serDescr${addedDivs}">Palvelun kuvaus 
+          <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Palvelun sisällön ja toiminnan yleinen kuvaus.</span></div>
       </label>
       <input type="text" id="serDescr${addedDivs}" name="serDescr${addedDivs}" class="field">
 
       <label for="serDescriptionsci${addedDivs}">Tieteellinen kuvaus
-        <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tarvittaessa tarkempi kuvaus palvelusta. Esimerkiksi laitteisto, tarjottavat mittausmenetelmät, jne.</span></div>
+          <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tarvittaessa tarkempi kuvaus palvelusta. Esimerkiksi laitteisto, tarjottavat mittausmenetelmät, jne.</span></div>
       </label>
       <input type="text" id="serDescrsci${addedDivs}" name="serDescrsci${addedDivs}" class="field">
 
-
       <label for="serAbbrev${addedDivs}">Lyhenne
-        <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Mikäli palvelulla on vakiintunut ja käytössä oleva lyhenne tai lyhenne, jota halutaan käytettäväksi</span></div>
+          <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Mikäli palvelulla on vakiintunut ja käytössä oleva lyhenne tai lyhenne, jota halutaan käytettäväksi.</span></div>
       </label>
       <input type="text" id="serAbbrev${addedDivs}" name="serAbbrev${addedDivs}" class="field">
 
-      <label class="required" for="serType${addedDivs}" class="dropdown">Palvelun tyyppi
+      <label for="serType${addedDivs}" class="dropdown required">Palvelun tyyppi</label>
       <select id="serType${addedDivs}" name="serType${addedDivs}">
           <option selected value="base" disabled>Valitse</option>
           <option value="aineisto">Aineisto</option>
           <option value="laitteisto">Laitteisto</option>
           <option value="palvelu">Palvelu</option>
-      </select></label>
+      </select>
 
       <!-- ------------------ option checkbox / Servive contact information ---------------- -->
 
       <fieldset>
           <legend>
-            <h3 class="sub-header">3b. Palvelun yhteystiedot</h3>
+              <h3 class="sub-header">3b. Palvelun yhteystiedot</h3>
           </legend>
 
           <label for="SerPointSame${addedDivs}">
-              <input type="checkbox" class="box" id="SerPointSame${addedDivs}" name="SerPointSame${addedDivs}" value="yes" onclick="toggleElement('hidden_fields2${addedDivs}', this.checked)" />
+              <input type="checkbox" class="box" id="SerPointSame${addedDivs}" name="SerPointSame${addedDivs}" value="1" onclick="toggleElement('hidden_fields2${addedDivs}', this.checked)"/>
               Palvelun yhteystiedot ovat eri kuin kohdassa 2a.
+              <input type="hidden" name="SerPointSame${addedDivs}" value="0"/>
           </label>
       </fieldset>
 
       <!-- -------(SerPoint)----- Option fields for service contact info (other than 2a)------------ -->
 
-      
+
       <div id="hidden_fields2${addedDivs}" class="hidden">
           <fieldset id="SerPointOther${addedDivs}">
 
-          <legend>
-            <h3 class="sub-header">Palvelun yhteystiedot (eri kuin kohdassa 2a ilmoitetut)</h3>
-          </legend>
+              <legend>
+                  <h3 class="sub-header">Palvelun yhteystiedot (eri kuin kohdassa 2a ilmoitetut)</h3>
+              </legend>
 
-          <label class="required" for="SerPointName${addedDivs}">Palvelupisteen nimi
-             <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tähän kirjoitetaan parhaiten yhteystietoa kuvaava nimi. Yhteyspisteen, asiakaspalvelusta vastaavaan henkilön tms. Infrastruktuurin yhteystietoa kuvaava nimi. Tähän ei täytetä palvelun nimeä.</span></div>
-          </label>
-          <input type="text" id="SerPointName${addedDivs}" name="SerPointName${addedDivs}" class="field">
+              <label for="SerPointName${addedDivs}" class="required">Palvelupisteen nimi
+                  <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tähän kirjoitetaan parhaiten yhteystietoa kuvaava nimi. Yhteyspisteen, asiakaspalvelusta vastaavaan henkilön tms. Infrastruktuurin yhteystietoa kuvaava nimi. Tähän ei täytetä palvelun nimeä.</span></div>
+              </label>
+              <input type="text" id="SerPointName${addedDivs}" name="SerPointName${addedDivs}" class="field">
 
-          <label for="SerPointDescr${addedDivs}">Palvelupisteen kuvaus
-             <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tarvittaessa tarkempi kuvaus yhteystiedon roolista. Esimerkiksi onko kyse tutkimushenkilökunnasta, teknisestä tuesta, hallinnollisesta yhteyshenkilöstä jne.</span></div>
-          </label>
-          <textarea id="SerPointDescr${addedDivs}" name="SerPointDescr${addedDivs}" class="field"></textarea>
 
-          <label for="SerPointTel${addedDivs}">Puhelinnumero</label>
-          <input type="tel" id="SerPointTel${addedDivs}" name="SerPointTel${addedDivs}" class="field">
+              <label for="SerPointDescr${addedDivs}">Palvelupisteen kuvaus
+                  <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tarvittaessa tarkempi kuvaus yhteystiedon roolista. Esimerkiksi onko kyse tutkimushenkilökunnasta, teknisestä tuesta, hallinnollisesta yhteyshenkilöstä jne.</span></div>
+              </label>
+              <textarea id="SerPointDescr${addedDivs}" name="SerPointDescr${addedDivs}" class="field"></textarea>
 
-          <label class="required" for="SerPointEmail${addedDivs}">Sähköposti </label>
-          <input type="email" id="SerPointEmail${addedDivs}" name="SerPointEmail${addedDivs}" class="field">
+              <label for="SerPointTel${addedDivs}">Puhelinnumero</label>
+              <input type="tel" id="SerPointTel${addedDivs}" name="SerPointTel${addedDivs}" class="field">
 
-          <label for="SerPointPost${addedDivs}">Postiosoite</label>
-          <input type="text" id="SerPointPost${addedDivs}" name="SerPointPost${addedDivs}" class="field">
+              <label for="SerPointEmail${addedDivs}" class="required">Sähköposti </label>
+              <input type="email" id="SerPointEmail${addedDivs}" name="SerPointEmail${addedDivs}" class="field">
 
-          <label for="SerPointInfo${addedDivs}">Verkkosivu
-            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Esimerkiksi infrastruktuurin kotisivu jne.</span></div>
-          </label>
-          <input type="url" id="SerPointInfo${addedDivs}" name="SerPointInfo${addedDivs}" class="field">
+              <label for="SerPointPost${addedDivs}">Postiosoite</label>
+              <input type="text" id="SerPointPost${addedDivs}" name="SerPointPost${addedDivs}" class="field">
 
-          <label for="SerPointTerms${addedDivs}">Linkki käyttöehtoihin
-            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tutkimusinfrastruktuurin käyttöehdot kertova dokumentti tai verkkosivu</span></div>
-          </label>
-          <input type="url" id="SerPointTerms${addedDivs}" name="SerPointTerms${addedDivs}" class="field">
+              <label for="SerPointInfo${addedDivs}">Verkkosivu
+                  <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Esimerkiksi infrastruktuurin kotisivu jne.</span></div>
+              </label>
+              <input type="url" id="SerPointInfo${addedDivs}" name="SerPointInfo${addedDivs}" class="field">
 
-          <label class="required" for="SerPointCountry${addedDivs}" class="dropdown">Maa</label>
+              <label for="SerPointTerms${addedDivs}">Linkki käyttöehtoihin
+                  <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tutkimusinfrastruktuurin käyttöehdot kertova dokumentti tai verkkosivu.Esimerkiksi infrastruktuurin kotisivu jne.</span></div>
+              </label>
+              <input type="url" id="SerPointTerms${addedDivs}" name="SerPointTerms${addedDivs}" class="field">
 
-          <select id="SerPointCountry${addedDivs}" name="SerPointCountry${addedDivs}">
-          </select>
+              <label for="SerPointCountry${addedDivs}" class="dropdown required">Maa</label>
+              <select id="SerPointCountry${addedDivs}" name="SerPointCountry${addedDivs}"></select>
 
-          <label for="SerPointMuninci${addedDivs}">Kunta</label>
-          <input type="text" id="SerPointMuninci${addedDivs}" name="SerPointMuninci${addedDivs}" class="field">
+              <label for="SerPointMunicipality${addedDivs}">Kunta</label>
+              <input type="text" id="SerPointMunicipality${addedDivs}" name="SerPointMunicipality${addedDivs}" class="field">
 
-          <label for="SerPointLatitude${addedDivs}">Leveysaste
-            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext"><strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</span></div>
-          </label>
-          <input type="number" min="0" value="0" step=".01" id="SerPointLatitude${addedDivs}" name="SerPointLatitude${addedDivs}" class="field">
+              <label for="SerPointLatitude${addedDivs}">Leveysaste
+                  <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext"><strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</span></div>
+              </label> 
+              <input type="number" min="0" value="0" step=".01" id="SerPointLatitude${addedDivs}" name="SerPointLatitude${addedDivs}" class="field">
 
-          <label for="SerPointLongitude${addedDivs}">Pituusaste
-          <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext"><strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</span></div>
-             </label>
-          <input type="number" min="0" value="0" step=".01" id="SerPointLongitude${addedDivs}" name="SerPointLongitude${addedDivs}" class="field">
+              <label for="SerPointLongitude${addedDivs}">Pituusaste
+                  <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext"><strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</span></div>
+              </label> 
+              <input type="number" min="0" value="0" step=".01" id="SerPointLongitude${addedDivs}" name="SerPointLongitude${addedDivs}" class="field">
 
           </fieldset>
       </div>
-  
+
 
 
       <!-- -------(SerCoOrg)------ Option checkbox / responsible organisation ---------------- !-->
 
       <fieldset>
           <legend>
-          <h3 class="sub-header">3c. Koordinoiva organisaatio</h3>
+              <h3 class="sub-header">3c. Koordinoiva organisaatio</h3>
           </legend>
 
           <label for="SerCoOrg${addedDivs}">
-              <input type="checkbox" class="box" id="SerCoOrg${addedDivs}" name="SerCoOrg${addedDivs}" value="yes" onclick="toggleElement('hidden_fields3${addedDivs}', this.checked)"/>
+              <input type="checkbox" class="box" id="SerCoOrg${addedDivs}" name="SerCoOrg${addedDivs}" value="1" onclick="toggleElement('hidden_fields3${addedDivs}', this.checked)" />
               Palvelua koordinoiva organisaatio on eri kuin kohdassa 2b.
+              <input type="hidden" name="SerCoOrg${addedDivs}" value="0"/>
           </label>
 
       </fieldset>
@@ -143,26 +143,26 @@ function addSection(id) {
       <!-- -----(CoOrg_oth)------- 3c option fields for responsible organisation (other than 2b) --->
 
 
-      <div id="hidden_fields3${addedDivs}" class="hidden"> 
-        <fieldset id="SerCoOrgOther${addedDivs}">
-            
+      <div id="hidden_fields3${addedDivs}" class="hidden">
+          <fieldset id="SerCoOrgOther${addedDivs}">
 
-          <legend>
-            <h3 class="sub-header">Koordinoiva organisaatio (eri kuin kohdassa 2b)</h3>
-          </legend>
 
-          <label class="required" for="CoOrgOtherName${addedDivs}">Organisaation nimi</label>
-          <input type="text" id="CoOrgOtherName${addedDivs}" name="CoOrgOtherName${addedDivs}" class="field">
+              <legend>
+                  <h3 class="sub-header">Koordinoiva organisaatio (eri kuin kohdassa 2b)</h3>
+              </legend>
 
-          <label class="required" for="CoOrgOtherID${addedDivs}">Y-tunnus</label>
-          <input type="text" id="CoOrgOtherID${addedDivs}" name="CoOrgOtherID${addedDivs}" class="field" pattern="([0-9]{7} - [0-9]{1})" placeholder="1234567-8">
+              <label for="CoOrgOtherName${addedDivs}" class="required">Organisaation nimi</label>
+              <input type="text" id="CoOrgOtherName${addedDivs}" name="CoOrgOtherName${addedDivs}" class="field">
 
-          <label for="CoOrgOtherIsni${addedDivs}">ISNI</label>
-          <input type="text" id="CoOrgOtherIsni${addedDivs}" name="CoOrgOtherIsni${addedDivs}" class="field" pattern="([0-9]{15} [a-zA-Z0-9]{1})" placeholder="0000 0000 0000 0000">
+              <label for="CoOrgOtherID${addedDivs}" class="required">Y-tunnus</label>
+              <input type="text" id="CoOrgOtherID${addedDivs}" name="CoOrgOtherID${addedDivs}" class="field" pattern="([0-9]{7} - [0-9]{1})" placeholder="1234567-8">
 
-        </fieldset> 
+              <label for="CoOrgOtherIsni${addedDivs}">ISNI</label>
+              <input type="text" id="CoOrgOtherIsni${addedDivs}" name="CoOrgOtherIsni${addedDivs}" class="field" pattern="([0-9]{15} [a-zA-Z0-9]{1})" placeholder="0000 0000 0000 0000">
+
+          </fieldset>
       </div>
-      
+
 
 
 
@@ -170,12 +170,13 @@ function addSection(id) {
 
       <fieldset>
           <legend>
-            <h3 class="sub-header">3d. Palvelun muut palvelupisteet</h3>
+              <h3 class="sub-header">3d. Palvelun muut palvelupisteet</h3>
           </legend>
 
           <label for="SerPointOther_add${addedDivs}">
-              <input type="checkbox" class="box" id="SerPointOther_add${addedDivs}" name="SerPointOther_add${addedDivs}" value="yes" onclick="toggleElement('hidden_fields4${addedDivs}', this.checked)"/>
+              <input type="checkbox" class="box" id="SerPointOther_add${addedDivs}" name="SerPointOther_add${addedDivs}" value="1" onclick="toggleElement('hidden_fields4${addedDivs}', this.checked)" />
               Palvelulla on kohdassa 2a ja 3b ilmoitettujen palvelupisteiden lisäksi myös muita palvelupisteitä.
+              <input type="hidden" name="SerPointOther_add${addedDivs}" value="0"/>                                
           </label>
       </fieldset>
 
@@ -183,76 +184,69 @@ function addSection(id) {
 
 
       <div id="hidden_fields4${addedDivs}" class="hidden">
-        <fieldset id="AddOtherSerPoint${addedDivs}">
+          <fieldset id="AddOtherSerPoint${addedDivs}">
+              <legend>
+                  <h3 class="sub-header">Saman palvelun muut palvelupisteet</h3>
+              </legend>
 
 
-          <legend>
-            <h3 class="sub-header">Saman palvelun muut palvelupisteet</h3>
-          </legend>
+              <label for="SerPointName_add${addedDivs}" class="required">Palvelupisteen nimi
+                  <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tähän kirjoitetaan parhaiten yhteystietoa kuvaava nimi. Yhteyspisteen, asiakaspalvelusta vastaavaan henkilön tms. Infrastruktuurin yhteystietoa kuvaava nimi. Tähän ei täytetä palvelun nimeä.</span></div>
+              </label>
+              <input type="text" id="SerPointName_add${addedDivs}" name="SerPointName_add${addedDivs}" class="field">
 
 
-          <label class="required" for="SerPointName_add${addedDivs}">Palvelupisteen nimi
-            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tähän kirjoitetaan parhaiten yhteystietoa kuvaava nimi. Yhteyspisteen, asiakaspalvelusta vastaavaan henkilön tms. Infrastruktuurin yhteystietoa kuvaava nimi. Tähän ei täytetä palvelun nimeä.</span></div>
-          </label>
-          <input type="text" id="SerPointName_add${addedDivs}" name="SerPointName_add${addedDivs}" class="field">
+              <label for="SerPointDescr_add${addedDivs}">Palvelupisteen kuvaus
+                  <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tarvittaessa tarkempi kuvaus yhteystiedon roolista. Esimerkiksi onko kyse tutkimushenkilökunnasta, teknisestä tuesta, hallinnollisesta yhteyshenkilöstä jne.</span></div>
+              </label>
+              <textarea id="SerPointDescr_add${addedDivs}" name="SerPointDescr_add${addedDivs}" class="field"></textarea>
 
-          <label for="SerPointDescr_add${addedDivs}">Palvelupisteen kuvaus
-            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tarvittaessa tarkempi kuvaus yhteystiedon roolista. Esimerkiksi onko kyse tutkimushenkilökunnasta, teknisestä tuesta, hallinnollisesta yhteyshenkilöstä jne.</span></div>
-          </label>
-          <textarea id="SerPointDescr_add${addedDivs}" name="SerPointDescr_add${addedDivs}" class="field"></textarea>
+              <label for="SerPointTel_add${addedDivs}">Puhelinnumero</label>
+              <input type="tel" id="SerPointTel_add${addedDivs}" name="SerPointTel_add${addedDivs}" class="field">
 
-          <label for="SerPointTel_add${addedDivs}">Puhelinnumero</label>
-          <input type="tel" id="SerPointTel_add${addedDivs}" name="SerPointTel_add${addedDivs}" class="field">
+              <label for="SerPointEmail_add${addedDivs}" class="required">Sähköposti </label>
+              <input type="email" id="SerPointEmail_add${addedDivs}" name="SerPointEmail_add${addedDivs}" class="field">
 
-          <label class="required" for="SerPointEmail_add${addedDivs}">Sähköposti </label>
-          <input type="email" id="SerPointEmail_add${addedDivs}" name="SerPointEmail_add${addedDivs}" class="field">
+              <label for="SerPointPost_add${addedDivs}" class="required">Postiosoite</label>
+              <input type="text" id="SerPointPost_add${addedDivs}" name="SerPointPost_add${addedDivs}" class="field">
 
-          <label for="SerPointPost_add${addedDivs}">Postiosoite</label>
-          <input type="text" id="SerPointPost_add${addedDivs}" name="SerPointPost_add${addedDivs}" class="field">
+              <label for="SerPointInfo_add${addedDivs}">Verkkosivu
+                      <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Esimerkiksi infrastruktuurin kotisivu jne.</span></div>
+                  </label>
+              <input type="url" id="SerPointInfo_add${addedDivs}" name="SerPointInfo_add${addedDivs}" class="field">
 
-          <label for="SerPointInfo_add${addedDivs}">Verkkosivu
-             <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Esimerkiksi infrastruktuurin kotisivu jne.</span></div>
-          </label>
-          <input type="url" id="SerPointInfo_add${addedDivs}" name="SerPointInfo_add${addedDivs}" class="field">
+              <label for="SerPointTerms_add${addedDivs}">Linkki käyttöehtoihin
+                  <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tutkimusinfrastruktuurin käyttöehdot kertova dokumentti tai verkkosivu.</span></div>
+              </label>
+              <input type="url" id="SerPointTerms_add${addedDivs}" name="SerPointTerms_add${addedDivs}" class="field">
 
-          <label for="SerPointTerms_add${addedDivs}">Linkki käyttöehtoihin</label>
-            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext"> Tutkimusinfrastruktuurin käyttöehdot kertova dokumentti tai verkkosivu</span></div>
-          </label>
-          <input type="url" id="SerPointTerms_add${addedDivs}" name="SerPointTerms_add${addedDivs}" class="field">
+              <label for="SerPointCountry_add${addedDivs}" class="dropdown required">Maa</label>
+              <select id="SerPointCountry_add${addedDivs}" name="SerPointCountry_add${addedDivs}"></select>
 
-          <label class="required" for="SerPointCountry_add${addedDivs}" class="dropdown">Maa</label>
+              <label for="SerPointMunicipality_add${addedDivs}">Kunta</label>
+              <input type="text" id="SerPointMunicipality_add${addedDivs}" name="SerPointMunicipality_add${addedDivs}" class="field">
+              
+              <label for="SerPointLatitude_add${addedDivs}">Leveysaste
+                  <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext"><strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</span></div>
+              </label> 
+              <input type="number" min="0" value="0" step=".01" id="SerPointLatitude_add${addedDivs}" name="SerPointLatitude_add${addedDivs}" class="field">
 
-          <select id="SerPointCountry_add${addedDivs}" name="SerPointCountry_add${addedDivs}">
-          </select>
-
-          <label for="SerPointMuninci_add${addedDivs}">Kunta</label>
-          <input type="text" id="SerPointMuninci_add${addedDivs}" name="SerPointMuninci_add${addedDivs}" class="field">
-
-          <label for="SerPointLatitude_add${addedDivs}">Leveysaste
-          <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext"><strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</span></div>
-          </label>
-          <input type="number" min="0" value="0" step=".01" id="SerPointLatitude_add${addedDivs}" name="SerPointLatitude_add${addedDivs}" class="field">
-
-          <label for="SerPointLongitude_add${addedDivs}">Pituusaste
-          <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext"><strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</span></div>
-          </label>
-          <input type="number" min="0" value="0" step=".01" id="SerPointLongitude_add${addedDivs}" name="SerPointLongitude_add${addedDivs}" class="field">
-        </fieldset>
+              <label for="SerPointLongitude_add${addedDivs}">Pituusaste
+                  <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext"><strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</span></div>
+              </label> 
+              <input type="number" min="0" value="0" step=".01" id="SerPointLongitude_add${addedDivs}" name="SerPointLongitude_add${addedDivs}" class="field">
+          </fieldset>
       </div>
 
-  </fieldset>
+    </fieldset>
 
-  
-  <!-- ------------------EO  service ---------------- -->
+    <div>
+      <button class="cta-pal" value="yes" onclick="addSection('moreServices')" type="button" >Lisää uusi palvelu</button>
+                            
+      <button class="cta-del" value="yes" onclick="removeSection('newService${addedDivs}')" type="button" >Poista palvelu</button>
+    </div>
 
-  <!-- --------Additional services 3a-d repeated ---------------- !-->
-
-  <div>
-    <button class="cta-pal" value="yes" onclick="addSection('moreServices')" type="button" >Lisää uusi palvelu</button>
-                          
-    <button class="cta-del" value="yes" onclick="removeSection('newService${addedDivs}')" type="button" >Poista palvelu</button>
   </div>
-
   </div>
   `;
   addedDivs++;
