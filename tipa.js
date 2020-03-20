@@ -111,16 +111,6 @@ function addSection(id) {
               <label for="SerPointMunicipality${addedDivs}">Kunta</label>
               <input type="text" id="SerPointMunicipality${addedDivs}" name="SerPointMunicipality${addedDivs}" class="field">
 
-              <label for="SerPointLatitude${addedDivs}">Leveysaste
-                  <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext"><strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</span></div>
-              </label> 
-              <input type="number" min="0" value="0" step=".01" id="SerPointLatitude${addedDivs}" name="SerPointLatitude${addedDivs}" class="field">
-
-              <label for="SerPointLongitude${addedDivs}">Pituusaste
-                  <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext"><strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</span></div>
-              </label> 
-              <input type="number" min="0" value="0" step=".01" id="SerPointLongitude${addedDivs}" name="SerPointLongitude${addedDivs}" class="field">
-
           </fieldset>
       </div>
 
@@ -226,16 +216,7 @@ function addSection(id) {
 
               <label for="SerPointMunicipality_add${addedDivs}">Kunta</label>
               <input type="text" id="SerPointMunicipality_add${addedDivs}" name="SerPointMunicipality_add${addedDivs}" class="field">
-              
-              <label for="SerPointLatitude_add${addedDivs}">Leveysaste
-                  <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext"><strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</span></div>
-              </label> 
-              <input type="number" min="0" value="0" step=".01" id="SerPointLatitude_add${addedDivs}" name="SerPointLatitude_add${addedDivs}" class="field">
-
-              <label for="SerPointLongitude_add${addedDivs}">Pituusaste
-                  <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext"><strong>Desimaaleina, 64 bit.</strong> Infrastruktuurit voivat olla sijoittuneena laajasti. Joskus esimerkiksi mittausaseman sijainti on tieto, joka halutaan välittää eteenpäin.</span></div>
-              </label> 
-              <input type="number" min="0" value="0" step=".01" id="SerPointLongitude_add${addedDivs}" name="SerPointLongitude_add${addedDivs}" class="field">
+    
           </fieldset>
       </div>
 
