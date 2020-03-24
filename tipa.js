@@ -146,10 +146,10 @@ function addSection(id) {
               <input type="text" id="CoOrgOtherName${addedDivs}" name="CoOrgOtherName${addedDivs}" class="field">
 
               <label for="CoOrgOtherID${addedDivs}" class="required">Y-tunnus</label>
-              <input type="text" id="CoOrgOtherID${addedDivs}" name="CoOrgOtherID${addedDivs}" class="field" pattern="([0-9]{7} - [0-9]{1})" placeholder="1234567-8">
+              <input type="text" id="CoOrgOtherID${addedDivs}" name="CoOrgOtherID${addedDivs}" class="field" pattern="\d{7}-\d" placeholder="1234567-8">
 
               <label for="CoOrgOtherIsni${addedDivs}">ISNI</label>
-              <input type="text" id="CoOrgOtherIsni${addedDivs}" name="CoOrgOtherIsni${addedDivs}" class="field" pattern="([0-9]{15} [a-zA-Z0-9]{1})" placeholder="0000 0000 0000 0000">
+              <input type="text" id="CoOrgOtherIsni${addedDivs}" name="CoOrgOtherIsni${addedDivs}" class="field" pattern="(\d{4}( )?){3}\d{3}(\d|[A-Z])" placeholder="0000 0000 0000 0000">
 
           </fieldset>
       </div>
