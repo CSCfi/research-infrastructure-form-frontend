@@ -401,10 +401,10 @@
                                 <input type="text" id="CoOrgOtherName" name="CoOrgOtherName" class="field">
 
                                 <label for="CoOrgOtherID" class="required">Y-tunnus</label>
-                                <input type="text" id="CoOrgOtherID" name="CoOrgOtherID" class="field" pattern="([0-9]{7} - [0-9]{1})" placeholder="1234567-8">
+                                <input type="text" id="CoOrgOtherID" name="CoOrgOtherID" class="field" pattern="\d{7}-\d" placeholder="1234567-8">
 
                                 <label for="CoOrgOtherIsni">ISNI</label>
-                                <input type="text" id="CoOrgOtherIsni" name="CoOrgOtherIsni" class="field" pattern="([0-9]{15} [a-zA-Z0-9]{1})" placeholder="0000 0000 0000 0000">
+                                <input type="text" id="CoOrgOtherIsni" name="CoOrgOtherIsni" class="field" pattern="(\d{4}( )?){3}\d{3}(\d|[A-Z])" placeholder="0000 0000 0000 0000">
 
                             </fieldset>
                         </div>
