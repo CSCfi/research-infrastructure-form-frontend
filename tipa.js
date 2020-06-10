@@ -50,6 +50,8 @@ function addSection(id) {
           <option value="laitteisto">Laitteisto</option>
           <option value="palvelu">Palvelu</option>
       </select>
+      <input type="hidden" name="serType${addedDivs}" value="">
+
 
       <!-- ------------------ option checkbox / Servive contact information ---------------- -->
 
