@@ -195,6 +195,12 @@
                         </label>
 
                         <div data-name="infraKeywordsEn" class="tags-input" id="tags-input-en"></div>
+
+                        <label for="infraKeywordsSv">Avainsanat <small>(sv)</small>
+                            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext"><strong>Lisää avainsana painamalla enter.</strong> Avainsanat, jotka helpottavat infrastruktuurin löytämistä. Myös laitteistojen, mittausmenetelmien jne. akronyymit.</span></div>
+                        </label>
+
+                        <div data-name="infraKeywordsSv" class="tags-input" id="tags-input-sv"></div>
                     </fieldset>
 
                     <!-- ------infraCon------------ 2a contact information for main infra------------------ !-->
@@ -205,16 +211,31 @@
                         </legend>
                         <p>Tutkimusinfrastruktuurin yhteystiedot toimitetaan tässä. Yhteystiedot ovat palvelukohtaisia, mutta palveluilla voi olla samat yhteystiedot. Palvelukohtaisia yhteistietoja tarvitaan esimerkiksi silloin, kun infrastruktuuri on hajautettu, sen palveluita tuottaa useampi kuin yksi organisaatio ja palveluiden käyttö organisaatioiden kautta erikseen.</p>
                     
-                        <label for="infraConName" class="required">Palvelupisteen nimi
+                        <label for="infraConNameFi" class="required">Palvelupisteen nimi <small>(fi)</small>
                             <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tähän kirjoitetaan parhaiten yhteystietoa kuvaava nimi. Yhteyspisteen, asiakaspalvelusta vastaavaan henkilön tms. Infrastruktuurin yhteystietoa kuvaava nimi. Tähän ei täytetä palvelun nimeä.</span></div>
                         </label>
-                            
-                        <input type="text" id="infraConName" name="infraConName" class="field">
+                        <input type="text" id="infraConNameFi" name="infraConNameFi" class="field">
+                        <label for="infraConNameEn" class="required">Palvelupisteen nimi <small>(en)</small>
+                            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tähän kirjoitetaan parhaiten yhteystietoa kuvaava nimi. Yhteyspisteen, asiakaspalvelusta vastaavaan henkilön tms. Infrastruktuurin yhteystietoa kuvaava nimi. Tähän ei täytetä palvelun nimeä.</span></div>
+                        </label>
+                        <input type="text" id="infraConNameEn" name="infraConNameEn" class="field">
+                        <label for="infraConNameSv" class="required">Palvelupisteen nimi <small>(sv)</small>
+                            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tähän kirjoitetaan parhaiten yhteystietoa kuvaava nimi. Yhteyspisteen, asiakaspalvelusta vastaavaan henkilön tms. Infrastruktuurin yhteystietoa kuvaava nimi. Tähän ei täytetä palvelun nimeä.</span></div>
+                        </label>
+                        <input type="text" id="infraConNameSv" name="infraConNameSv" class="field">
 
-                        <label for="infraConDescr">Palvelupisteen kuvaus
+                        <label for="infraConDescrFi">Palvelupisteen kuvaus <small>(fi)</small>
                             <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tarvittaessa tarkempi kuvaus yhteystiedon roolista. Esimerkiksi onko kyse tutkimushenkilökunnasta, teknisestä tuesta, hallinnollisesta yhteyshenkilöstä jne.</span></div>
                         </label>
-                        <textarea id="infraConDescr" name="infraConDescr" class="field"></textarea>
+                        <textarea id="infraConDescrFi" name="infraConDescrFi" class="field"></textarea>
+                        <label for="infraConDescrEn">Palvelupisteen kuvaus <small>(en)</small>
+                            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tarvittaessa tarkempi kuvaus yhteystiedon roolista. Esimerkiksi onko kyse tutkimushenkilökunnasta, teknisestä tuesta, hallinnollisesta yhteyshenkilöstä jne.</span></div>
+                        </label>
+                        <textarea id="infraConDescrEn" name="infraConDescrEn" class="field"></textarea>
+                        <label for="infraConDescrSv">Palvelupisteen kuvaus <small>(sv)</small>
+                            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tarvittaessa tarkempi kuvaus yhteystiedon roolista. Esimerkiksi onko kyse tutkimushenkilökunnasta, teknisestä tuesta, hallinnollisesta yhteyshenkilöstä jne.</span></div>
+                        </label>
+                        <textarea id="infraConDescrSv" name="infraConDescrSv" class="field"></textarea>
 
                         <label for="infraConTel">Puhelinnumero</label>
                         <input type="tel" id="infraConTel" name="infraConTel" class="field">
@@ -225,15 +246,33 @@
                         <label for="infraConPost">Postiosoite</label>
                         <input type="text" id="infraConPost" name="infraConPost" class="field">
 
-                        <label for="infraConInfo">Verkkosivu
+                        <label for="infraConInfoFi">Verkkosivu <small>(fi)</small>
                             <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Esimerkiksi infrastruktuurin kotisivu jne.</span></div>
                         </label>
-                        <input type="url" id="infraConInfo" name="infraConInfo" class="field">
+                        <input type="url" id="infraConInfoFi" name="infraConInfoFi" class="field">
+                        <label for="infraConInfoEn">Verkkosivu <small>(en)</small>
+                            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Esimerkiksi infrastruktuurin kotisivu jne.</span></div>
+                        </label>
+                        <input type="url" id="infraConInfoEn" name="infraConInfoEn" class="field">
+                        <label for="infraConInfoSv">Verkkosivu <small>(sv)</small>
+                            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Esimerkiksi infrastruktuurin kotisivu jne.</span></div>
+                        </label>
+                        <input type="url" id="infraConInfoSv" name="infraConInfoSv" class="field">
 
-                        <label for="infraConTerms">Linkki käyttöehtoihin
+                        <label for="infraConTermsFi">Linkki käyttöehtoihin <small>(fi)</small>
                             <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tutkimusinfrastruktuurin käyttöehdot kertova dokumentti tai verkkosivu.</span></div>
                          </label>
-                        <input type="url" id="infraConTerms" name="infraConTerms" class="field">
+                        <input type="url" id="infraConTermsFi" name="infraConTermsFi" class="field">
+                        <label for="infraConTermsEn">Linkki käyttöehtoihin <small>(en)</small>
+                            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tutkimusinfrastruktuurin käyttöehdot kertova dokumentti tai verkkosivu.</span></div>
+                         </label>
+                        <input type="url" id="infraConTermsEn" name="infraConTermsEn" class="field">
+                        <label for="infraConTermsSv">Linkki käyttöehtoihin <small>(sv)</small>
+                            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tutkimusinfrastruktuurin käyttöehdot kertova dokumentti tai verkkosivu.</span></div>
+                         </label>
+                        <input type="url" id="infraConTermsSv" name="infraConTermsSv" class="field">
+
+
 
                         <div class="drowdown-holder">
                             <label for="infraConCountry" class="dropdown required">Maa</label>
@@ -252,8 +291,12 @@
                             <h2 class="form-header">2b. Koordinoiva organisaatio</h2>
                         </legend>
 
-                        <label for="CoOrgName" class="required">Organisaation nimi</label>
-                        <input type="text" id="CoOrgName" name="CoOrgName" class="field">
+                        <label for="CoOrgNameFi" class="required">Organisaation nimi <small>(fi)</small></label>
+                        <input type="text" id="CoOrgNameFi" name="CoOrgNameFi" class="field">
+                        <label for="CoOrgNameEn" class="required">Organisaation nimi <small>(en)</small></label>
+                        <input type="text" id="CoOrgNameEn" name="CoOrgNameEn" class="field">
+                        <label for="CoOrgNameSv" class="required">Organisaation nimi <small>(sv)</small></label>
+                        <input type="text" id="CoOrgNameSv" name="CoOrgNameSv" class="field">
 
                         <label for="CoOrgID" class="required">Y-tunnus</label>
                         <input type="text" id="CoOrgID" name="CoOrgID" class="field" pattern="\d{7}-\d" placeholder="1234567-8">
@@ -280,18 +323,39 @@
                             <h3 class="sub-header">3a. Palvelun tiedot</h3>
                         </legend>
 
-                        <label for="serName" class="required">Palvelun nimi</label>
-                        <input type="text" id="serName" name="serName"> 
+                        <label for="serNameFi" class="required">Palvelun nimi <small>(fi)</small></label>
+                        <input type="text" id="serNameFi" name="serNameFi">
+                        <label for="serNameEn" class="required">Palvelun nimi <small>(en)</small></label>
+                        <input type="text" id="serNameEn" name="serNameEn"> 
+                        <label for="serNameSv" class="required">Palvelun nimi <small>(sv)</small></label>
+                        <input type="text" id="serNameSv" name="serNameSv"> 
 
-                        <label for="serDescr">Palvelun kuvaus 
+                        <label for="serDescrFi">Palvelun kuvaus <small>(fi)</small>
                             <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Palvelun sisällön ja toiminnan yleinen kuvaus.</span></div>
                         </label>
-                        <input type="text" id="serDescr" name="serDescr" class="field">
+                        <input type="text" id="serDescrFi" name="serDescrFi" class="field">
+                        <label for="serDescrEn">Palvelun kuvaus <small>(en)</small>
+                            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Palvelun sisällön ja toiminnan yleinen kuvaus.</span></div>
+                        </label>
+                        <input type="text" id="serDescrEn" name="serDescrEn" class="field">
+                        <label for="serDescrSv">Palvelun kuvaus <small>(sv)</small>
+                            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Palvelun sisällön ja toiminnan yleinen kuvaus.</span></div>
+                        </label>
+                        <input type="text" id="serDescrSv" name="serDescrSv" class="field">
 
-                        <label for="serDescriptionsci">Tieteellinen kuvaus
+
+                        <label for="serDescriptionsciFi">Tieteellinen kuvaus <small>(fi)</small>
                             <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tarvittaessa tarkempi kuvaus palvelusta. Esimerkiksi laitteisto, tarjottavat mittausmenetelmät, jne.</span></div>
                         </label>
-                        <input type="text" id="serDescrsci" name="serDescrsci" class="field">
+                        <input type="text" id="serDescrsciFi" name="serDescrsciFi" class="field">
+                        <label for="serDescriptionsciEn">Tieteellinen kuvaus <small>(en)</small>
+                            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tarvittaessa tarkempi kuvaus palvelusta. Esimerkiksi laitteisto, tarjottavat mittausmenetelmät, jne.</span></div>
+                        </label>
+                        <input type="text" id="serDescrsciEn" name="serDescrsciEn" class="field">
+                        <label for="serDescriptionsciSv">Tieteellinen kuvaus <small>(sv)</small>
+                            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Tarvittaessa tarkempi kuvaus palvelusta. Esimerkiksi laitteisto, tarjottavat mittausmenetelmät, jne.</span></div>
+                        </label>
+                        <input type="text" id="serDescrsciSv" name="serDescrsciSv" class="field">
 
                         <label for="serAbbrev">Lyhenne
                             <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Mikäli palvelulla on vakiintunut ja käytössä oleva lyhenne tai lyhenne, jota halutaan käytettäväksi.</span></div>
