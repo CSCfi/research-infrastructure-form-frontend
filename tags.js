@@ -7,7 +7,8 @@ function interceptEnter(evt) {
 document.onkeypress = interceptEnter;
 
 window.addEventListener("DOMContentLoaded", function() {
-    initTags(['tags-input', 'tags-input-en'])
+    initTags(['tags-input', 'tags-input-en','tags-input-sv'])
+    
 });
 
 function initTags(elemIds) {
