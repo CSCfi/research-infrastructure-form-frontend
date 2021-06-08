@@ -359,6 +359,7 @@ function removeSection() {
   const el = document.getElementById('newService' + (addedDivs-1));
   el.remove();
   addedDivs--;
+  document.getElementById('extra-services').value = addedDivs.toString();
   toggleElement('remove-service', addedDivs > 0);
 }
 
