@@ -9,7 +9,7 @@ document.onkeypress = interceptEnter;
 window.addEventListener("DOMContentLoaded", function() {
     window.idlist = ['tags-input', 'tags-input-en','tags-input-sv']
     window.tagslist = [];
-    var taglist = window.taglist
+    var tagslist = window.tagslist
     var idlist = window.idlist
     idlist.forEach(id => tagslist.push([]))
     initTags(idlist,tagslist)
@@ -98,7 +98,7 @@ function refreshTags (hiddenInput,tags) {
     tags.forEach(function (t) {
         tagsList.push(t.text);
     });
-    hiddenInput.value = tagsList.join(',');
+    hiddenInput = tagsList.join(',');
 }
 
 function filterTag (tag) {
