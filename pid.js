@@ -51,15 +51,15 @@ function setValues(data) {
 
     // Store keywords div wrappers 
     var elemList = [];
-    window.idlist.forEach(id => elemList.push(document.getElementById(id)))
+    window.idlist.forEach(id => elemList.push(document.getElementById(id)));
     
     // Store visible text inputs
     var tagsInput = [];
-    window.idlist.forEach(id => tagsInput.push(document.querySelector('#' + id + ' input[type="text"]')))
+    window.idlist.forEach(id => tagsInput.push(document.querySelector('#' + id + ' input[type="text"]')));
 
     // Store hidden inputs
     var hiddeninput = [];
-    elemList.forEach(elem => hiddeninput.push(document.querySelector('[name="'+ elem.dataset.name +'"]')))
+    elemList.forEach(elem => hiddeninput.push(document.querySelector('[name="'+ elem.dataset.name +'"]')));
 
     (data.keywordsFi || []).forEach(item => addTag(item.keyword, elemList[0], window.tagslist[0], tagsInput[0], hiddeninput[0]));
     (data.keywordsEn || []).forEach(item => addTag(item.keyword, elemList[1], window.tagslist[1], tagsInput[1], hiddeninput[1]));
@@ -85,7 +85,7 @@ function setValues(data) {
                     document.getElementById("sciFieldYhteiskuntatieteet").checked = true
                     break
                 case "6":
-                    document.getElementById("sciFieldhumanistiset").checked = true
+                    document.getElementById("sciFieldHumanistiset").checked = true
                     break
                 
             }

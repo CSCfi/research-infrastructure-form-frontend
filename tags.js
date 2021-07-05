@@ -99,7 +99,7 @@ function refreshTags (hiddenInput,tags) {
     tags.forEach(function (t) {
         tagsList.push(t.text);
     });
-    hiddenInput = tagsList.join(',');
+    hiddenInput.value = tagsList.join(',');
 }
 
 function filterTag (tag) {
