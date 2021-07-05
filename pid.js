@@ -45,16 +45,25 @@ function setValues(data) {
 
     //Keywords
  
-    const getElemFi = document.getElementById('tags-input')
-    const getElemEn = document.getElementById('tags-input-en')
-    const getElemSv = document.getElementById('tags-input-sv')
+    // const getElemFi = document.getElementById('tags-input')
+    // const getElemEn = document.getElementById('tags-input-en')
+    // const getElemSv = document.getElementById('tags-input-sv')
+
+    // Store keywords div wrappers 
     var elemList = [];
     window.idlist.forEach(id => elemList.push(document.getElementById(id)))
+    
+    // Store visible text inputs
+    var tagsInput = [];
+    window.idlist.forEach(id => tagsInput.push(document.querySelector('#' + id + ' input[type="text"]')))
+
+    // Store hidden inputs
     var hiddeninput = [];
     elemList.forEach(elem => hiddeninput.push(document.querySelector('[name="'+ elem.dataset.name +'"]')))
-    data.keywordsFi.forEach(item => addTag(item.keyword,getElemFi,window.tagslist[0],hiddeninput[0]))
-    data.keywordsEn.forEach(item => addTag(item.keyword,getElemEn,window.tagslist[1],hiddeninput[1]))
-    data.keywordsSv.forEach(item => addTag(item.keyword,getElemSv,window.tagslist[2],hiddeninput[2]))
+
+    data.keywordsFi.forEach(item => addTag(item.keyword, elemList[0], window.tagslist[0], tagsInput[0], hiddeninput[0]))
+    data.keywordsEn.forEach(item => addTag(item.keyword, elemList[1], window.tagslist[1], tagsInput[1], hiddeninput[1]))
+    data.keywordsSv.forEach(item => addTag(item.keyword, elemList[2], window.tagslist[2], tagsInput[2], hiddeninput[2]))
 
     //Science Fields
     if(data.fieldsOfScience != null){
