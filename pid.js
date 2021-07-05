@@ -61,8 +61,8 @@ function setValues(data) {
     var hiddeninput = [];
     elemList.forEach(elem => hiddeninput.push(document.querySelector('[name="'+ elem.dataset.name +'"]')))
 
-    data.keywordsFi.forEach(item => addTag(item.keyword, elemList[0], window.tagslist[0], tagsInput[0], hiddeninput[0]));
-    data.keywordsEn.forEach(item => addTag(item.keyword, elemList[1], window.tagslist[1], tagsInput[1], hiddeninput[1]));
+    (data.keywordsFi || []).forEach(item => addTag(item.keyword, elemList[0], window.tagslist[0], tagsInput[0], hiddeninput[0]));
+    (data.keywordsEn || []).forEach(item => addTag(item.keyword, elemList[1], window.tagslist[1], tagsInput[1], hiddeninput[1]));
     (data.keywordsSv || []).forEach(item => addTag(item.keyword, elemList[2], window.tagslist[2], tagsInput[2], hiddeninput[2]));
 
     //Science Fields
