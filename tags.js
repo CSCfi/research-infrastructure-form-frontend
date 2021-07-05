@@ -61,6 +61,7 @@ function initTags(elemIds,tagslist) {
     
 
     })
+
 }
 
 function addTag (text,el,tags,tagsInput,hiddenInput) {
@@ -75,7 +76,7 @@ function addTag (text,el,tags,tagsInput,hiddenInput) {
     let closeBtn = document.createElement('span');
     closeBtn.classList.add('close');
     tag.element.addEventListener('click', function () {
-        removeTag(tags.indexOf(tag),tags);
+        removeTag(tags.indexOf(tag),tags,el,hiddenInput);
     });
     tag.element.appendChild(closeBtn);
 
@@ -86,7 +87,7 @@ function addTag (text,el,tags,tagsInput,hiddenInput) {
     refreshTags(hiddenInput,tags);
 }
 
-function removeTag (index,tags) {
+function removeTag (index,tags,el,hiddenInput) {
     let tag = tags[index];
     tags.splice(index, 1);
     el.removeChild(tag.element);

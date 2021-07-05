@@ -41,16 +41,47 @@ function setValues(data) {
     if (data.finlandRoadmap == true) {
         document.getElementById("infraAcafi").checked = true
     }
-    document.getElementById('infraEsfri').value = (data.ESFRICodes == null) ? "" : data.ESFRICodes
+    document.getElementById('infraEsfri').value = (data.ESFRICodes == null) ? "" : data.ESFRICodes[0].ESFRICode
 
     //Keywords
  
-    //const getElem = document.getElementById('tags-input')
-    //var elemList = [];
-    //window.idlist.forEach(id => elemList.push(document.getElementById(id)))
-    //var hiddeninput = [];
-    //elemList.forEach(elem => hiddeninput.push(document.querySelector('[name="'+ elem.dataset.name +'"]')))
-    //data.keywords.forEach(item => addTag(item.keyword,getElem,window.tagslist[0],hiddeninput[0]))
+    const getElemFi = document.getElementById('tags-input')
+    const getElemEn = document.getElementById('tags-input-en')
+    const getElemSv = document.getElementById('tags-input-sv')
+    var elemList = [];
+    window.idlist.forEach(id => elemList.push(document.getElementById(id)))
+    var hiddeninput = [];
+    elemList.forEach(elem => hiddeninput.push(document.querySelector('[name="'+ elem.dataset.name +'"]')))
+    data.keywordsFi.forEach(item => addTag(item.keyword,getElemFi,window.tagslist[0],hiddeninput[0]))
+    data.keywordsEn.forEach(item => addTag(item.keyword,getElemEn,window.tagslist[1],hiddeninput[1]))
+    data.keywordsSv.forEach(item => addTag(item.keyword,getElemSv,window.tagslist[2],hiddeninput[2]))
+
+    //Science Fields
+    if(data.fieldsOfScience != null){
+        data.fieldsOfScience.forEach(field => {
+            switch(field.field_id){
+                case "1":
+                    document.getElementById("sciFieldLuonnontieteet").checked = true
+                    break
+                case "2":
+                    document.getElementById("sciFieldTekniikka").checked = true
+                    break
+                case "3":
+                    document.getElementById("sciFieldTerveys").checked = true
+                    break
+                case "4":
+                    document.getElementById("sciFieldMaametsa").checked = true
+                    break
+                case "5":
+                    document.getElementById("sciFieldYhteiskuntatieteet").checked = true
+                    break
+                case "6":
+                    document.getElementById("sciFieldhumanistiset").checked = true
+                    break
+                
+            }
+        })
+    }
 
     //2a Service
     document.getElementById('infraConNameFi').value = (data.infraConPoint[0].infraConNameFi == 0) ? "" : data.infraConPoint[0].infraConNameFi
@@ -143,8 +174,7 @@ function addServices(service,i){
 
 function addOrg(data,index) {
     const part_org = data.participantOrganizations
-    if(typeof part_org[index] != "undefined"){
-        console.log("true")
+    if(part_org != null && typeof part_org[index] != "undefined"){
         var org = part_org[index]
         document.getElementById('SerCoOrg' + ((index > 0) ? (index-1):"")).checked = true
         toggleElement(('hidden_fields3' + ((index > 0) ? (index-1):"")),true)
