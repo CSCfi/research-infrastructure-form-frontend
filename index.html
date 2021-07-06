@@ -42,7 +42,9 @@
                     <input type="number" class="hidden" id="extra-services" name="extra-services" value="0">
                     <fieldset>
                         <legend>
-                            <h2 class="form-header">Onko tutkimusinfrastruktuurilla URN-tunniste?</h2>
+                            <h2 class="form-header">Onko tutkimusinfrastruktuurilla URN-tunniste?
+                                <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Akatemian aiemmalla tiekartalla olleille infrastruktuureille annettiin URN-tunnisteet. Jos infralla on URN, sen voi kertoa tässä. Jollei URN-tunnistetta ole, kentästä ei tarvitse välittää.</span></div>
+                            </h2>
                         </legend>
 
 
@@ -144,7 +146,7 @@
 
 
                         <label for="infraReplace">Infrastruktuurin tunniste, jonka infrastruktuuri korvaa
-                            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Uusi infrastruktuuri on aiemman infran seuraaja. Se korvaa aiemman toiminnan.</span></div>
+                            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Jos infrastruktuuri korvaa aiemman infran, jonka tiedot ovat jo Tutkimustietovarannossa JA korvattavalla infralla on ollut pysyvä tunniste, se kerrotaan tässä kentässä. Muussa tapauksessa kentän voi jättää tyhjäksi.</span></div>
                         </label>
                         <input type="text" name="infraReplace" id="infraReplace" class="field">
                         
@@ -186,7 +188,9 @@
                         <!-- <label for="infraMeril"> Infrastruktuurin luokitus MERIL-luokittelussa <small><a href="https://portal.meril.eu/meril/search/quick?keyword=&typeOfSearch=ris&_type=gr.ekt.cerif.entities.infrastructure.Facility" target="_blank">(koodisto)</a></small></label>
                         <input type="text" name="infraMeril" id="infraMeril" class="field"> -->
 
-                        <label for="infraEsfri"> Infrastruktuurin luokitus ESFRI-luokittelussa <small><a href="https://www.esfri.eu/esfri-ris" target="_blank">(koodisto)</a></small></label>
+                        <label for="infraEsfri"> Infrastruktuurin luokitus ESFRI-luokittelussa <small><a href="https://www.esfri.eu/esfri-ris" target="_blank">(koodisto)</a></small>
+                            <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">ESFRI käyttää kuutta luokkaa (domain) 1–6, jotka voi haluttaessa lisätä. Infrastruktuuri voi kuulua useampaan luokkaan. Koodiston mukaiset koodit: <a href="http://uri.suomi.fi/codelist/research/ESFRI-Domain" target="_blank">http://uri.suomi.fi/codelist/research/ESFRI-Domain</a> </span></div>
+                        </label>
                         <input type="text" name="infraEsfri" id="infraEsfri" class="field">
 
                         <label for="infraAcafi">
