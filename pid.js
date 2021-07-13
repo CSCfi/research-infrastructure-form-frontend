@@ -19,8 +19,8 @@ function loadDoc() {
 }
 
 function setValues(data) {
-    //Ifrastructure name
-    document.getElementById('infraNameFi').value = (data.nameFi == 0) ? "" : data.nameFi;
+    //Infrastructure name
+    document.getElementById('infraNameFi').value = (data.nameFi == 0) ? "" : data.nameFi; // .value = data.nameFi || '';
     document.getElementById('infraNameEn').value = (data.nameEn == 0) ? "" : data.nameEn;
     document.getElementById('infraNameSv').value = (data.nameSv == 0) ? "" : data.nameSv;
     //Abbreviation
@@ -186,7 +186,7 @@ function addServices(service,i){
 
 function addOrg(data,index) {
     const part_org = data.participantOrganizations
-    if(part_org != null && typeof part_org[index] != "undefined"){
+    if (part_org != null && typeof part_org[index] != "undefined") { // (!!part_org && !!part_org[index])
         var org = part_org[index]
         document.getElementById('SerCoOrg' + ((index > 0) ? (index-1):"")).checked = true
         toggleElement(('hidden_fields3' + ((index > 0) ? (index-1):"")),true)
@@ -206,7 +206,7 @@ function checkIfSame(service,list_2a,i) {
                     is_same = false;
                     return false;
                 }
-                console.log(is_same);
+                // console.log(is_same);
                 return true;       
             });
             if(is_same){
