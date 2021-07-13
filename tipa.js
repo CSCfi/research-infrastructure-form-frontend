@@ -34,19 +34,14 @@ function addSection(id) {
       <label for="serNameSv${addedDivs}" class="required">Palvelun nimi <small>(sv)</small></label>
       <input type="text" id="serNameSv${addedDivs}" name="serNameSv${addedDivs}"> 
 
-      <label for="serDescrFi${addedDivs}">Palvelun kuvaus <small>(fi)</small>
-          <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Palvelun sisällön ja toiminnan yleinen kuvaus.</span></div>
+      <label for="serDescrFi${addedDivs}" class="required">Palvelun kuvaus <small>(fi)</small>
+          <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext"><strong>Vähintään yksi kieli on pakollinen.</strong>Palvelun sisällön ja toiminnan yleinen kuvaus.</span></div>
       </label>
       <input type="text" id="serDescrFi${addedDivs}" name="serDescrFi${addedDivs}" class="field">
 
-      <label for="serDescrEn${addedDivs}">Palvelun kuvaus <small>(en)</small>
-          <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Palvelun sisällön ja toiminnan yleinen kuvaus.</span></div>
-      </label>
+      <label for="serDescrEn${addedDivs}" class="required">Palvelun kuvaus <small>(en)</small></label>
       <input type="text" id="serDescrEn${addedDivs}" name="serDescrEn${addedDivs}" class="field">
-
-      <label for="serDescrSv${addedDivs}">Palvelun kuvaus <small>(sv)</small>
-          <div class="tooltip"><i class="fa fa-info-circle"></i><span class="tooltiptext">Palvelun sisällön ja toiminnan yleinen kuvaus.</span></div>
-      </label>
+      <label for="serDescrSv${addedDivs}" class="required">Palvelun kuvaus <small>(sv)</small></label>
       <input type="text" id="serDescrSv${addedDivs}" name="serDescrSv${addedDivs}" class="field">
 
 
