@@ -186,7 +186,7 @@ function addServices(service,i){
 
 function addOrg(data,index) {
     const part_org = data.participantOrganizations
-    if (part_org != null && typeof part_org[index] != "undefined") { // (!!part_org && !!part_org[index])
+    if (!!part_org && !!part_org[index]) { // (!!part_org && !!part_org[index])
         var org = part_org[index]
         document.getElementById('SerCoOrg' + ((index > 0) ? (index-1):"")).checked = true
         toggleElement(('hidden_fields3' + ((index > 0) ? (index-1):"")),true)
