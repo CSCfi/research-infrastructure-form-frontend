@@ -1,6 +1,6 @@
 function loadDoc() {
   var urn = document.getElementById('ttv_id').value.slice(-10)
-  var url = "https://researchfi-api-researchfi.rahtiapp.fi/portalapi/infrastructure/_search?q=urn:" + urn
+  var url = "https://researchfi-api-production-researchfi.rahtiapp.fi/portalapi/infrastructure/_search?q=urn:" + urn
   var xhttp = new XMLHttpRequest()
 
   xhttp.open("GET",url,true)
